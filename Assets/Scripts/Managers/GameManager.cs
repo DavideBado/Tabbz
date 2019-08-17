@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     private Tabboz tabboz;
     public static GameManager MyGameManager = null;
     public GameObject TabbozMenu, Shops, Work, Disco, School, Girlfriend, Friends;
+    public GameObject OutWtYrFriends, CallFriends, Race;
+    public GameObject OutWtYrGf, CallYrGf, LeaveGf, LkngForGirlfriend;
     private Animator fsm;
     public List<Action> GameManagerActions = new List<Action>();
     public TMP_Text Nome, Cognome, NomeTipa, RapportoConLaTipa, Soldi, Reputazione, Figosit, ProgittoScolastico, NomeMoto, StatoMoto;
@@ -22,6 +24,13 @@ public class GameManager : MonoBehaviour
     public Action GoToFriends;
     public Action GoToDisco;
     public Action GoToGirlfriend;
+    public Action GoToCallFriends;
+    public Action GoToOutWtYrFriends;
+    public Action GoToRace;
+    public Action GoToOutWtYrGf;
+    public Action GoToCallYrGf;
+    public Action GoToLeaveGf;
+    public Action GoToLkngForGirlfriend;
     #endregion
 
     void Awake()
@@ -64,6 +73,13 @@ public class GameManager : MonoBehaviour
         GoToFriends += SetToFriends;
         GoToDisco += SetToDisco;
         GoToGirlfriend += SetToGirlfriend;
+        GoToCallFriends += SetToCallFriends;
+        GoToOutWtYrFriends += SetToOutWtYrFriends;
+        GoToRace += SetToRace;
+        GoToOutWtYrGf += SetToOutWtYrGf;
+        GoToCallYrGf += SetToCallYrGf;
+        GoToLeaveGf += SetToLeaveGf;
+        GoToLkngForGirlfriend += SetToLkngForGirlfriend;
     }
     private void ActionsToList()
     {
@@ -74,6 +90,13 @@ public class GameManager : MonoBehaviour
         GameManagerActions.Add(GoToFriends);
         GameManagerActions.Add(GoToDisco);
         GameManagerActions.Add(GoToGirlfriend);
+        GameManagerActions.Add(GoToCallFriends);
+        GameManagerActions.Add(GoToOutWtYrFriends);
+        GameManagerActions.Add(GoToRace);
+        GameManagerActions.Add(GoToOutWtYrGf);
+        GameManagerActions.Add(GoToCallYrGf);
+        GameManagerActions.Add(GoToLeaveGf);
+        GameManagerActions.Add(GoToLkngForGirlfriend);
     }
     private void SetToTabbozMenu()
     {
@@ -103,6 +126,34 @@ public class GameManager : MonoBehaviour
     private void SetToGirlfriend()
     {
         fsm.SetTrigger("GoToGirlfriend");
+    }
+    private void SetToCallFriends()
+    {
+        fsm.SetTrigger("GoToCallFriends");
+    }
+    private void SetToOutWtYrFriends()
+    {
+        fsm.SetTrigger("GoToOutWtYrFriends");
+    }
+    private void SetToRace()
+    {
+        fsm.SetTrigger("GoToRace");
+    }
+    private void SetToOutWtYrGf()
+    {
+        fsm.SetTrigger("GoToOutWtYrGf");
+    }
+    private void SetToCallYrGf()
+    {
+        fsm.SetTrigger("GoToCallYrGf");
+    }
+    private void SetToLeaveGf()
+    {
+        fsm.SetTrigger("GoToLeaveGf");
+    }
+    private void SetToLkngForGirlfriend()
+    {
+        fsm.SetTrigger("GoToLkngForGirlfriend");
     }
 
     private void UpdateTexts()
