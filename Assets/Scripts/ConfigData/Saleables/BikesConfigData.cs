@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Bado_City
 {
-    [CreateAssetMenu(fileName = "Bike Congid Data", menuName = "Saleable/Bike", order = 1)]
+    [CreateAssetMenu(fileName = "Bike Config Data", menuName = "Saleable/Bike", order = 1)]
     public class BikesConfigData : ScriptableObject, ISaleable
     {
         [SerializeField]
