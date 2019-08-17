@@ -60,10 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CallYrGfState.cs" />
-    <Compile Include="Assets\LeaveGfState.cs" />
-    <Compile Include="Assets\LkngForGirlfriendState.cs" />
-    <Compile Include="Assets\OutWtYrGfState.cs" />
     <Compile Include="Assets\Scripts\Abstracts\BikeBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\BikeShopBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\CigarettesBase.cs" />
@@ -82,10 +78,14 @@
     <Compile Include="Assets\Scripts\ConfigData\Shops\DiscoShopConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Shops\ShopConfigData.cs" />
     <Compile Include="Assets\Scripts\FSM\States\CallFriendsState.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\CallYrGfState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\DiscoState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\FriendsState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\GirlfriendState.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\LeaveGfState.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\LkngForGirlfriendState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\OutWtYrFriendsState.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\OutWtYrGfState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\RaceState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\SchoolState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\ShopsState.cs" />

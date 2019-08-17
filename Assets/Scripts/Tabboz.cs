@@ -17,6 +17,9 @@ namespace Bado_City
         // telefono
         // lavoro
 
+        /// <summary>
+        /// Setta i valori iniziali del tabboz
+        /// </summary>
         public void Init()
         {
             Nome = "Tizio";

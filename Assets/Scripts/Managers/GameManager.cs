@@ -35,26 +35,28 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        //Check if instance already exists
+        //Controlla se esite già
         if (MyGameManager == null)
 
-            //if not, set instance to this
+            //Se no setta questo come MyGameManager
             MyGameManager = this;
 
-        //If instance already exists and it's not this:
+        //Se invece esiste già e non è questo
         else if (MyGameManager != this)
 
-            //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
+            //Distrugge questo
             Destroy(gameObject);
 
-        //Sets this to not be destroyed when reloading scene
+        //Ci assicuriamo di non perderlo quando cambiamo scena
         DontDestroyOnLoad(gameObject);
 
         ActionsSubs();
         ActionsToList();
-
+        
+        //Se non esiste un tabboz
         if(tabboz == null)
         {
+            //Generiamo un nuovo tabboz
             tabboz = new Tabboz();
             tabboz.Init();
         }
@@ -63,6 +65,9 @@ public class GameManager : MonoBehaviour
     {
         fsm = GetComponent<Animator>();
     }
+    /// <summary>
+    /// Regitra tutti i metodi alle action
+    /// </summary>
     private void ActionsSubs()
     {
         GoToTabbozMenu += SetToTabbozMenu;
@@ -81,6 +86,9 @@ public class GameManager : MonoBehaviour
         GoToLeaveGf += SetToLeaveGf;
         GoToLkngForGirlfriend += SetToLkngForGirlfriend;
     }
+    /// <summary>
+    /// Metodo che aggiunge alla lista di action tutte le action, pezza a culo per settare da inspector dei bottoni le action
+    /// </summary>
     private void ActionsToList()
     {
         GameManagerActions.Add(GoToTabbozMenu);
@@ -98,9 +106,13 @@ public class GameManager : MonoBehaviour
         GameManagerActions.Add(GoToLeaveGf);
         GameManagerActions.Add(GoToLkngForGirlfriend);
     }
+    /// <summary>
+    /// Tutti i metodi che settano i trigger della FSM
+    /// </summary>
+    #region TriggerSet
     private void SetToTabbozMenu()
     {
-        UpdateTexts();
+        UpdateTabbozMenuTexts();
         fsm.SetTrigger("GoToTabbozMenu");
     }
     private void SetToShops()
@@ -155,8 +167,11 @@ public class GameManager : MonoBehaviour
     {
         fsm.SetTrigger("GoToLkngForGirlfriend");
     }
-
-    private void UpdateTexts()
+    #endregion
+    /// <summary>
+    /// Aggiorna i testi del menu del tabboz
+    /// </summary>
+    private void UpdateTabbozMenuTexts()
     {
         Nome.text = tabboz.Nome;
         Cognome.text = tabboz.Cognome;
