@@ -6,7 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager MyGameManager = null;
-    public GameObject TabbozMenu, Shops, Work, Disco;
+    public GameObject TabbozMenu, Shops, Work, Disco, School, Girlfriend, Friends;
     private Animator fsm;
     public List<Action> GameManagerActions = new List<Action>();
 
@@ -48,6 +48,11 @@ public class GameManager : MonoBehaviour
     {
         GoToTabbozMenu += SetToTabbozMenu;
         GoToShops += SetToShops;
+        GoToWork += SetToWork;
+        GoToSchool += SetToSchool;
+        GoToFriends += SetToFriends;
+        GoToDisco += SetToDisco;
+        GoToGirlfriend += SetToGirlfriend;
     }
     private void ActionsToList()
     {
@@ -66,5 +71,25 @@ public class GameManager : MonoBehaviour
     private void SetToShops()
     {
         fsm.SetTrigger("GoToShops");
+    }
+    private void SetToWork()
+    {
+        fsm.SetTrigger("GoToWork");
+    }
+    private void SetToSchool()
+    {
+        fsm.SetTrigger("GoToSchool");
+    }
+    private void SetToFriends()
+    {
+        fsm.SetTrigger("GoToFriends");
+    }
+    private void SetToDisco()
+    {
+        fsm.SetTrigger("GoToDisco");
+    }
+    private void SetToGirlfriend()
+    {
+        fsm.SetTrigger("GoToGirlfriend");
     }
 }

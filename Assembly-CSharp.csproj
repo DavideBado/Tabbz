@@ -77,6 +77,10 @@
     <Compile Include="Assets\Scripts\ConfigData\Shops\ClothingShopConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Shops\DiscoShopConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Shops\ShopConfigData.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\DiscoState.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\FriendsState.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\GirlfriendState.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\SchoolState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\ShopsState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\TabbozMenuState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\WorkState.cs" />
@@ -84,6 +88,7 @@
     <Compile Include="Assets\Scripts\Interfaces\IShop.cs" />
     <Compile Include="Assets\Scripts\Managers\DayManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Tabboz.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\Data storage\ButtonData.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\MyButtonBase.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

@@ -11,5 +11,5 @@ public abstract class BikeBase : MonoBehaviour, ISaleable
     public Sprite Icon { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
     public int Price { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 
-    public float SpeedMax, Endurance, FuelMax; // Ogni moto avrà una velocità massima, una resistenza all'usura e una capienza del serbatoio. Da rivedere nel dettaglio le gare.
+    public float Velocità, Cilindrata, Efficienza, Benzina, Stato; // Ogni moto avrà una velocità massima, una resistenza all'usura e una capienza del serbatoio. Da rivedere nel dettaglio le gare.
 }
