@@ -2,13 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using Bado_City;
 
 public class GameManager : MonoBehaviour
 {
+    private Tabboz tabboz;
     public static GameManager MyGameManager = null;
     public GameObject TabbozMenu, Shops, Work, Disco, School, Girlfriend, Friends;
     private Animator fsm;
     public List<Action> GameManagerActions = new List<Action>();
+    public TMP_Text Nome, Cognome, NomeTipa, RapportoConLaTipa, Soldi, Reputazione, Figosit, ProgittoScolastico, NomeMoto, StatoMoto;
 
     #region Actions
     public Action GoToTabbozMenu;
@@ -39,6 +43,12 @@ public class GameManager : MonoBehaviour
 
         ActionsSubs();
         ActionsToList();
+
+        if(tabboz == null)
+        {
+            tabboz = new Tabboz();
+            tabboz.Init();
+        }
     }
     private void Start()
     {
@@ -47,6 +57,7 @@ public class GameManager : MonoBehaviour
     private void ActionsSubs()
     {
         GoToTabbozMenu += SetToTabbozMenu;
+        //GoToTabbozMenu += UpdateTexts; Devo sistemare gli eventi in Inspector, il sistema attuale del cazzo non permette più metodi su un evento
         GoToShops += SetToShops;
         GoToWork += SetToWork;
         GoToSchool += SetToSchool;
@@ -66,6 +77,7 @@ public class GameManager : MonoBehaviour
     }
     private void SetToTabbozMenu()
     {
+        UpdateTexts();
         fsm.SetTrigger("GoToTabbozMenu");
     }
     private void SetToShops()
@@ -91,5 +103,26 @@ public class GameManager : MonoBehaviour
     private void SetToGirlfriend()
     {
         fsm.SetTrigger("GoToGirlfriend");
+    }
+
+    private void UpdateTexts()
+    {
+        Nome.text = tabboz.Nome;
+        Cognome.text = tabboz.Cognome;
+        // if(tipa != null...da fare classe tipa
+        // NomeTipa = ....
+        RapportoConLaTipa.text = (tabboz.RapportoConLaTipa.ToString() + "/100");
+        Soldi.text = tabboz.Soldi.ToString();
+        Reputazione.text = (tabboz.Reputazione.ToString() + "/100");
+        Figosit.text = (tabboz.Figosit.ToString() + "/100");
+        ProgittoScolastico.text = (tabboz.ProfittoScolastico.ToString() + "/100");
+        if (tabboz.Bike != null)
+        {
+            NomeMoto.gameObject.SetActive(true);
+            StatoMoto.gameObject.SetActive(true);
+            NomeMoto.text = tabboz.Bike.Name;
+            StatoMoto.text = (tabboz.Bike.Stato.ToString() + "/100");
+        }
+        else StatoMoto.gameObject.SetActive(false);
     }
 }

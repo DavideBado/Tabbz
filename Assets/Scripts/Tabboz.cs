@@ -14,6 +14,19 @@ namespace Bado_City
         public int Figosit;
         public int ProfittoScolastico;
         public BikeBase Bike;
-    }
+        // telefono
+        // lavoro
 
+        public void Init()
+        {
+            Nome = "Tizio";
+            Cognome = "Caio";
+            RapportoConLaTipa = 0;
+            Soldi = 0;
+            Reputazione = 0;
+            Figosit = 0;
+            ProfittoScolastico = 50;
+            Bike = null;
+        }
+    }
 }
