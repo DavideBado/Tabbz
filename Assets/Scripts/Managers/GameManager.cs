@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject TabbozMenu, Shops, Work, Disco, School, Girlfriend, Friends;
     public GameObject OutWtYrFriends, CallFriends, Race;
     public GameObject OutWtYrGf, CallYrGf, LeaveGf, LkngForGirlfriend;
+    public GameObject LookingForAJob, QuitWork, FactoryInfo, Asslicker, AskSalaryIncrease, Strike;
     private Animator fsm;
     public List<Action> GameManagerActions = new List<Action>();
     public TMP_Text Nome, Cognome, NomeTipa, RapportoConLaTipa, Soldi, Reputazione, Figosit, ProgittoScolastico, NomeMoto, StatoMoto;
@@ -31,6 +32,12 @@ public class GameManager : MonoBehaviour
     public Action GoToCallYrGf;
     public Action GoToLeaveGf;
     public Action GoToLkngForGirlfriend;
+    public Action GoToLookingForAJob;
+    public Action GoToQuitWork;
+    public Action GoToFactoryInfo;
+    public Action GoToAsslicker;
+    public Action GoToAskSalaryIncrease;
+    public Action GoToStrike;
     #endregion
 
     void Awake()
@@ -52,6 +59,7 @@ public class GameManager : MonoBehaviour
 
         ActionsSubs();
         ActionsToList();
+        fsm = GetComponent<Animator>();
         
         //Se non esiste un tabboz
         if(tabboz == null)
@@ -61,10 +69,7 @@ public class GameManager : MonoBehaviour
             tabboz.Init();
         }
     }
-    private void Start()
-    {
-        fsm = GetComponent<Animator>();
-    }
+
     /// <summary>
     /// Regitra tutti i metodi alle action
     /// </summary>
@@ -85,6 +90,12 @@ public class GameManager : MonoBehaviour
         GoToCallYrGf += SetToCallYrGf;
         GoToLeaveGf += SetToLeaveGf;
         GoToLkngForGirlfriend += SetToLkngForGirlfriend;
+        GoToLookingForAJob += SetToLookingForAJob;
+        GoToQuitWork += SetToQuitWork;
+        GoToFactoryInfo += SetToFactoryInfo;
+        GoToAsslicker += SetToAsslicker;
+        GoToAskSalaryIncrease += SetToAskSalaryIncrease;
+        GoToStrike += SetToStrike;
     }
     /// <summary>
     /// Metodo che aggiunge alla lista di action tutte le action, pezza a culo per settare da inspector dei bottoni le action
@@ -165,6 +176,30 @@ public class GameManager : MonoBehaviour
     private void SetToLkngForGirlfriend()
     {
         fsm.SetTrigger("GoToLkngForGirlfriend");
+    }
+    private void SetToLookingForAJob()
+    {
+        fsm.SetTrigger("GoToLookingForAJob");
+    }
+    private void SetToQuitWork()
+    {
+        fsm.SetTrigger("GoToQuitWork");
+    }
+    private void SetToFactoryInfo()
+    {
+        fsm.SetTrigger("GoToFactoryInfo");
+    }
+    private void SetToAsslicker()
+    {
+        fsm.SetTrigger("GoToAsslicker");
+    }
+    private void SetToAskSalaryIncrease()
+    {
+        fsm.SetTrigger("GoToAskSalaryIncrease");
+    }
+    private void SetToStrike()
+    {
+        fsm.SetTrigger("GoToStrike");
     }
     #endregion
     /// <summary>

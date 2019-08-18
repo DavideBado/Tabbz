@@ -79,6 +79,30 @@ namespace Bado_City
 
                         OnClickActions.Add(GameManager.MyGameManager.GoToLkngForGirlfriend);
                         break;
+                    case StatesActions.ActToLookingForAJob:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToLookingForAJob);
+                        break;
+                    case StatesActions.ActToQuitWork:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToQuitWork);
+                        break;
+                    case StatesActions.ActToFactoryInfo:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToFactoryInfo);
+                        break;
+                    case StatesActions.ActToAsslicker:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToAsslicker);
+                        break;
+                    case StatesActions.ActToAskSalaryIncrease:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToAskSalaryIncrease);
+                        break;
+                    case StatesActions.ActToStrike:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToStrike);
+                        break;
                     default:
                         break;
                 }
@@ -100,7 +124,13 @@ namespace Bado_City
             ActToOutWtYrGf,
             ActToCallYrGf,
             ActToLeaveGf,
-            ActToLkngForGirlfriend
+            ActToLkngForGirlfriend,
+            ActToLookingForAJob,
+            ActToQuitWork,
+            ActToFactoryInfo,
+            ActToAsslicker,
+            ActToAskSalaryIncrease,
+            ActToStrike
         }
     }
 }
