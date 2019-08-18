@@ -1,19 +1,25 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-
-public class MyButtonBase : Button
+namespace Bado_City
 {
-    ButtonData mydata;
-    protected override void Start()
+    public class MyButtonBase : Button
     {
-        mydata = GetComponent<ButtonData>();
-    }
-    public override void OnPointerClick(PointerEventData eventData)
-    {
-        mydata.OnClickAction();
+        ButtonData mydata;
+        protected override void Start()
+        {
+            mydata = GetComponent<ButtonData>();
+        }
+        public override void OnPointerClick(PointerEventData eventData)
+        {
+            foreach (Action _action in mydata.OnClickActions)
+            {
+                _action();
+            }
+        }
     }
 }

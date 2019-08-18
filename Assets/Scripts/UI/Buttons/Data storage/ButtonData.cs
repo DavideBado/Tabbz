@@ -3,27 +3,104 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonData : MonoBehaviour
+namespace Bado_City
 {
-    public string EventOnSubmit;
-    public Action OnClickAction;
-
-    private void Start()
+    public class ButtonData : MonoBehaviour
     {
-        SetOnClickAction();
-    }
+        public List<Action> OnClickActions = new List<Action>();
+        public List<StatesActions> MyActions = new List<StatesActions>();
 
-    /// <summary>
-    /// Pezza imbarazzante per settare le action da inspector senza usare gli eventi di Unity
-    /// </summary>
-    private void SetOnClickAction()
-    {
-        foreach (Action _action in GameManager.MyGameManager.GameManagerActions)
+        private void Start()
         {
-            if(_action.Method.Name == EventOnSubmit) // Questo ci permette sì di settare rapidamente le action collegate a un bottone, ma non ci permette di registrare più di un metodo alla action, facendo venire meno il senso di quest'ultima
+            SetOnClickAction();
+        }
+
+        /// <summary>
+        /// Non potendo mettere a inspector le action non di unity ho optato per uno switch
+        /// </summary>
+        private void SetOnClickAction()
+        {
+            foreach (StatesActions _action in MyActions)
             {
-                OnClickAction = _action;
+                switch (_action)
+                {
+                    case StatesActions.ActToTabbozMenu:
+                        OnClickActions.Add(GameManager.MyGameManager.GoToTabbozMenu);
+                        break;
+                    case StatesActions.ActToShops:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToShops);
+                        break;
+                    case StatesActions.ActToWork:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToWork);
+                        break;
+                    case StatesActions.ActToSchool:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToSchool);
+                        break;
+                    case StatesActions.ActToFriends:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToFriends);
+                        break;
+                    case StatesActions.ActToDisco:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToDisco);
+                        break;
+                    case StatesActions.ActToGirlfriend:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToGirlfriend);
+                        break;
+                    case StatesActions.ActToCallFriends:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToCallFriends);
+                        break;
+                    case StatesActions.ActToOutWtYrFriends:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToOutWtYrFriends);
+                        break;
+                    case StatesActions.ActToRace:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToRace);
+                        break;
+                    case StatesActions.ActToOutWtYrGf:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToOutWtYrGf);
+                        break;
+                    case StatesActions.ActToCallYrGf:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToCallYrGf);
+                        break;
+                    case StatesActions.ActToLeaveGf:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToLeaveGf);
+                        break;
+                    case StatesActions.ActToLkngForGirlfriend:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToLkngForGirlfriend);
+                        break;
+                    default:
+                        break;
+                }
             }
+        }
+
+        public enum StatesActions
+        {
+            ActToTabbozMenu,
+            ActToShops,
+            ActToWork,
+            ActToSchool,
+            ActToFriends,
+            ActToDisco,
+            ActToGirlfriend,
+            ActToCallFriends,
+            ActToOutWtYrFriends,
+            ActToRace,
+            ActToOutWtYrGf,
+            ActToCallYrGf,
+            ActToLeaveGf,
+            ActToLkngForGirlfriend
         }
     }
 }

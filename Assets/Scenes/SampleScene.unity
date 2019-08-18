@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToGirlfriend
+  MyActions: 06000000
 --- !u!114 &10863183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,6 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToCallFriends
+  MyActions: 07000000
 --- !u!114 &44516344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -620,6 +622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToShops
+  MyActions: 01000000
 --- !u!114 &54736335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -676,7 +679,7 @@ GameObject:
   - component: {fileID: 67893990}
   - component: {fileID: 67893989}
   m_Layer: 5
-  m_Name: Back (2)
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -757,6 +760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToTabbozMenu
+  MyActions: 00000000
 --- !u!114 &67893991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -909,7 +913,7 @@ GameObject:
   - component: {fileID: 124793423}
   - component: {fileID: 124793422}
   m_Layer: 5
-  m_Name: Back (2)
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -990,6 +994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToTabbozMenu
+  MyActions: 00000000
 --- !u!114 &124793424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2843,6 +2848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToLkngForGirlfriend
+  MyActions: 0d000000
 --- !u!114 &546806756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3129,6 +3135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToRace
+  MyActions: 09000000
 --- !u!114 &666123391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3261,6 +3268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToOutWtYrFriends
+  MyActions: 08000000
 --- !u!114 &722486035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3388,8 +3396,8 @@ GameObject:
   - component: {fileID: 739675701}
   - component: {fileID: 739675703}
   - component: {fileID: 739675702}
-  - component: {fileID: 739675705}
   - component: {fileID: 739675704}
+  - component: {fileID: 739675705}
   m_Layer: 5
   m_Name: Work
   m_TagString: Untagged
@@ -3467,6 +3475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToWork
+  MyActions: 02000000
 --- !u!114 &739675705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3604,6 +3613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToFriends
+  MyActions: 04000000
 --- !u!114 &760138903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3896,6 +3906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToGirlfriend
+  MyActions: 06000000
 --- !u!114 &841296415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4504,6 +4515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToTabbozMenu
+  MyActions: 00000000
 --- !u!114 &936317491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5215,6 +5227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToOutWtYrGf
+  MyActions: 0a000000
 --- !u!114 &1086593792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5384,6 +5397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToDisco
+  MyActions: 05000000
 --- !u!1 &1185437800
 GameObject:
   m_ObjectHideFlags: 0
@@ -5479,6 +5493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToGirlfriend
+  MyActions: 06000000
 --- !u!114 &1185437804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5611,6 +5626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToTabbozMenu
+  MyActions: 00000000
 --- !u!114 &1243696847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5859,6 +5875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToSchool
+  MyActions: 03000000
 --- !u!1 &1325582954
 GameObject:
   m_ObjectHideFlags: 0
@@ -6272,6 +6289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToCallYrGf
+  MyActions: 0b000000
 --- !u!114 &1338139611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6561,7 +6579,7 @@ GameObject:
   - component: {fileID: 1371843321}
   - component: {fileID: 1371843320}
   m_Layer: 5
-  m_Name: Back (2)
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6642,6 +6660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToTabbozMenu
+  MyActions: 00000000
 --- !u!114 &1371843322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6853,6 +6872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToGirlfriend
+  MyActions: 06000000
 --- !u!114 &1405885864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7459,6 +7479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToLeaveGf
+  MyActions: 0c000000
 --- !u!114 &1527857392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7751,6 +7772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToFriends
+  MyActions: 04000000
 --- !u!114 &1564407341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9475,6 +9497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToTabbozMenu
+  MyActions: 00000000
 --- !u!114 &1747868568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9765,6 +9788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToFriends
+  MyActions: 04000000
 --- !u!114 &1791776594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10251,6 +10275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToGirlfriend
+  MyActions: 06000000
 --- !u!1 &1970412759
 GameObject:
   m_ObjectHideFlags: 0
@@ -10500,6 +10525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EventOnSubmit: SetToFriends
+  MyActions: 04000000
 --- !u!114 &2021752226
 MonoBehaviour:
   m_ObjectHideFlags: 0

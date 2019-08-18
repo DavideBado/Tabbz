@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
     private void ActionsSubs()
     {
         GoToTabbozMenu += SetToTabbozMenu;
-        //GoToTabbozMenu += UpdateTexts; Devo sistemare gli eventi in Inspector, il sistema attuale del cazzo non permette più metodi su un evento
+        GoToTabbozMenu += UpdateTabbozMenuTexts;
         GoToShops += SetToShops;
         GoToWork += SetToWork;
         GoToSchool += SetToSchool;
@@ -111,8 +111,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     #region TriggerSet
     private void SetToTabbozMenu()
-    {
-        UpdateTabbozMenuTexts();
+    {      
         fsm.SetTrigger("GoToTabbozMenu");
     }
     private void SetToShops()
