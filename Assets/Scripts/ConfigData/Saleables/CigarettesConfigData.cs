@@ -9,13 +9,13 @@ namespace Bado_City
     {
         [SerializeField]
         protected string Name_Insp;
-        public string Name { get { return Name; } set { Name = Name_Insp; } }
+        public string Name { get { return Name_Insp; } set { Name = Name_Insp; } }
         [SerializeField]
         protected Sprite Icon_Insp;
-        public Sprite Icon { get { return Icon; } set { Icon = Icon_Insp; } }
+        public Sprite Icon { get { return Icon_Insp; } set { Icon = Icon_Insp; } }
         [SerializeField]
         protected int Price_Insp;
-        public int Price { get { return Price; } set { Price = Price_Insp; } }
+        public int Price { get { return Price_Insp; } set { Price = Price_Insp; } }
 
         [SerializeField]
         protected float Nicotine, Tar, CO; // Valori delle sigarette

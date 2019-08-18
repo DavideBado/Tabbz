@@ -16,6 +16,10 @@ namespace Bado_City
         }
         public override void OnPointerClick(PointerEventData eventData)
         {
+            if(mydata.DiscoShop != null)
+            {
+                GameManager.MyGameManager.SetDiscoDelegate(mydata.DiscoShop);
+            }
             foreach (Action _action in mydata.OnClickActions)
             {
                 _action();

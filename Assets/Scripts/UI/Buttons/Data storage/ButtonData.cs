@@ -9,6 +9,8 @@ namespace Bado_City
     {
         public List<Action> OnClickActions = new List<Action>();
         public List<StatesActions> MyActions = new List<StatesActions>();
+        public ScriptableObject Shop;
+        public DiscoShopConfigData DiscoShop; // Ho troppo sonno per pensare a un metodo più generico che funzioni bene hahahaha
 
         private void Start()
         {
@@ -103,6 +105,10 @@ namespace Bado_City
 
                         OnClickActions.Add(GameManager.MyGameManager.GoToStrike);
                         break;
+                    case StatesActions.ActToEnterTheDisco:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToEnterTheDisco);
+                        break;
                     default:
                         break;
                 }
@@ -130,7 +136,8 @@ namespace Bado_City
             ActToFactoryInfo,
             ActToAsslicker,
             ActToAskSalaryIncrease,
-            ActToStrike
+            ActToStrike,
+            ActToEnterTheDisco
         }
     }
 }

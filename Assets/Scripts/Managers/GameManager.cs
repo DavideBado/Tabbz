@@ -9,13 +9,14 @@ public class GameManager : MonoBehaviour
 {
     private Tabboz tabboz;
     public static GameManager MyGameManager = null;
-    public GameObject TabbozMenu, Shops, Work, Disco, School, Girlfriend, Friends;
+    public GameObject TabbozMenu, Shops, Work, DiscoOut, DiscoIn, School, Girlfriend, Friends;
     public GameObject OutWtYrFriends, CallFriends, Race;
     public GameObject OutWtYrGf, CallYrGf, LeaveGf, LkngForGirlfriend;
     public GameObject LookingForAJob, QuitWork, FactoryInfo, Asslicker, AskSalaryIncrease, Strike;
     private Animator fsm;
-    public List<Action> GameManagerActions = new List<Action>();
     public TMP_Text Nome, Cognome, NomeTipa, RapportoConLaTipa, Soldi, Reputazione, Figosit, ProgittoScolastico, NomeMoto, StatoMoto;
+    [HideInInspector]
+    public DiscoShopConfigData DiscoShop;
 
     #region Actions
     public Action GoToTabbozMenu;
@@ -38,6 +39,12 @@ public class GameManager : MonoBehaviour
     public Action GoToAsslicker;
     public Action GoToAskSalaryIncrease;
     public Action GoToStrike;
+    public Action GoToEnterTheDisco;
+    #endregion
+    #region delegates
+    public delegate void MyDiscoShopDelegate(DiscoShopConfigData _shop);
+
+    public MyDiscoShopDelegate SetDiscoDelegate;
     #endregion
 
     void Awake()
@@ -58,7 +65,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         ActionsSubs();
-        ActionsToList();
+        DelegatesSubs();
         fsm = GetComponent<Animator>();
         
         //Se non esiste un tabboz
@@ -96,26 +103,11 @@ public class GameManager : MonoBehaviour
         GoToAsslicker += SetToAsslicker;
         GoToAskSalaryIncrease += SetToAskSalaryIncrease;
         GoToStrike += SetToStrike;
-    }
-    /// <summary>
-    /// Metodo che aggiunge alla lista di action tutte le action, pezza a culo per settare da inspector dei bottoni le action
-    /// </summary>
-    private void ActionsToList()
+        GoToEnterTheDisco += SetToEnterTheDisco;
+    }    
+    private void DelegatesSubs()
     {
-        GameManagerActions.Add(GoToTabbozMenu);
-        GameManagerActions.Add(GoToShops);
-        GameManagerActions.Add(GoToWork);
-        GameManagerActions.Add(GoToSchool);
-        GameManagerActions.Add(GoToFriends);
-        GameManagerActions.Add(GoToDisco);
-        GameManagerActions.Add(GoToGirlfriend);
-        GameManagerActions.Add(GoToCallFriends);
-        GameManagerActions.Add(GoToOutWtYrFriends);
-        GameManagerActions.Add(GoToRace);
-        GameManagerActions.Add(GoToOutWtYrGf);
-        GameManagerActions.Add(GoToCallYrGf);
-        GameManagerActions.Add(GoToLeaveGf);
-        GameManagerActions.Add(GoToLkngForGirlfriend);
+        SetDiscoDelegate += SetDiscoShop;
     }
     /// <summary>
     /// Tutti i metodi che settano i trigger della FSM
@@ -200,6 +192,19 @@ public class GameManager : MonoBehaviour
     private void SetToStrike()
     {
         fsm.SetTrigger("GoToStrike");
+    }
+    private void SetToEnterTheDisco()
+    {
+        fsm.SetTrigger("GoToEnterTheDisco");
+    }
+    #endregion
+    /// <summary>
+    /// Set dei negozi
+    /// </summary>
+    #region ShopSet
+    private void SetDiscoShop(DiscoShopConfigData _discoShop)
+    {
+        DiscoShop = _discoShop;
     }
     #endregion
     /// <summary>

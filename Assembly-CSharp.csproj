@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\FSM\States\CallFriendsState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\CallYrGfState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\DiscoState.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\EnterTheDiscoState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\FactoryInfoState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\FriendsState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\GirlfriendState.cs" />
