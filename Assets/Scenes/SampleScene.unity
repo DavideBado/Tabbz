@@ -207,8 +207,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 06000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &10863183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,8 +653,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 07000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &44516344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,8 +780,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 01000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &54736335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,8 +917,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 00000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &67893991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1245,8 +1237,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 00000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &124793424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2771,8 +2761,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 02000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &437024357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3067,8 +3055,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 02000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &467137044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3680,8 +3666,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 0d000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &546806756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3814,8 +3798,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 0f000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &555584564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4181,8 +4163,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 05000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &663624602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4315,8 +4295,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 09000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &666123391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4599,8 +4577,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 08000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &722486035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4807,8 +4783,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 02000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &739675705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4946,8 +4920,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 04000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &760138903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5161,8 +5133,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 02000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &776576360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5453,8 +5423,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 06000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &841296415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6063,8 +6031,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 00000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &936317491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6514,8 +6480,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 12000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &975258286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6917,8 +6881,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 0a000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1086593792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7088,8 +7050,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 05000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!1 &1185437800
 GameObject:
   m_ObjectHideFlags: 0
@@ -7185,8 +7145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 06000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1185437804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7552,8 +7510,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 00000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1243696847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7640,7 +7596,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1250664435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dceb8a9aa651e544b803a489294e5f04, type: 3}
+  m_Script: {fileID: 11500000, guid: 306176ee5c8fe7946a1afd9281b8386a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -7682,11 +7638,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1250664435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5e245bc3fe616e43a3dd87dad2f1b4a, type: 3}
+  m_Script: {fileID: 11500000, guid: c2b7578736ad1b246a9029eea7306560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 14000000
-  Shop: {fileID: 0}
   DiscoShop: {fileID: 11400000, guid: db7a91aacc3fa4049a5ecdb038770f7d, type: 2}
 --- !u!114 &1250664439
 MonoBehaviour:
@@ -7936,8 +7891,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 03000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!1 &1303145544
 GameObject:
   m_ObjectHideFlags: 0
@@ -8033,8 +7986,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 13000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1303145548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8167,8 +8118,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 0e000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1309399613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8619,8 +8568,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 0b000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1338139611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8991,8 +8938,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 00000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1371843322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9158,7 +9103,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1391113337}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dceb8a9aa651e544b803a489294e5f04, type: 3}
+  m_Script: {fileID: 11500000, guid: 306176ee5c8fe7946a1afd9281b8386a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -9200,11 +9145,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1391113337}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5e245bc3fe616e43a3dd87dad2f1b4a, type: 3}
+  m_Script: {fileID: 11500000, guid: c2b7578736ad1b246a9029eea7306560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 14000000
-  Shop: {fileID: 0}
   DiscoShop: {fileID: 11400000, guid: 04d0ff67711381b41a531d705e46a430, type: 2}
 --- !u!114 &1391113341
 MonoBehaviour:
@@ -9417,8 +9361,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 06000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1405885864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9819,7 +9761,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1451855791}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dceb8a9aa651e544b803a489294e5f04, type: 3}
+  m_Script: {fileID: 11500000, guid: 306176ee5c8fe7946a1afd9281b8386a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -9861,11 +9803,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1451855791}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5e245bc3fe616e43a3dd87dad2f1b4a, type: 3}
+  m_Script: {fileID: 11500000, guid: c2b7578736ad1b246a9029eea7306560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 14000000
-  Shop: {fileID: 0}
   DiscoShop: {fileID: 11400000, guid: 2b3ac40df6ca3254e8c1afd55f2a12d7, type: 2}
 --- !u!114 &1451855795
 MonoBehaviour:
@@ -9999,8 +9940,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 02000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1455287730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10526,8 +10465,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 0c000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1527857392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10820,8 +10757,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 04000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1564407341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11428,8 +11363,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 11000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1628206292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12841,8 +12774,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 00000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1747868568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13212,8 +13143,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 02000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1777779426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13346,8 +13275,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 04000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1791776594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13719,8 +13646,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 02000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1816274042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14007,8 +13932,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 10000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &1902766152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14256,8 +14179,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 06000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!1 &1970412759
 GameObject:
   m_ObjectHideFlags: 0
@@ -14507,8 +14428,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyActions: 04000000
-  Shop: {fileID: 0}
-  DiscoShop: {fileID: 0}
 --- !u!114 &2021752226
 MonoBehaviour:
   m_ObjectHideFlags: 0

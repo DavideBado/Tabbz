@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\ConfigData\Factory\FactoryConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Factory\QuizConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Months\MonthsConfigData.cs" />
+    <Compile Include="Assets\Scripts\ConfigData\NPC\TipaConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Saleables\BikesConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Saleables\CigarettesConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Saleables\ClothingConfigData.cs" />
@@ -100,12 +101,15 @@
     <Compile Include="Assets\Scripts\FSM\States\StrikeState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\TabbozMenuState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\WorkState.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\ICharacter.cs" />
     <Compile Include="Assets\Scripts\Interfaces\ISaleable.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IShop.cs" />
     <Compile Include="Assets\Scripts\Managers\DayManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Tabboz.cs" />
-    <Compile Include="Assets\Scripts\UI\Buttons\Data storage\ButtonData.cs" />
+    <Compile Include="Assets\Scripts\UI\Buttons\Data storage\ButtonBaseData.cs" />
+    <Compile Include="Assets\Scripts\UI\Buttons\Data storage\DiscoButtonData.cs" />
+    <Compile Include="Assets\Scripts\UI\Buttons\DiscoButton.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\MyButtonBase.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

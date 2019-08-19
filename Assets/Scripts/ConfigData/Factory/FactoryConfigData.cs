@@ -22,6 +22,7 @@ namespace Bado_City
             public string Name; //Nome della fabbrica           
             public List<string> Descriptions; // Lista nel caso si volesse dividere la descrizione in più parti
             public Sprite IconSprite; // Immagine della fabbrica
+            public int Fatturato;
         }
     }
 }

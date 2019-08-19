@@ -7,20 +7,19 @@ using UnityEngine.UI;
 
 namespace Bado_City
 {
+    /// <summary>
+    /// Classe per i bottoni che si limitano a settare un trigger della state/classe base per gli altri bottoni
+    /// </summary>
     public class MyButtonBase : Button
     {
-        ButtonData mydata;
+        protected ButtonBaseData myBaseData;
         protected override void Start()
         {
-            mydata = GetComponent<ButtonData>();
+            myBaseData = GetComponent<ButtonBaseData>();
         }
         public override void OnPointerClick(PointerEventData eventData)
-        {
-            if(mydata.DiscoShop != null)
-            {
-                GameManager.MyGameManager.SetDiscoDelegate(mydata.DiscoShop);
-            }
-            foreach (Action _action in mydata.OnClickActions)
+        {            
+            foreach (Action _action in myBaseData.OnClickActions)
             {
                 _action();
             }

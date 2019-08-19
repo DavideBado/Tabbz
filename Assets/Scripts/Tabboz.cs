@@ -10,12 +10,14 @@ namespace Bado_City
         public string Cognome;
         public int RapportoConLaTipa;
         public int Soldi;
-        public int Reputazione;
-        public int Figosit;
-        public int ProfittoScolastico;
+        [Range(0,100)] public int Reputazione;
+        [Range(0, 100)] public int Figosit;
+        [Range(0, 100)] public int ProfittoScolastico;
+        [Range(0, 100)] public int ImpegnoLavoro;
+        public int Stipendio;
         public BikeBase Bike;
+        public FactoryConfigData CurrentFactory;
         // telefono
-        // lavoro
 
         /// <summary>
         /// Setta i valori iniziali del tabboz
@@ -28,8 +30,11 @@ namespace Bado_City
             Soldi = 0;
             Reputazione = 0;
             Figosit = 0;
-            ProfittoScolastico = 50;
+            ProfittoScolastico = 0;
+            ImpegnoLavoro = 0;
+            Stipendio = 0;
             Bike = null;
+            CurrentFactory = null;
         }
     }
 }
