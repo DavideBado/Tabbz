@@ -68,6 +68,8 @@
     <Compile Include="Assets\Scripts\Abstracts\DrinkBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\SchoolBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\TabacchiBase.cs" />
+    <Compile Include="Assets\Scripts\ConfigData\Factory\FactoryConfigData.cs" />
+    <Compile Include="Assets\Scripts\ConfigData\Factory\QuizConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Months\MonthsConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Saleables\BikesConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Saleables\CigarettesConfigData.cs" />
