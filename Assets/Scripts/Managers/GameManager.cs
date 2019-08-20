@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
     private void ActionsSubs()
     {
         GoToTabbozMenu += SetToTabbozMenu;
-        GoToTabbozMenu += UpdateTabbozMenuTexts;
+        GoToTabbozMenu += UpdateTabbozMenuTextsAndImages;
         GoToShops += SetToShops;
         GoToWork += SetToWork;
         GoToSchool += SetToSchool;
@@ -229,9 +229,9 @@ public class GameManager : MonoBehaviour
     }
     #endregion
     /// <summary>
-    /// Aggiorna i testi del menu del tabboz
+    /// Aggiorna i testi e le immagini del tabboz menu
     /// </summary>
-    private void UpdateTabbozMenuTexts()
+    private void UpdateTabbozMenuTextsAndImages()
     {
         Nome.text = tabboz.Nome;
         Cognome.text = tabboz.Cognome;
@@ -250,5 +250,10 @@ public class GameManager : MonoBehaviour
             StatoMoto.text = (tabboz.Bike.Stato.ToString() + "/100");
         }
         else StatoMoto.gameObject.SetActive(false);
+
+        for (int i = 0; i < tabboz.clothings.Count; i++)
+        {
+            TabbozMenu.GetComponent<TabbozImageData>().Clothings[i].sprite = tabboz.clothings[i].Icon;
+        }
     }
 }

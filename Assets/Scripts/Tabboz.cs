@@ -17,6 +17,7 @@ namespace Bado_City
         public int Stipendio;
         public BikeBase Bike;
         public FactoryConfigData CurrentFactory;
+        public List<ClothingConfigData> clothings = new List<ClothingConfigData>();        
         // telefono
 
         /// <summary>

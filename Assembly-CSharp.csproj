@@ -60,8 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ClothingsState.cs" />
-    <Compile Include="Assets\EnterTheClothingsState.cs" />
     <Compile Include="Assets\Scripts\Abstracts\BikeBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\BikeShopBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\CigarettesBase.cs" />
@@ -86,7 +84,9 @@
     <Compile Include="Assets\Scripts\FSM\States\AsslickerState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\CallFriendsState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\CallYrGfState.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\ClothingsState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\DiscoState.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\EnterTheClothingsState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\EnterTheDiscoState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\FactoryInfoState.cs" />
     <Compile Include="Assets\Scripts\FSM\States\FriendsState.cs" />
@@ -117,6 +117,7 @@
     <Compile Include="Assets\Scripts\UI\Buttons\MyButtonBase.cs" />
     <Compile Include="Assets\Scripts\UI\ShopsUI\ClothingInfoData.cs" />
     <Compile Include="Assets\Scripts\UI\ShopsUI\ShopPanelData.cs" />
+    <Compile Include="Assets\Scripts\UI\TabbozImageData.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
