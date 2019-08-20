@@ -13,13 +13,13 @@ public class GameManager : MonoBehaviour
     public GameObject OutWtYrFriends, CallFriends, Race;
     public GameObject OutWtYrGf, CallYrGf, LeaveGf, LkngForGirlfriend;
     public GameObject LookingForAJob, QuitWork, FactoryInfo, Asslicker, AskSalaryIncrease, Strike;
-    public GameObject ClothingsOut, ClothingsIn;
+    public GameObject ClothingsOut, ClothesSIn;
     private Animator fsm;
     public TMP_Text Nome, Cognome, NomeTipa, RapportoConLaTipa, Soldi, Reputazione, Figosit, ProgittoScolastico, NomeMoto, StatoMoto;
     [HideInInspector]
     public DiscoShopConfigData DiscoShop;
     [HideInInspector]
-    public ClothingShopConfigData ClothingsShop;
+    public ClothesShopConfigData ClothesShop;
 
     #region Actions
     public Action GoToTabbozMenu;
@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
     #region Delegates
     public delegate void MyDiscoShopDelegate(DiscoShopConfigData _shop);
     public MyDiscoShopDelegate SetDiscoDelegate;
-    public delegate void MyClothingsShopDelegate(ClothingShopConfigData _shop);
+    public delegate void MyClothingsShopDelegate(ClothesShopConfigData _shop);
     public MyClothingsShopDelegate SetClothingDelegate;
     #endregion
 
@@ -223,9 +223,9 @@ public class GameManager : MonoBehaviour
     {
         DiscoShop = _discoShop;
     }
-    private void SetClothingsShop(ClothingShopConfigData _clothingsShop)
+    private void SetClothingsShop(ClothesShopConfigData _clothingsShop)
     {
-        ClothingsShop = _clothingsShop;
+        ClothesShop = _clothingsShop;
     }
     #endregion
     /// <summary>
