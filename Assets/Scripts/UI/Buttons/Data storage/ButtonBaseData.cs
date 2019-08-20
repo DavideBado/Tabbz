@@ -107,6 +107,14 @@ namespace Bado_City
 
                         OnClickActions.Add(GameManager.MyGameManager.GoToEnterTheDisco);
                         break;
+                    case StatesActions.ActToEnterTheClothingsShop:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToEnterTheClothingsShop);
+                        break;
+                    case StatesActions.ActClothingsShop:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToClothingsShop);
+                        break;
                     default:
                         break;
                 }
@@ -135,7 +143,9 @@ namespace Bado_City
             ActToAsslicker,
             ActToAskSalaryIncrease,
             ActToStrike,
-            ActToEnterTheDisco
-        }
+            ActToEnterTheDisco,
+            ActToEnterTheClothingsShop,
+            ActClothingsShop
+    }
     }
 }

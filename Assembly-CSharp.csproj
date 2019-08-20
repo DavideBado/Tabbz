@@ -60,6 +60,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ClothingsState.cs" />
+    <Compile Include="Assets\EnterTheClothingsState.cs" />
     <Compile Include="Assets\Scripts\Abstracts\BikeBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\BikeShopBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\CigarettesBase.cs" />
@@ -107,10 +109,14 @@
     <Compile Include="Assets\Scripts\Managers\DayManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Tabboz.cs" />
+    <Compile Include="Assets\Scripts\UI\Buttons\ClothingsButton.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\Data storage\ButtonBaseData.cs" />
+    <Compile Include="Assets\Scripts\UI\Buttons\Data storage\ClothingsButtonData.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\Data storage\DiscoButtonData.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\DiscoButton.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\MyButtonBase.cs" />
+    <Compile Include="Assets\Scripts\UI\ShopsUI\ClothingInfoData.cs" />
+    <Compile Include="Assets\Scripts\UI\ShopsUI\ShopPanelData.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

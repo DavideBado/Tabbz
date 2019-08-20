@@ -21,6 +21,6 @@ namespace Bado_City
         public float ClosingTime { get { return ClosingTime_Insp; } set { ClosingTime = ClosingTime_Insp; } }
 
         [SerializeField]
-        internal List<ClothingBase> Clothings = new List<ClothingBase>(); // Quali vestiti si possono comprare
+        internal List<ClothingConfigData> Clothings = new List<ClothingConfigData>(); // Quali vestiti si possono comprare
     }
 }

@@ -13,10 +13,13 @@ public class GameManager : MonoBehaviour
     public GameObject OutWtYrFriends, CallFriends, Race;
     public GameObject OutWtYrGf, CallYrGf, LeaveGf, LkngForGirlfriend;
     public GameObject LookingForAJob, QuitWork, FactoryInfo, Asslicker, AskSalaryIncrease, Strike;
+    public GameObject ClothingsOut, ClothingsIn;
     private Animator fsm;
     public TMP_Text Nome, Cognome, NomeTipa, RapportoConLaTipa, Soldi, Reputazione, Figosit, ProgittoScolastico, NomeMoto, StatoMoto;
     [HideInInspector]
     public DiscoShopConfigData DiscoShop;
+    [HideInInspector]
+    public ClothingShopConfigData ClothingsShop;
 
     #region Actions
     public Action GoToTabbozMenu;
@@ -40,11 +43,14 @@ public class GameManager : MonoBehaviour
     public Action GoToAskSalaryIncrease;
     public Action GoToStrike;
     public Action GoToEnterTheDisco;
+    public Action GoToEnterTheClothingsShop;
+    public Action GoToClothingsShop;
     #endregion
-    #region delegates
+    #region Delegates
     public delegate void MyDiscoShopDelegate(DiscoShopConfigData _shop);
-
     public MyDiscoShopDelegate SetDiscoDelegate;
+    public delegate void MyClothingsShopDelegate(ClothingShopConfigData _shop);
+    public MyClothingsShopDelegate SetClothingDelegate;
     #endregion
 
     void Awake()
@@ -104,10 +110,13 @@ public class GameManager : MonoBehaviour
         GoToAskSalaryIncrease += SetToAskSalaryIncrease;
         GoToStrike += SetToStrike;
         GoToEnterTheDisco += SetToEnterTheDisco;
-    }    
+        GoToEnterTheClothingsShop += SetToEnterTheClothingsShop;
+        GoToClothingsShop += SetToClothingsShop;
+}    
     private void DelegatesSubs()
     {
         SetDiscoDelegate += SetDiscoShop;
+        SetClothingDelegate += SetClothingsShop;
     }
     /// <summary>
     /// Tutti i metodi che settano i trigger della FSM
@@ -197,6 +206,14 @@ public class GameManager : MonoBehaviour
     {
         fsm.SetTrigger("GoToEnterTheDisco");
     }
+    private void SetToClothingsShop()
+    {
+        fsm.SetTrigger("GoToClothingsShop");
+    }
+    private void SetToEnterTheClothingsShop()
+    {
+        fsm.SetTrigger("GoToEnterTheClothingsShop");
+    }
     #endregion
     /// <summary>
     /// Set dei negozi
@@ -205,6 +222,10 @@ public class GameManager : MonoBehaviour
     private void SetDiscoShop(DiscoShopConfigData _discoShop)
     {
         DiscoShop = _discoShop;
+    }
+    private void SetClothingsShop(ClothingShopConfigData _clothingsShop)
+    {
+        ClothingsShop = _clothingsShop;
     }
     #endregion
     /// <summary>

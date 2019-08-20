@@ -16,7 +16,7 @@ namespace Bado_City
         [SerializeField]
         protected int Price_Insp;
         public int Price { get { return Price_Insp; } set { Price = Price_Insp; } }
-
+        public string Description;
         [SerializeField]
         protected int Type; // Identificatore per la zona del corpo di destinazione
     }

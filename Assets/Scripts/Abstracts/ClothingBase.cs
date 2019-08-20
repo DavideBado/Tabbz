@@ -10,6 +10,6 @@ public class ClothingBase : MonoBehaviour, ISaleable
     public string Name { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
     public Sprite Icon { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
     public int Price { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
-
+    public string Description;
     public int Type; // Identificatore per la zona del corpo di destinazione
 }
