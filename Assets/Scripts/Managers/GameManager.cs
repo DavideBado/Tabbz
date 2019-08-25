@@ -7,8 +7,11 @@ using Bado_City;
 
 public class GameManager : MonoBehaviour
 {
-    private Tabboz tabboz;
     public static GameManager MyGameManager = null;
+    private Tabboz tabboz;
+    public GameObject LoadingImage;
+    [HideInInspector]
+    public GameObject MainMenu, SettingsMenu, QuitPanel, CreditsPanel;
     public GameObject TabbozMenu, Shops, Work, DiscoOut, DiscoIn, School, Girlfriend, Friends;
     public GameObject OutWtYrFriends, CallFriends, Race;
     public GameObject OutWtYrGf, CallYrGf, LeaveGf, LkngForGirlfriend;
@@ -22,6 +25,12 @@ public class GameManager : MonoBehaviour
     public ClothesShopConfigData ClothesShop;
 
     #region Actions
+    public Action GoToLoading;
+    public Action GoToMainMenu;
+    public Action GoToQuit;
+    public Action GoToSettings;
+    public Action GoToCredits;
+    public Action GoToGameplay;
     public Action GoToTabbozMenu;
     public Action GoToShops;
     public Action GoToWork;
@@ -112,7 +121,13 @@ public class GameManager : MonoBehaviour
         GoToEnterTheDisco += SetToEnterTheDisco;
         GoToEnterTheClothingsShop += SetToEnterTheClothingsShop;
         GoToClothingsShop += SetToClothingsShop;
-}    
+        GoToLoading += SetToLoading;
+        GoToGameplay += SetToGameplay;
+        GoToMainMenu += SetToMainMenu;
+        GoToQuit += SetToQuit;
+        GoToSettings += SetToSettings;
+        GoToCredits += SetToCredits;
+    }  
     private void DelegatesSubs()
     {
         SetDiscoDelegate += SetDiscoShop;
@@ -213,6 +228,30 @@ public class GameManager : MonoBehaviour
     private void SetToEnterTheClothingsShop()
     {
         fsm.SetTrigger("GoToEnterTheClothingsShop");
+    }
+    private void SetToLoading()
+    {
+        fsm.SetTrigger("GoToLoading");
+    }
+    private void SetToGameplay()
+    {
+        fsm.SetTrigger("GoToGameplay");
+    }
+    private void SetToMainMenu()
+    {
+        fsm.SetTrigger("GoToMainMenu");
+    }
+    private void SetToQuit()
+    {
+        fsm.SetTrigger("GoToQuit");
+    }
+    private void SetToSettings()
+    {
+        fsm.SetTrigger("GoToSettings");
+    }
+    private void SetToCredits()
+    {
+        fsm.SetTrigger("GoToCredits");
     }
     #endregion
     /// <summary>

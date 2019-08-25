@@ -1039,118 +1039,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79084669}
   m_CullTransparentMesh: 0
---- !u!1 &85411671
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 85411674}
-  - component: {fileID: 85411673}
-  - component: {fileID: 85411672}
-  - component: {fileID: 85411675}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &85411672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 85411671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f7f6d80a573024f8f8206e2a21e0b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Months: []
---- !u!114 &85411673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 85411671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dca1d31d6f83494c83a76fef75abb0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TabbozMenu: {fileID: 1345314778}
-  Shops: {fileID: 1911381757}
-  Work: {fileID: 29553776}
-  DiscoOut: {fileID: 1690883942}
-  DiscoIn: {fileID: 1889226587}
-  School: {fileID: 385294321}
-  Girlfriend: {fileID: 900914690}
-  Friends: {fileID: 951393014}
-  OutWtYrFriends: {fileID: 2008287097}
-  CallFriends: {fileID: 2073412582}
-  Race: {fileID: 564323615}
-  OutWtYrGf: {fileID: 2132284153}
-  CallYrGf: {fileID: 1345984384}
-  LeaveGf: {fileID: 1431321211}
-  LkngForGirlfriend: {fileID: 1006729210}
-  LookingForAJob: {fileID: 1504001575}
-  QuitWork: {fileID: 24654197}
-  FactoryInfo: {fileID: 705833466}
-  Asslicker: {fileID: 1208339840}
-  AskSalaryIncrease: {fileID: 697214035}
-  Strike: {fileID: 141994282}
-  ClothingsOut: {fileID: 1069693826}
-  ClothesSIn: {fileID: 0}
-  Nome: {fileID: 1720448485}
-  Cognome: {fileID: 1626533485}
-  NomeTipa: {fileID: 1471952559}
-  RapportoConLaTipa: {fileID: 1673354533}
-  Soldi: {fileID: 265813483}
-  Reputazione: {fileID: 1713463231}
-  Figosit: {fileID: 1435849702}
-  ProgittoScolastico: {fileID: 441494829}
-  NomeMoto: {fileID: 1652289636}
-  StatoMoto: {fileID: 524903535}
-  DiscoShop: {fileID: 0}
-  ClothesShop: {fileID: 0}
---- !u!4 &85411674
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 85411671}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 929.49805, y: 390.25113, z: 20.25}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &85411675
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 85411671}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 50c9d26a7ea6df2408d54f0330919c39, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &117957521
 GameObject:
   m_ObjectHideFlags: 0
@@ -16777,6 +16665,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: InShopMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 4739850594919160292, guid: ead8ef6f88e3fd1408fdaca07029c02a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739850594919160292, guid: ead8ef6f88e3fd1408fdaca07029c02a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000045776367
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739850594919160292, guid: ead8ef6f88e3fd1408fdaca07029c02a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4739850595080948570, guid: ead8ef6f88e3fd1408fdaca07029c02a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16881,21 +16784,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4739850594919160292, guid: ead8ef6f88e3fd1408fdaca07029c02a,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4739850594919160292, guid: ead8ef6f88e3fd1408fdaca07029c02a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.000030517578
-      objectReference: {fileID: 0}
-    - target: {fileID: 4739850594919160292, guid: ead8ef6f88e3fd1408fdaca07029c02a,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4739850594425576998, guid: ead8ef6f88e3fd1408fdaca07029c02a,
         type: 3}

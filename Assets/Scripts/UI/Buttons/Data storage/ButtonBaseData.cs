@@ -8,7 +8,7 @@ namespace Bado_City
     public class ButtonBaseData : MonoBehaviour
     {
         public List<Action> OnClickActions = new List<Action>();
-        public List<StatesActions> MyActions = new List<StatesActions>();        
+        public List<StatesActions> MyActions = new List<StatesActions>();
 
         private void Start()
         {
@@ -115,6 +115,30 @@ namespace Bado_City
 
                         OnClickActions.Add(GameManager.MyGameManager.GoToClothingsShop);
                         break;
+                    case StatesActions.ActToLoading:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToLoading);
+                        break;
+                    case StatesActions.ActToGameplay:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToGameplay);
+                        break;
+                    case StatesActions.ActToMainMenu:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToMainMenu);
+                        break;
+                    case StatesActions.ActToQuit:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToQuit);
+                        break;
+                    case StatesActions.ActToSettings:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToSettings);
+                        break;
+                    case StatesActions.ActToCredits:
+
+                        OnClickActions.Add(GameManager.MyGameManager.GoToCredits);
+                        break;
                     default:
                         break;
                 }
@@ -145,7 +169,13 @@ namespace Bado_City
             ActToStrike,
             ActToEnterTheDisco,
             ActToEnterTheClothingsShop,
-            ActClothingsShop
-    }
+            ActClothingsShop,
+            ActToLoading,
+            ActToGameplay,
+            ActToMainMenu,
+            ActToQuit,
+            ActToSettings,
+            ActToCredits
+        }
     }
 }
