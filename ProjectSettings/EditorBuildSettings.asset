@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: dbed2182be59b074b95c63baf103ad97
+  - enabled: 1
+    path: Assets/Scenes/TabbozMenu.unity
+    guid: f9c3eca82d57a264783d97734ab13cee
   m_configObjects: {}

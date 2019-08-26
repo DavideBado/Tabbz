@@ -7,18 +7,25 @@ using Bado_City;
 
 public class GameManager : MonoBehaviour
 {
+    public int CurrentSceneIndex, NextSceneIndex;
     public static GameManager MyGameManager = null;
     private Tabboz tabboz;
     public GameObject LoadingImage;
     [HideInInspector]
     public GameObject MainMenu, SettingsMenu, QuitPanel, CreditsPanel;
+    [HideInInspector]
     public GameObject TabbozMenu, Shops, Work, DiscoOut, DiscoIn, School, Girlfriend, Friends;
+    [HideInInspector]
     public GameObject OutWtYrFriends, CallFriends, Race;
+    [HideInInspector]
     public GameObject OutWtYrGf, CallYrGf, LeaveGf, LkngForGirlfriend;
+    [HideInInspector]
     public GameObject LookingForAJob, QuitWork, FactoryInfo, Asslicker, AskSalaryIncrease, Strike;
+    [HideInInspector]
     public GameObject ClothingsOut, ClothesSIn;
     private Animator fsm;
-    public TMP_Text Nome, Cognome, NomeTipa, RapportoConLaTipa, Soldi, Reputazione, Figosit, ProgittoScolastico, NomeMoto, StatoMoto;
+    [HideInInspector]
+    public TMP_Text Nome, Cognome, NomeTipa, RapportoConLaTipa, Soldi, Reputazione, Figosit, ProfittoScolastico, NomeMoto, StatoMoto;
     [HideInInspector]
     public DiscoShopConfigData DiscoShop;
     [HideInInspector]
@@ -123,6 +130,7 @@ public class GameManager : MonoBehaviour
         GoToClothingsShop += SetToClothingsShop;
         GoToLoading += SetToLoading;
         GoToGameplay += SetToGameplay;
+        GoToGameplay += UpdateTabbozMenuTextsAndImages;
         GoToMainMenu += SetToMainMenu;
         GoToQuit += SetToQuit;
         GoToSettings += SetToSettings;
@@ -280,7 +288,7 @@ public class GameManager : MonoBehaviour
         Soldi.text = tabboz.Soldi.ToString();
         Reputazione.text = (tabboz.Reputazione.ToString() + "/100");
         Figosit.text = (tabboz.Figosit.ToString() + "/100");
-        ProgittoScolastico.text = (tabboz.ProfittoScolastico.ToString() + "/100");
+        ProfittoScolastico.text = (tabboz.ProfittoScolastico.ToString() + "/100");
         if (tabboz.Bike != null)
         {
             NomeMoto.gameObject.SetActive(true);

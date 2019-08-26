@@ -4,18 +4,21 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public abstract class LoaderBase : MonoBehaviour
+namespace Bado_City
 {
-    public GameObject LoadingPanel, CountinueButton;    
-   
-    public virtual void SetGameManager()
+    public abstract class LoaderBase : MonoBehaviour
     {
-        
-    }
+        public GameObject LoadingPanel, CountinueButton;
 
-    public void OnLoaded()
-    {
-        if(CountinueButton != null)
-            CountinueButton.SetActive(true);
+        public virtual void SetGameManager()
+        {
+
+        }
+
+        public void OnLoaded()
+        {
+            if (CountinueButton != null)
+                CountinueButton.SetActive(true);
+        }
     }
 }
