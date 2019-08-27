@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Bado_City
 {
     [CreateAssetMenu(fileName = "Bike Config Data", menuName = "Saleable/Bike", order = 1)]
-    public class BikesConfigData : ScriptableObject, ISaleable
+    public class BikesConfigData : BuyableBase, ISaleable
     {
         [SerializeField]
         protected string Name_Insp;
@@ -16,8 +16,11 @@ namespace Bado_City
         [SerializeField]
         protected int Price_Insp;
         public int Price { get { return Price_Insp; } set { Price = Price_Insp; } }
+        public float Velocità, Cilindrata, Efficienza, Benzina, Stato; // Ogni moto avrà una velocità massima, una resistenza all'usura e una capienza del serbatoio. Da rivedere nel dettaglio le gare.
 
-        [SerializeField]
-        protected float SpeedMax, Endurance, FuelMax; // Ogni moto avrà una velocità massima, una resistenza all'usura e una capienza del serbatoio. Da rivedere nel dettaglio le gare.
+        public void EquipMe()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

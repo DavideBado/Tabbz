@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Bado_City
 {
     [CreateAssetMenu(fileName = "Cigarette Congid Data", menuName = "Saleable/Cigarette", order = 3)]
-    public class CigarettesConfigData : ScriptableObject, ISaleable
+    public class CigarettesConfigData : BuyableBase, ISaleable
     {
         [SerializeField]
         protected string Name_Insp;
@@ -35,6 +35,11 @@ namespace Bado_City
         private void upgradeStat()
         {
 
+        }
+
+        public void EquipMe()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

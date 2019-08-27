@@ -8,7 +8,7 @@ namespace Bado_City
     /// Classe base per i vestiti
     /// </summary>
     [CreateAssetMenu(fileName = "Clothing Congid Data", menuName = "Saleable/Clothing", order = 2)]
-    public class ClothesConfigData : ScriptableObject, ISaleable
+    public class ClothesConfigData : BuyableBase, ISaleable
     {
         [SerializeField]
         protected string Name_Insp;
@@ -44,6 +44,11 @@ namespace Bado_City
                 default:
                     break;
             }
+        }
+
+        public void EquipMe()
+        {
+            GameManager.MyGameManager.tabboz.clothings.Insert(Type, this);
         }
 
         protected enum ClothingType

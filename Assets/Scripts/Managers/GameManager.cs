@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public int CurrentSceneIndex, NextSceneIndex;
     public static GameManager MyGameManager = null;
-    private Tabboz tabboz;
+    public Tabboz tabboz;
     public GameObject LoadingImage;
     [HideInInspector]
     public GameObject MainMenu, SettingsMenu, QuitPanel, CreditsPanel;

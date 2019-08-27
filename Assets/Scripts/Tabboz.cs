@@ -15,7 +15,7 @@ namespace Bado_City
         [Range(0, 100)] public int ProfittoScolastico;
         [Range(0, 100)] public int ImpegnoLavoro;
         public int Stipendio;
-        public BikeBase Bike;
+        public BikesConfigData Bike;
         public FactoryConfigData CurrentFactory;
         public List<ClothesConfigData> clothings = new List<ClothesConfigData>();        
         // telefono

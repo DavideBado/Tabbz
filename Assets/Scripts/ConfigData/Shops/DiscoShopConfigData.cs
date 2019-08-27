@@ -21,6 +21,6 @@ namespace Bado_City
         public float ClosingTime { get { return ClosingTime_Insp; } set { ClosingTime = ClosingTime_Insp; } }
 
         [SerializeField]
-        internal List<DrinkBase> Drinks = new List<DrinkBase>(); // Quali drink si possono comprare
+        internal List<DrinksConfigData> Drinks = new List<DrinksConfigData>(); // Quali drink si possono comprare
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Bado_City
 {
     [CreateAssetMenu(fileName = "Drink Congid Data", menuName = "Saleable/Drink", order = 0)]
-    public class DrinksConfigData : ScriptableObject, ISaleable
+    public class DrinksConfigData : BuyableBase, ISaleable
     {
         [SerializeField]
         protected string Name_Insp;
@@ -19,5 +19,10 @@ namespace Bado_City
 
         [SerializeField]
         protected float Vol;
+
+        public void EquipMe()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

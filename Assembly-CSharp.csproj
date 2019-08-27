@@ -60,13 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Abstracts\BikeBase.cs" />
-    <Compile Include="Assets\Scripts\Abstracts\BikeShopBase.cs" />
-    <Compile Include="Assets\Scripts\Abstracts\CigarettesBase.cs" />
-    <Compile Include="Assets\Scripts\Abstracts\DrinkBase.cs" />
+    <Compile Include="Assets\Scripts\Abstracts\BuyableBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\LoaderBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\SchoolBase.cs" />
-    <Compile Include="Assets\Scripts\Abstracts\TabacchiBase.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Factory\FactoryConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Factory\QuizConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Months\MonthsConfigData.cs" />

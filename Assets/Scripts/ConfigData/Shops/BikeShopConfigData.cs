@@ -21,6 +21,6 @@ namespace Bado_City
         public float ClosingTime { get { return ClosingTime_Insp; } set { ClosingTime = ClosingTime_Insp; } }
 
         [SerializeField]
-        internal List<BikeBase> Bikes = new List<BikeBase>(); // Quante e quali moto si possono comprare
+        internal List<BikesConfigData> Bikes = new List<BikesConfigData>(); // Quante e quali moto si possono comprare
     }
 }
