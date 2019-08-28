@@ -5,10 +5,15 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     public int WalkSpeed;
-    public KeyCode LeftKey, RightKey, UpKey, DownKey;
+    public KeyCode LeftKey, RightKey, UpKey, DownKey, SubmitKey;
     public bool OnTheRoad, OutsideTheDoor, InsideABuilding;
+    public bool InfrontOfTheGashaponMachine, InGashaponBoxView, InGashaponView;
     public List<Camera> Cameras = new List<Camera>();
     private float OutsideSavedPosX;
+    public GameObject GashaponBox;
+    public List<Material> GashaponBox_Materials = new List<Material>();
+    public float GashaponRotationSpeed;
+    private GashaponMachine gashaponMachine;
     private void Update()
     {
         MoveOnTheRoad();
@@ -31,12 +36,20 @@ public class InputManager : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(transform.position, Vector3.forward, out hit, 5f))
                 {
-                    if (hit.transform.gameObject.tag == "Door" || hit.transform.gameObject.tag == "ToyMachine")
+                    if (hit.transform.gameObject.tag == "Door")
                     {
                         OnTheRoad = false;
                         Cameras[0].gameObject.SetActive(false);
                         Cameras[1].gameObject.SetActive(true);
                         OutsideTheDoor = true;
+                    }
+                    else if(hit.transform.GetComponent<GashaponMachine>()!= null)
+                    {
+
+                        OnTheRoad = false;
+                        Cameras[0].gameObject.SetActive(false);
+                        Cameras[1].gameObject.SetActive(true);
+                        InfrontOfTheGashaponMachine = true;
                     }
                 }
             }
@@ -75,6 +88,82 @@ public class InputManager : MonoBehaviour
                 Cameras[0].gameObject.SetActive(true);
                 OnTheRoad = true;
             }            
+        }
+        else if (InfrontOfTheGashaponMachine)
+        {
+            if (Input.GetKeyDown(DownKey) && !(Input.GetKey(LeftKey) || Input.GetKey(RightKey) || Input.GetKey(UpKey)))
+            {
+                InfrontOfTheGashaponMachine = false;
+                Cameras[0].gameObject.SetActive(true);
+                Cameras[1].gameObject.SetActive(false);
+                Cameras[2].gameObject.SetActive(false);
+                OnTheRoad = true;
+            }
+            else if (Input.GetKeyDown(UpKey) && !(Input.GetKey(LeftKey) || Input.GetKey(RightKey) || Input.GetKey(DownKey)))
+            {
+                InfrontOfTheGashaponMachine = false;
+                Cameras[0].gameObject.SetActive(false);
+                Cameras[1].gameObject.SetActive(false);
+                Cameras[2].gameObject.SetActive(true);
+                GashaponBox.SetActive(true);
+                GashaponBox.GetComponent<MeshRenderer>().enabled = true;
+                GashaponBox.GetComponent<MeshRenderer>().material = GashaponBox_Materials[Random.Range(0, GashaponBox_Materials.Count)];
+                InGashaponBoxView = true;
+            }
+        }
+        else if (InGashaponBoxView)
+        {            
+            if (Input.GetKey(DownKey))
+            {
+                GashaponBox.transform.Rotate(Vector3.down * GashaponRotationSpeed * Time.deltaTime);
+            }
+            else if (Input.GetKey(UpKey))
+            {
+                GashaponBox.transform.Rotate(Vector3.up * GashaponRotationSpeed * Time.deltaTime);
+            }
+            if (Input.GetKey(LeftKey))
+            {
+                GashaponBox.transform.Rotate(Vector3.left * GashaponRotationSpeed * Time.deltaTime);
+            }
+            else if (Input.GetKey(RightKey))
+            {
+                GashaponBox.transform.Rotate(Vector3.right * GashaponRotationSpeed * Time.deltaTime);
+            }
+            else if (Input.GetKeyDown(SubmitKey))
+            {
+                InGashaponBoxView = false;
+                GameObject NewGashapon = GameObject.Instantiate(gashaponMachine.BuyOne());
+                NewGashapon.transform.parent = GashaponBox.transform;
+                NewGashapon.transform.position = Vector3.zero;
+                GashaponBox.GetComponent<MeshRenderer>().enabled = false;
+                InGashaponView = true;
+            }
+        }
+        else if (InGashaponView)
+        {            
+            if (Input.GetKey(DownKey))
+            {
+                GashaponBox.transform.Rotate(Vector3.down * GashaponRotationSpeed * Time.deltaTime);
+            }
+            else if (Input.GetKey(UpKey))
+            {
+                GashaponBox.transform.Rotate(Vector3.up * GashaponRotationSpeed * Time.deltaTime);
+            }
+            if (Input.GetKey(LeftKey))
+            {
+                GashaponBox.transform.Rotate(Vector3.left * GashaponRotationSpeed * Time.deltaTime);
+            }
+            else if (Input.GetKey(RightKey))
+            {
+                GashaponBox.transform.Rotate(Vector3.right * GashaponRotationSpeed * Time.deltaTime);
+            }
+            else if (Input.GetKeyDown(SubmitKey))
+            {
+                InGashaponView = false;
+                Cameras[0].gameObject.SetActive(false);
+                Cameras[1].gameObject.SetActive(true);
+                InfrontOfTheGashaponMachine = true;
+            }
         }
     }
 }

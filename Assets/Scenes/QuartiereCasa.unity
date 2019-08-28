@@ -1056,6 +1056,88 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InsidePosition: {x: -5.5, y: 0, z: 7}
+--- !u!1 &108797870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 108797873}
+  - component: {fileID: 108797871}
+  - component: {fileID: 108797872}
+  m_Layer: 0
+  m_Name: Camera2
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!20 &108797871
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108797870}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_GateFitMode: 2
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &108797872
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108797870}
+  m_Enabled: 1
+--- !u!4 &108797873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108797870}
+  m_LocalRotation: {x: 0.14228338, y: 0, z: 0, w: 0.98982596}
+  m_LocalPosition: {x: -0.049, y: 0.823, z: 0.189}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1898532999}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 16.36, y: 0, z: 0}
 --- !u!1 &113625028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3624,6 +3706,83 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &500766937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 500766940}
+  - component: {fileID: 500766939}
+  - component: {fileID: 500766938}
+  m_Layer: 0
+  m_Name: GashaponBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!23 &500766938
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500766937}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 66309e4872c1da844a628abf5fbe2eee, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &500766939
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500766937}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &500766940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500766937}
+  m_LocalRotation: {x: -0.15735321, y: -0.16276374, z: -0.026303662, w: 0.97368175}
+  m_LocalPosition: {x: -0.048999786, y: 0.5239363, z: 0.71599984}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.100000024}
+  m_Children: []
+  m_Father: {fileID: 1898532999}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -18.36, y: -18.98, z: 0}
 --- !u!1 &507241377
 GameObject:
   m_ObjectHideFlags: 0
@@ -4584,7 +4743,7 @@ GameObject:
   - component: {fileID: 604240559}
   - component: {fileID: 604240558}
   m_Layer: 0
-  m_Name: Camera2
+  m_Name: Camera1
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14465,11 +14624,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898532995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 1.5768313, z: 1.5}
+  m_LocalPosition: {x: -20.41, y: 1.5768313, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 214221364}
   - {fileID: 604240557}
+  - {fileID: 108797873}
+  - {fileID: 500766940}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14493,9 +14654,22 @@ MonoBehaviour:
   OnTheRoad: 1
   OutsideTheDoor: 0
   InsideABuilding: 0
+  InfrontOfTheGashaponMachine: 0
+  InGashaponBoxView: 0
+  InGashaponView: 0
   Cameras:
   - {fileID: 214221363}
   - {fileID: 604240559}
+  - {fileID: 108797871}
+  GashaponBox: {fileID: 500766937}
+  GashaponBox_Materials:
+  - {fileID: 2100000, guid: 66309e4872c1da844a628abf5fbe2eee, type: 2}
+  - {fileID: 2100000, guid: ff1900ac0e77c084d9e04cde71dd93b4, type: 2}
+  - {fileID: 2100000, guid: 85e6432d41857764f98843c6584605e5, type: 2}
+  - {fileID: 2100000, guid: 838b46520cfc0c448a3c3855cc81fb96, type: 2}
+  - {fileID: 2100000, guid: 31de887a9cc57c842a710874d1d5987f, type: 2}
+  - {fileID: 2100000, guid: 5c442254028c72e48b124fff61422e98, type: 2}
+  GashaponRotationSpeed: 50
 --- !u!1 &1901671299
 GameObject:
   m_ObjectHideFlags: 0
