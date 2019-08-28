@@ -111,6 +111,7 @@
     <Compile Include="Assets\Scripts\Managers\DayManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Tabboz.cs" />
+    <Compile Include="Assets\Scripts\Test\NPCMoveTest.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\BuyButton.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\ClothesButton.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\Data storage\ButtonBaseData.cs" />
