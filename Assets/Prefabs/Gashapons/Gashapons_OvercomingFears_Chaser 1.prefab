@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4132275064002389789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5158722948043850501}
+  - component: {fileID: 1385628884085656213}
+  - component: {fileID: 1017968669749223606}
+  m_Layer: 0
+  m_Name: Gashapons_OvercomingFears_Chaser 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5158722948043850501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132275064002389789}
+  m_LocalRotation: {x: -0.15735321, y: -0.16276374, z: -0.026303662, w: 0.97368175}
+  m_LocalPosition: {x: 0.20100021, y: 1.7589998, z: -3.634}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.10000003}
+  m_Children:
+  - {fileID: 9053097241918715981}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -18.36, y: -18.98, z: 0}
+--- !u!33 &1385628884085656213
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132275064002389789}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1017968669749223606
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132275064002389789}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 66309e4872c1da844a628abf5fbe2eee, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1001 &2093007828811188782
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5158722948043850501}
+    m_Modifications:
+    - target: {fileID: 6965050461657411139, guid: ff92564ea57821f42a60ca1876d6f5a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Gashapons_OvercomingFears_Chaser
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965050461657576035, guid: ff92564ea57821f42a60ca1876d6f5a7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.202
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965050461657576035, guid: ff92564ea57821f42a60ca1876d6f5a7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.206
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965050461657576035, guid: ff92564ea57821f42a60ca1876d6f5a7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.373
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965050461657576035, guid: ff92564ea57821f42a60ca1876d6f5a7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965050461657576035, guid: ff92564ea57821f42a60ca1876d6f5a7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.954605
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965050461657576035, guid: ff92564ea57821f42a60ca1876d6f5a7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965050461657576035, guid: ff92564ea57821f42a60ca1876d6f5a7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.29787475
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965050461657576035, guid: ff92564ea57821f42a60ca1876d6f5a7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965050461657576035, guid: ff92564ea57821f42a60ca1876d6f5a7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965050461657576035, guid: ff92564ea57821f42a60ca1876d6f5a7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 214.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965050461657576035, guid: ff92564ea57821f42a60ca1876d6f5a7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965050461657576035, guid: ff92564ea57821f42a60ca1876d6f5a7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965050461657576035, guid: ff92564ea57821f42a60ca1876d6f5a7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965050461657576035, guid: ff92564ea57821f42a60ca1876d6f5a7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ff92564ea57821f42a60ca1876d6f5a7, type: 3}
+--- !u!4 &9053097241918715981 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6965050461657576035, guid: ff92564ea57821f42a60ca1876d6f5a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2093007828811188782}
+  m_PrefabAsset: {fileID: 0}

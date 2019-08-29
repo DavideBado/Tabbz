@@ -13,7 +13,7 @@ public class InputManager : MonoBehaviour
     public GameObject GashaponBox;
     public List<Material> GashaponBox_Materials = new List<Material>();
     public float GashaponRotationSpeed;
-    private GashaponMachine gashaponMachine;
+    private GameObject NewGashapon;
     private void Update()
     {
         MoveOnTheRoad();
@@ -129,14 +129,21 @@ public class InputManager : MonoBehaviour
             {
                 GashaponBox.transform.Rotate(Vector3.right * GashaponRotationSpeed * Time.deltaTime);
             }
-            else if (Input.GetKeyDown(SubmitKey))
+            if (Input.GetKeyDown(SubmitKey))
             {
-                InGashaponBoxView = false;
-                GameObject NewGashapon = GameObject.Instantiate(gashaponMachine.BuyOne());
-                NewGashapon.transform.parent = GashaponBox.transform;
-                NewGashapon.transform.position = Vector3.zero;
-                GashaponBox.GetComponent<MeshRenderer>().enabled = false;
-                InGashaponView = true;
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, Vector3.forward, out hit, 5f))
+                {
+                    if (hit.transform.GetComponent<GashaponMachine>() != null)
+                    {
+                        InGashaponBoxView = false;
+                        NewGashapon = GameObject.Instantiate(hit.transform.GetComponent<GashaponMachine>().BuyOne());
+                        NewGashapon.transform.parent = GashaponBox.transform;
+                        NewGashapon.transform.SetPositionAndRotation(GashaponBox.transform.position, Quaternion.identity);
+                        GashaponBox.GetComponent<MeshRenderer>().enabled = false;
+                        InGashaponView = true;
+                    }
+                }               
             }
         }
         else if (InGashaponView)
@@ -157,8 +164,9 @@ public class InputManager : MonoBehaviour
             {
                 GashaponBox.transform.Rotate(Vector3.right * GashaponRotationSpeed * Time.deltaTime);
             }
-            else if (Input.GetKeyDown(SubmitKey))
+            if (Input.GetKeyDown(SubmitKey))
             {
+                Destroy(NewGashapon);
                 InGashaponView = false;
                 Cameras[0].gameObject.SetActive(false);
                 Cameras[1].gameObject.SetActive(true);
