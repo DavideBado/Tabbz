@@ -4812,7 +4812,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604240556}
   m_LocalRotation: {x: 0.06217567, y: -0.13932964, z: 0.008765884, w: 0.9882533}
-  m_LocalPosition: {x: 2.07, y: 0.7, z: -1.74}
+  m_LocalPosition: {x: 1.771, y: 0.7, z: -1.541}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1898532999}
@@ -14811,6 +14811,9 @@ GameObject:
   - component: {fileID: 1898532997}
   - component: {fileID: 1898533000}
   - component: {fileID: 1898532996}
+  - component: {fileID: 1898533001}
+  - component: {fileID: 1898533002}
+  - component: {fileID: 1898533003}
   m_Layer: 0
   m_Name: Tabboz
   m_TagString: Untagged
@@ -14925,6 +14928,9 @@ MonoBehaviour:
   - {fileID: 214221363}
   - {fileID: 604240559}
   - {fileID: 108797871}
+  OutsideSavedPosX: 0
+  SavedDoor: {fileID: 0}
+  SavedGashaponMachine: {fileID: 0}
   GashaponBox: {fileID: 500766937}
   GashaponBox_Materials:
   - {fileID: 2100000, guid: 66309e4872c1da844a628abf5fbe2eee, type: 2}
@@ -14934,6 +14940,58 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 31de887a9cc57c842a710874d1d5987f, type: 2}
   - {fileID: 2100000, guid: 5c442254028c72e48b124fff61422e98, type: 2}
   GashaponRotationSpeed: 50
+--- !u!95 &1898533001
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898532995}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f0528817e0cc9144b822e22ef1bcab34, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1898533002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898532995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37dd85dbe445ebb40bda7c28214d10fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTheRoadCamera: {fileID: 214221363}
+  InsideOrNearBuildCamera: {fileID: 604240559}
+  POVCamera: {fileID: 108797871}
+--- !u!114 &1898533003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898532995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 835119decbf6d5b4fb3094b1539d3078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  To_OutsideTheDoor_Trigger: GoOutsideTheDoor
+  To_GashaponMachine_Trigger: GoToGashaponMachine
+  To_OnTheRoad_Trigger: GoToOnTheRoad
+  To_InsideABuilding_Trigger: GoInsideABuilding
+  To_InGashaponBoxView_Trigger: GoInGashaponBoxView
+  To_InGashaponView_Trigger: GoInGashaponView
 --- !u!1 &1901671299
 GameObject:
   m_ObjectHideFlags: 0
