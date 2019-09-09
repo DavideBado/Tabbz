@@ -500,10 +500,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2
-  targets:
-  - {x: 50, y: 1.576831, z: -1.5}
-  - {x: -50, y: 1.576831, z: -1.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &60264598
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -594,10 +594,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2
-  targets:
-  - {x: 50, y: 1.576831, z: -1.5}
-  - {x: -50, y: 1.576831, z: -1.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &63610056
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1056,6 +1056,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InsidePosition: {x: -5.5, y: 0, z: 7}
+  SelectableObjects:
+  - {fileID: 94612713}
 --- !u!1 &108797870
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,10 +1425,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2
-  targets:
-  - {x: 50, y: 1.576831, z: -1.5}
-  - {x: -50, y: 1.576831, z: -1.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &147796386
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1517,10 +1519,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
-  targets:
-  - {x: 50, y: 1.222, z: -6}
-  - {x: -50, y: 1.222, z: -6}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &155004672
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1597,10 +1599,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 6
-  targets:
-  - {x: -50, y: 1.222, z: -4.5}
-  - {x: 50, y: 1.222, z: -4.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &181359508
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2073,6 +2075,97 @@ Transform:
   m_Father: {fileID: 113625029}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 28.8, y: -109.4, z: 20.1}
+--- !u!1 &273648391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 273648392}
+  - component: {fileID: 273648395}
+  - component: {fileID: 273648394}
+  - component: {fileID: 273648393}
+  m_Layer: 0
+  m_Name: OrarioDiApertura
+  m_TagString: Door
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &273648392
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273648391}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.26, y: -0.27899998, z: -0.5}
+  m_LocalScale: {x: 0.13, y: 0.08, z: 0.2}
+  m_Children: []
+  m_Father: {fileID: 1593856448}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &273648393
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273648391}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 0.99999994, z: 1}
+  m_Center: {x: -0.0000009536743, y: -0.000000059604645, z: 0}
+--- !u!23 &273648394
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273648391}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4fa5c85525e630448a8b25655b4899d5, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &273648395
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273648391}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &279972846
 GameObject:
   m_ObjectHideFlags: 0
@@ -2462,10 +2555,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
-  targets:
-  - {x: 50, y: 1.576831, z: -3}
-  - {x: -50, y: 1.576831, z: -3}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &320747727
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2787,10 +2880,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2
-  targets:
-  - {x: 50, y: 1.576831, z: -1.5}
-  - {x: -50, y: 1.576831, z: -1.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &340576416
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2958,10 +3051,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2
-  targets:
-  - {x: 50, y: 1.576831, z: -1.5}
-  - {x: -50, y: 1.576831, z: -1.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &364135818
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3115,10 +3208,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
-  targets:
-  - {x: 50, y: 1.576831, z: 0}
-  - {x: -50, y: 1.576831, z: 0}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &389331080
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3377,10 +3470,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
-  targets:
-  - {x: 50, y: 1.576831, z: 0}
-  - {x: -50, y: 1.576831, z: 0}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &410469453
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4128,10 +4221,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2
-  targets:
-  - {x: 50, y: 1.576831, z: -1.5}
-  - {x: -50, y: 1.576831, z: -1.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &522965149
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4222,10 +4315,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
-  targets:
-  - {x: 50, y: 1.576831, z: 0}
-  - {x: -50, y: 1.576831, z: 0}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &530173085
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4737,10 +4830,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
-  targets:
-  - {x: 50, y: 1.576831, z: -3}
-  - {x: -50, y: 1.576831, z: -3}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &600077532
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4803,7 +4896,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &604240557
 Transform:
   m_ObjectHideFlags: 0
@@ -4812,7 +4905,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604240556}
   m_LocalRotation: {x: 0.06217567, y: -0.13932964, z: 0.008765884, w: 0.9882533}
-  m_LocalPosition: {x: 1.771, y: 0.7, z: -1.541}
+  m_LocalPosition: {x: 1.771, y: 0.7, z: -2.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1898532999}
@@ -5067,10 +5160,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
-  targets:
-  - {x: 50, y: 1.576831, z: -3}
-  - {x: -50, y: 1.576831, z: -3}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &631251304
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5547,10 +5640,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
-  targets:
-  - {x: 50, y: 1.222, z: -6}
-  - {x: -50, y: 1.222, z: -6}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &720119536
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5718,10 +5811,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2
-  targets:
-  - {x: 50, y: 1.576831, z: -1.5}
-  - {x: -50, y: 1.576831, z: -1.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &737593692
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6187,10 +6280,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
-  targets:
-  - {x: 50, y: 1.222, z: -6}
-  - {x: -50, y: 1.222, z: -6}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &825726193
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6711,6 +6804,7 @@ Transform:
   - {fileID: 2063922466}
   - {fileID: 1483363710}
   - {fileID: 4568461}
+  - {fileID: 2142090971}
   m_Father: {fileID: 1085412849}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6745,10 +6839,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 6
-  targets:
-  - {x: -50, y: 1.222, z: -4.5}
-  - {x: 50, y: 1.222, z: -4.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &895510753
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6853,10 +6947,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
-  targets:
-  - {x: 50, y: 1.576831, z: 0}
-  - {x: -50, y: 1.576831, z: 0}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &905347862
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7042,10 +7136,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 6
-  targets:
-  - {x: -50, y: 1.222, z: -4.5}
-  - {x: 50, y: 1.222, z: -4.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &932378490
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7213,10 +7307,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 6
-  targets:
-  - {x: -50, y: 1.222, z: -4.5}
-  - {x: 50, y: 1.222, z: -4.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &958753834
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7321,10 +7415,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 6
-  targets:
-  - {x: -50, y: 1.222, z: -4.5}
-  - {x: 50, y: 1.222, z: -4.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &965911800
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8478,6 +8572,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InsidePosition: {x: 24.6, y: 0, z: 9}
+  SelectableObjects:
+  - {fileID: 1063366187}
+  - {fileID: 1401201168}
 --- !u!1 &1071922041
 GameObject:
   m_ObjectHideFlags: 0
@@ -8832,6 +8929,7 @@ Transform:
   - {fileID: 1063366186}
   - {fileID: 971443981}
   - {fileID: 1569714951}
+  - {fileID: 1401201166}
   m_Father: {fileID: 1085412849}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9036,10 +9134,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
-  targets:
-  - {x: 50, y: 1.576831, z: -3}
-  - {x: -50, y: 1.576831, z: -3}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &1112543482
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9363,10 +9461,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
-  targets:
-  - {x: 50, y: 1.576831, z: 0}
-  - {x: -50, y: 1.576831, z: 0}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &1137900979
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9767,10 +9865,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
-  targets:
-  - {x: 50, y: 1.222, z: -6}
-  - {x: -50, y: 1.222, z: -6}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &1181959834
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9970,6 +10068,97 @@ Transform:
   m_Father: {fileID: 780386766}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1231208956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1231208957}
+  - component: {fileID: 1231208960}
+  - component: {fileID: 1231208959}
+  - component: {fileID: 1231208958}
+  m_Layer: 0
+  m_Name: OrarioDiApertura
+  m_TagString: Door
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1231208957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231208956}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.26, y: -0.279, z: -0.5}
+  m_LocalScale: {x: 0.13, y: 0.08, z: 0.19999999}
+  m_Children: []
+  m_Father: {fileID: 1338858394}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1231208958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231208956}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 0.99999994, z: 1}
+  m_Center: {x: -0.0000009536743, y: -0.000000059604645, z: 0}
+--- !u!23 &1231208959
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231208956}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4fa5c85525e630448a8b25655b4899d5, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1231208960
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231208956}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1237041817
 GameObject:
   m_ObjectHideFlags: 0
@@ -10250,10 +10439,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
-  targets:
-  - {x: 50, y: 1.576831, z: -3}
-  - {x: -50, y: 1.576831, z: -3}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &1251200610
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10807,10 +10996,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
-  targets:
-  - {x: 50, y: 1.576831, z: -3}
-  - {x: -50, y: 1.576831, z: -3}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &1332506345
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10933,6 +11122,7 @@ Transform:
   - {fileID: 1625735124}
   - {fileID: 1237041818}
   - {fileID: 2067268179}
+  - {fileID: 1231208957}
   m_Father: {fileID: 1085412849}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11166,6 +11356,97 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399746998}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1401201165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1401201166}
+  - component: {fileID: 1401201169}
+  - component: {fileID: 1401201168}
+  - component: {fileID: 1401201167}
+  m_Layer: 0
+  m_Name: OrarioDiApertura
+  m_TagString: Door
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1401201166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401201165}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.26, y: -0.31583333, z: -0.5}
+  m_LocalScale: {x: 0.13, y: -0.07, z: 0.19999999}
+  m_Children: []
+  m_Father: {fileID: 1102385216}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1401201167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401201165}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 1}
+  m_Center: {x: 0.0000009536743, y: 0, z: 0}
+--- !u!23 &1401201168
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401201165}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4fa5c85525e630448a8b25655b4899d5, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1401201169
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401201165}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1403691271
 GameObject:
@@ -11597,10 +11878,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2
-  targets:
-  - {x: 50, y: 1.576831, z: -1.5}
-  - {x: -50, y: 1.576831, z: -1.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &1472242978
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12089,10 +12370,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
-  targets:
-  - {x: 50, y: 1.576831, z: 0}
-  - {x: -50, y: 1.576831, z: 0}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &1543002887
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12397,6 +12678,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InsidePosition: {x: -45.2, y: 0, z: 9}
+  SelectableObjects:
+  - {fileID: 1551705869}
+  - {fileID: 273648394}
 --- !u!1 &1554287155
 GameObject:
   m_ObjectHideFlags: 0
@@ -12860,6 +13144,7 @@ Transform:
   - {fileID: 1551705868}
   - {fileID: 1566004614}
   - {fileID: 538515845}
+  - {fileID: 273648392}
   m_Father: {fileID: 1085412849}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13200,6 +13485,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InsidePosition: {x: -25.2, y: 0, z: 9}
+  SelectableObjects:
+  - {fileID: 1625735125}
+  - {fileID: 1231208959}
 --- !u!1 &1635219100
 GameObject:
   m_ObjectHideFlags: 0
@@ -14082,10 +14370,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
-  targets:
-  - {x: 50, y: 1.576831, z: -3}
-  - {x: -50, y: 1.576831, z: -3}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &1819276923
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14330,10 +14618,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
-  targets:
-  - {x: 50, y: 1.576831, z: 0}
-  - {x: -50, y: 1.576831, z: 0}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &1841440343
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14564,10 +14852,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
-  targets:
-  - {x: 50, y: 1.576831, z: -3}
-  - {x: -50, y: 1.576831, z: -3}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &1884716627
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14672,10 +14960,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 6
-  targets:
-  - {x: -50, y: 1.222, z: -4.5}
-  - {x: 50, y: 1.222, z: -4.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &1896458430
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14940,6 +15228,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 31de887a9cc57c842a710874d1d5987f, type: 2}
   - {fileID: 2100000, guid: 5c442254028c72e48b124fff61422e98, type: 2}
   GashaponRotationSpeed: 50
+  NewGashapon: {fileID: 0}
 --- !u!95 &1898533001
 Animator:
   serializedVersion: 3
@@ -14974,6 +15263,7 @@ MonoBehaviour:
   OnTheRoadCamera: {fileID: 214221363}
   InsideOrNearBuildCamera: {fileID: 604240559}
   POVCamera: {fileID: 108797871}
+  OutlineShader: {fileID: 4800000, guid: 925dcceb2a546314ba96e6888c67cc38, type: 3}
 --- !u!114 &1898533003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15419,10 +15709,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
-  targets:
-  - {x: 50, y: 1.222, z: -6}
-  - {x: -50, y: 1.222, z: -6}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &2013012515
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15667,10 +15957,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2
-  targets:
-  - {x: 50, y: 1.576831, z: -1.5}
-  - {x: -50, y: 1.576831, z: -1.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &2032523083
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15840,10 +16130,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
-  targets:
-  - {x: 50, y: 1.222, z: -6}
-  - {x: -50, y: 1.222, z: -6}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &2045873326
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16071,6 +16361,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InsidePosition: {x: 34.7, y: 0, z: 9}
+  SelectableObjects:
+  - {fileID: 2063922467}
+  - {fileID: 2142090973}
 --- !u!1 &2067268178
 GameObject:
   m_ObjectHideFlags: 0
@@ -16137,10 +16430,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2
-  targets:
-  - {x: 50, y: 1.576831, z: -1.5}
-  - {x: -50, y: 1.576831, z: -1.5}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &2079941830
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16245,10 +16538,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
-  targets:
-  - {x: 50, y: 1.576831, z: 0}
-  - {x: -50, y: 1.576831, z: 0}
+  SpeedMax: 0
+  IAController: {fileID: 0}
+  configData: {fileID: 0}
+  direction: 0
 --- !u!23 &2099008481
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16525,3 +16818,94 @@ Transform:
   m_Father: {fileID: 113625029}
   m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: -395.1, y: -456.1, z: -215.3}
+--- !u!1 &2142090970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2142090971}
+  - component: {fileID: 2142090974}
+  - component: {fileID: 2142090973}
+  - component: {fileID: 2142090972}
+  m_Layer: 0
+  m_Name: OrarioDiApertura
+  m_TagString: Door
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2142090971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142090970}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.26, y: -0.27899998, z: -0.5}
+  m_LocalScale: {x: 0.13, y: 0.08, z: 0.19999999}
+  m_Children: []
+  m_Father: {fileID: 893109023}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2142090972
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142090970}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 0.99999994, z: 1}
+  m_Center: {x: 0, y: -0.000000059604645, z: 0}
+--- !u!23 &2142090973
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142090970}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4fa5c85525e630448a8b25655b4899d5, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &2142090974
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142090970}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}

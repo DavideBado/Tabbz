@@ -18,10 +18,12 @@ public abstract class StateBase : StateMachineBehaviour, IStateInputCheck
         m_FSMManager = inputManager.GetComponent<FSMManager>();
         Tabboz = inputManager.gameObject;
         inputManager.LeftKeyCall += GoLeft;
+        inputManager.LeftKeyDownCall += GoLeft_KDown;
         inputManager.RightKeyCall += GoRight;
+        inputManager.RightKeyDownCall += GoRight_KDown;
         inputManager.UpKeyCall += GoForward;
-        inputManager.DownKeyCall += GoBack;
         inputManager.UpKeyDownCall += GoForward_KDown;
+        inputManager.DownKeyCall += GoBack;
         inputManager.DownKeyDownCall += GoBack_KDown;
         inputManager.SubmitKeyDownCall += OnSubmit;
     }
@@ -36,10 +38,12 @@ public abstract class StateBase : StateMachineBehaviour, IStateInputCheck
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         inputManager.LeftKeyCall -= GoLeft;
+        inputManager.LeftKeyDownCall -= GoLeft_KDown;
         inputManager.RightKeyCall -= GoRight;
+        inputManager.RightKeyDownCall -= GoRight_KDown;
         inputManager.UpKeyCall -= GoForward;
-        inputManager.DownKeyCall -= GoBack;
         inputManager.UpKeyDownCall -= GoForward_KDown;
+        inputManager.DownKeyCall -= GoBack;
         inputManager.DownKeyDownCall -= GoBack_KDown;
         inputManager.SubmitKeyDownCall -= OnSubmit;
     }
@@ -60,6 +64,15 @@ public abstract class StateBase : StateMachineBehaviour, IStateInputCheck
     }
 
     public virtual void GoRight()
+    {
+
+    }
+    public virtual void GoLeft_KDown()
+    {
+
+    }
+
+    public virtual void GoRight_KDown()
     {
 
     }

@@ -22,6 +22,8 @@ public class InputManager : MonoBehaviour
     #region Actions
     public Action LeftKeyCall;
     public Action RightKeyCall;
+    public Action LeftKeyDownCall;
+    public Action RightKeyDownCall;
     public Action UpKeyDownCall;
     public Action DownKeyDownCall;
     public Action UpKeyCall;
@@ -39,25 +41,33 @@ public class InputManager : MonoBehaviour
         {
             LeftKeyCall();
         }
+        if (Input.GetKeyDown(LeftKey))
+        {
+            LeftKeyDownCall();
+        }
         if (Input.GetKey(RightKey))
         {
             RightKeyCall();
         }
-        if (Input.GetKeyDown(UpKey))
+        if (Input.GetKeyDown(RightKey))
         {
-            UpKeyDownCall();
-        }
-        if (Input.GetKeyDown(DownKey))
-        {
-            DownKeyDownCall();
+            RightKeyDownCall();
         }
         if (Input.GetKey(UpKey))
         {
             UpKeyCall();
         }
+        if (Input.GetKeyDown(UpKey))
+        {
+            UpKeyDownCall();
+        }
         if (Input.GetKey(DownKey))
         {
             DownKeyCall();
+        }
+        if (Input.GetKeyDown(DownKey))
+        {
+            DownKeyDownCall();
         }
         if (Input.GetKeyDown(SubmitKey))
         {

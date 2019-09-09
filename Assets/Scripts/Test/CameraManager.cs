@@ -11,6 +11,8 @@ public class CameraManager : MonoBehaviour
     public Camera POVCamera;
     #endregion
 
+   //public Shader OutlineShader;
+
     #region Actions
     public Action Action_OnTheRoadCamera;
     public Action Action_InsideOrNearBuildCamera;
@@ -49,6 +51,7 @@ public class CameraManager : MonoBehaviour
         OnTheRoadCamera.gameObject.SetActive(false);
         InsideOrNearBuildCamera.gameObject.SetActive(true);
         POVCamera.gameObject.SetActive(false);
+       // InsideOrNearBuildCamera.RenderWithShader(OutlineShader, "RenderedByReplacementCamera");
     }
     private void SetPOVCamera()
     {
