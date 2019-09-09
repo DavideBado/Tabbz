@@ -19,6 +19,8 @@ public class OutsideTheDoorState : StateBase
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         SetOutline(_door.SelectableObjects[_CurrentMeshIndex], null);
+        _CurrentMeshIndex = 0;
+        _OldMeshIndex = 0;
         base.OnStateExit(animator, stateInfo, layerIndex);
     }
 

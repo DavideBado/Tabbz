@@ -128,6 +128,7 @@
     <Compile Include="Assets\Scripts\Test\GashaponMachine.cs" />
     <Compile Include="Assets\Scripts\Test\InputManager.cs" />
     <Compile Include="Assets\Scripts\Test\NPCMoveTest.cs" />
+    <Compile Include="Assets\Scripts\Test\ShopBase.cs" />
     <Compile Include="Assets\Scripts\Test\Spawner_Pedoni.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\BuyButton.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\ClothesButton.cs" />

@@ -336,7 +336,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 85e68da7676f5184980027719c4bb651, type: 2}
+  - {fileID: 2100000, guid: 6c035d60836a83c48b329b42836ba7a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 60264599}
   - component: {fileID: 60264598}
   - component: {fileID: 60264597}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -561,7 +561,7 @@ GameObject:
   - component: {fileID: 63610057}
   - component: {fileID: 63610056}
   - component: {fileID: 63610055}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1055,9 +1055,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0acadb57df4d054da438ceebec0b4d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InsidePosition: {x: -5.5, y: 0, z: 7}
+  InsidePosition: {x: -6.33, y: 0, z: 8.5}
   SelectableObjects:
   - {fileID: 94612713}
+  Shop: {fileID: 853357579}
 --- !u!1 &108797870
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,7 +1107,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 311
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1392,7 +1393,7 @@ GameObject:
   - component: {fileID: 147796387}
   - component: {fileID: 147796386}
   - component: {fileID: 147796385}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1486,7 +1487,7 @@ GameObject:
   - component: {fileID: 155004673}
   - component: {fileID: 155004672}
   - component: {fileID: 155004671}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Auto 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1580,7 +1581,7 @@ GameObject:
   - component: {fileID: 181359509}
   - component: {fileID: 181359508}
   - component: {fileID: 181359507}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Auto 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2522,7 +2523,7 @@ GameObject:
   - component: {fileID: 320747728}
   - component: {fileID: 320747727}
   - component: {fileID: 320747726}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2847,7 +2848,7 @@ GameObject:
   - component: {fileID: 340576417}
   - component: {fileID: 340576416}
   - component: {fileID: 340576415}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3018,7 +3019,7 @@ GameObject:
   - component: {fileID: 364135819}
   - component: {fileID: 364135818}
   - component: {fileID: 364135817}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3189,7 +3190,7 @@ GameObject:
   - component: {fileID: 389331081}
   - component: {fileID: 389331080}
   - component: {fileID: 389331079}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3437,7 +3438,7 @@ GameObject:
   - component: {fileID: 410469454}
   - component: {fileID: 410469453}
   - component: {fileID: 410469452}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4188,7 +4189,7 @@ GameObject:
   - component: {fileID: 522965150}
   - component: {fileID: 522965149}
   - component: {fileID: 522965148}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4282,7 +4283,7 @@ GameObject:
   - component: {fileID: 530173086}
   - component: {fileID: 530173085}
   - component: {fileID: 530173084}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4797,7 +4798,7 @@ GameObject:
   - component: {fileID: 600077533}
   - component: {fileID: 600077532}
   - component: {fileID: 600077531}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4896,7 +4897,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &604240557
 Transform:
   m_ObjectHideFlags: 0
@@ -4904,13 +4905,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604240556}
-  m_LocalRotation: {x: 0.06217567, y: -0.13932964, z: 0.008765884, w: 0.9882533}
-  m_LocalPosition: {x: 1.771, y: 0.7, z: -2.17}
+  m_LocalRotation: {x: -0.05053769, y: -0.18867376, z: -0.009722881, w: 0.98069036}
+  m_LocalPosition: {x: 3.165, y: 0.376, z: -3.533}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1898532999}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 7.2, y: -16.05, z: 0}
+  m_LocalEulerAnglesHint: {x: -5.9, y: -21.78, z: 0}
 --- !u!81 &604240558
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4949,7 +4950,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 311
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -5127,7 +5128,7 @@ GameObject:
   - component: {fileID: 631251305}
   - component: {fileID: 631251304}
   - component: {fileID: 631251303}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5553,7 +5554,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 85e68da7676f5184980027719c4bb651, type: 2}
+  - {fileID: 2100000, guid: 6c035d60836a83c48b329b42836ba7a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5607,7 +5608,7 @@ GameObject:
   - component: {fileID: 720119537}
   - component: {fileID: 720119536}
   - component: {fileID: 720119535}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Auto 1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5778,7 +5779,7 @@ GameObject:
   - component: {fileID: 737593693}
   - component: {fileID: 737593692}
   - component: {fileID: 737593691}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6049,7 +6050,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 85e68da7676f5184980027719c4bb651, type: 2}
+  - {fileID: 2100000, guid: 6c035d60836a83c48b329b42836ba7a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6261,7 +6262,7 @@ GameObject:
   - component: {fileID: 825726194}
   - component: {fileID: 825726193}
   - component: {fileID: 825726192}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Auto 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6510,6 +6511,7 @@ GameObject:
   - component: {fileID: 853357576}
   - component: {fileID: 853357578}
   - component: {fileID: 853357577}
+  - component: {fileID: 853357579}
   m_Layer: 0
   m_Name: Letto
   m_TagString: Untagged
@@ -6553,7 +6555,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ed5955d9dcdce85458d0b0ba2086d370, type: 2}
+  - {fileID: 2100000, guid: 21967dad94000b6468d727e2f8603cbe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6581,6 +6583,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853357575}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &853357579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853357575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c5f9923e6b37f43b73031470ec5279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectableObjects:
+  - {fileID: 853357577}
+  - {fileID: 780386764}
 --- !u!1 &855200449
 GameObject:
   m_ObjectHideFlags: 0
@@ -6820,7 +6837,7 @@ GameObject:
   - component: {fileID: 895510754}
   - component: {fileID: 895510753}
   - component: {fileID: 895510752}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Auto 2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6914,7 +6931,7 @@ GameObject:
   - component: {fileID: 905347863}
   - component: {fileID: 905347862}
   - component: {fileID: 905347861}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7117,7 +7134,7 @@ GameObject:
   - component: {fileID: 932378491}
   - component: {fileID: 932378490}
   - component: {fileID: 932378489}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Auto 2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7288,7 +7305,7 @@ GameObject:
   - component: {fileID: 958753835}
   - component: {fileID: 958753834}
   - component: {fileID: 958753833}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Auto 2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7382,7 +7399,7 @@ GameObject:
   - component: {fileID: 965911801}
   - component: {fileID: 965911800}
   - component: {fileID: 965911799}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Auto 2 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8016,6 +8033,7 @@ GameObject:
   - component: {fileID: 1022266680}
   - component: {fileID: 1022266682}
   - component: {fileID: 1022266681}
+  - component: {fileID: 1022266683}
   m_Layer: 0
   m_Name: Negoziante
   m_TagString: Untagged
@@ -8054,7 +8072,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 03ff7e5c09117334ea22456c8aa73570, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8082,6 +8100,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022266679}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1022266683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022266679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c5f9923e6b37f43b73031470ec5279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectableObjects:
+  - {fileID: 1022266681}
 --- !u!1 &1034562962
 GameObject:
   m_ObjectHideFlags: 0
@@ -8348,7 +8380,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 85e68da7676f5184980027719c4bb651, type: 2}
+  - {fileID: 2100000, guid: 6c035d60836a83c48b329b42836ba7a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8575,6 +8607,7 @@ MonoBehaviour:
   SelectableObjects:
   - {fileID: 1063366187}
   - {fileID: 1401201168}
+  Shop: {fileID: 1471331075}
 --- !u!1 &1071922041
 GameObject:
   m_ObjectHideFlags: 0
@@ -9101,7 +9134,7 @@ GameObject:
   - component: {fileID: 1112543483}
   - component: {fileID: 1112543482}
   - component: {fileID: 1112543481}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9428,7 +9461,7 @@ GameObject:
   - component: {fileID: 1137900980}
   - component: {fileID: 1137900979}
   - component: {fileID: 1137900978}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9832,7 +9865,7 @@ GameObject:
   - component: {fileID: 1181959835}
   - component: {fileID: 1181959834}
   - component: {fileID: 1181959833}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Auto 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10026,7 +10059,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 85e68da7676f5184980027719c4bb651, type: 2}
+  - {fileID: 2100000, guid: 6c035d60836a83c48b329b42836ba7a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10406,7 +10439,7 @@ GameObject:
   - component: {fileID: 1251200611}
   - component: {fileID: 1251200610}
   - component: {fileID: 1251200609}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10885,6 +10918,7 @@ GameObject:
   - component: {fileID: 1331572388}
   - component: {fileID: 1331572391}
   - component: {fileID: 1331572390}
+  - component: {fileID: 1331572389}
   m_Layer: 0
   m_Name: Negoziante
   m_TagString: Untagged
@@ -10906,6 +10940,20 @@ Transform:
   m_Father: {fileID: 2067268179}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1331572389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331572387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c5f9923e6b37f43b73031470ec5279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectableObjects:
+  - {fileID: 1331572390}
 --- !u!23 &1331572390
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10923,7 +10971,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 03ff7e5c09117334ea22456c8aa73570, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10963,7 +11011,7 @@ GameObject:
   - component: {fileID: 1332506346}
   - component: {fileID: 1332506345}
   - component: {fileID: 1332506344}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11767,6 +11815,7 @@ GameObject:
   - component: {fileID: 1471331074}
   - component: {fileID: 1471331077}
   - component: {fileID: 1471331076}
+  - component: {fileID: 1471331075}
   m_Layer: 0
   m_Name: Negoziante
   m_TagString: Untagged
@@ -11788,6 +11837,20 @@ Transform:
   m_Father: {fileID: 1569714951}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1471331075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471331073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c5f9923e6b37f43b73031470ec5279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectableObjects:
+  - {fileID: 1471331076}
 --- !u!23 &1471331076
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11805,7 +11868,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 03ff7e5c09117334ea22456c8aa73570, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11845,7 +11908,7 @@ GameObject:
   - component: {fileID: 1472242979}
   - component: {fileID: 1472242978}
   - component: {fileID: 1472242977}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12337,7 +12400,7 @@ GameObject:
   - component: {fileID: 1543002888}
   - component: {fileID: 1543002887}
   - component: {fileID: 1543002886}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12681,6 +12744,7 @@ MonoBehaviour:
   SelectableObjects:
   - {fileID: 1551705869}
   - {fileID: 273648394}
+  Shop: {fileID: 1811210936}
 --- !u!1 &1554287155
 GameObject:
   m_ObjectHideFlags: 0
@@ -13488,6 +13552,7 @@ MonoBehaviour:
   SelectableObjects:
   - {fileID: 1625735125}
   - {fileID: 1231208959}
+  Shop: {fileID: 1331572389}
 --- !u!1 &1635219100
 GameObject:
   m_ObjectHideFlags: 0
@@ -14259,6 +14324,7 @@ GameObject:
   - component: {fileID: 1811210935}
   - component: {fileID: 1811210938}
   - component: {fileID: 1811210937}
+  - component: {fileID: 1811210936}
   m_Layer: 0
   m_Name: Negoziante
   m_TagString: Untagged
@@ -14280,6 +14346,20 @@ Transform:
   m_Father: {fileID: 538515845}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1811210936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811210934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c5f9923e6b37f43b73031470ec5279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectableObjects:
+  - {fileID: 1811210937}
 --- !u!23 &1811210937
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14297,7 +14377,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 03ff7e5c09117334ea22456c8aa73570, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14337,7 +14417,7 @@ GameObject:
   - component: {fileID: 1819276924}
   - component: {fileID: 1819276923}
   - component: {fileID: 1819276922}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14585,7 +14665,7 @@ GameObject:
   - component: {fileID: 1841440344}
   - component: {fileID: 1841440343}
   - component: {fileID: 1841440342}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14833,7 +14913,7 @@ GameObject:
   - component: {fileID: 1884716628}
   - component: {fileID: 1884716627}
   - component: {fileID: 1884716626}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14927,7 +15007,7 @@ GameObject:
   - component: {fileID: 1896458431}
   - component: {fileID: 1896458430}
   - component: {fileID: 1896458429}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Auto 2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15263,7 +15343,6 @@ MonoBehaviour:
   OnTheRoadCamera: {fileID: 214221363}
   InsideOrNearBuildCamera: {fileID: 604240559}
   POVCamera: {fileID: 108797871}
-  OutlineShader: {fileID: 4800000, guid: 925dcceb2a546314ba96e6888c67cc38, type: 3}
 --- !u!114 &1898533003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15676,7 +15755,7 @@ GameObject:
   - component: {fileID: 2013012516}
   - component: {fileID: 2013012515}
   - component: {fileID: 2013012514}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Auto 1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15924,7 +16003,7 @@ GameObject:
   - component: {fileID: 2032523084}
   - component: {fileID: 2032523083}
   - component: {fileID: 2032523082}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16097,7 +16176,7 @@ GameObject:
   - component: {fileID: 2045873327}
   - component: {fileID: 2045873326}
   - component: {fileID: 2045873325}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Auto 1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16364,6 +16443,7 @@ MonoBehaviour:
   SelectableObjects:
   - {fileID: 2063922467}
   - {fileID: 2142090973}
+  Shop: {fileID: 1022266683}
 --- !u!1 &2067268178
 GameObject:
   m_ObjectHideFlags: 0
@@ -16411,7 +16491,7 @@ GameObject:
   - component: {fileID: 2079941831}
   - component: {fileID: 2079941830}
   - component: {fileID: 2079941829}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16505,7 +16585,7 @@ GameObject:
   - component: {fileID: 2099008482}
   - component: {fileID: 2099008481}
   - component: {fileID: 2099008480}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pedone (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

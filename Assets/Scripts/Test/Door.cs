@@ -9,4 +9,5 @@ public class Door : MonoBehaviour
 {
     public Vector3 InsidePosition;
     public List<MeshRenderer> SelectableObjects = new List<MeshRenderer>();
+    public ShopBase Shop;
 }
