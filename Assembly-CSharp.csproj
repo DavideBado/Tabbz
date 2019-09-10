@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\OvertakeState.cs" />
     <Compile Include="Assets\Scripts\Abstracts\BuyableBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\LoaderBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\SchoolBase.cs" />
@@ -130,6 +131,7 @@
     <Compile Include="Assets\Scripts\Test\NPCMoveTest.cs" />
     <Compile Include="Assets\Scripts\Test\ShopBase.cs" />
     <Compile Include="Assets\Scripts\Test\Spawner_Pedoni.cs" />
+    <Compile Include="Assets\Scripts\Test\ZonaPedonale.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\BuyButton.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\ClothesButton.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\Data storage\ButtonBaseData.cs" />
@@ -142,6 +144,7 @@
     <Compile Include="Assets\Scripts\UI\ShopsUI\ClothesInfoData.cs" />
     <Compile Include="Assets\Scripts\UI\ShopsUI\ShopPanelData.cs" />
     <Compile Include="Assets\Scripts\UI\TabbozImageData.cs" />
+    <Compile Include="Assets\ValutaSorpassoState.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Shaders\ApplyTexture.shader" />

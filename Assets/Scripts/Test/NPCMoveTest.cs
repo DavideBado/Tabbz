@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class NPCMoveTest : MonoBehaviour
 {
+    [HideInInspector]
+    public ZonaPedonale MyZone;
+    [HideInInspector]
+    public ZonaPedonale OvertakeZone;
+    [HideInInspector]
+    public bool Overtaking;
     public int SpeedMax;
     public Animator IAController;
     public PedoneConfigData configData;    
