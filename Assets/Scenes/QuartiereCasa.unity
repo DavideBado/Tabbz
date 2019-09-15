@@ -503,6 +503,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -586,7 +588,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &60264602
 CapsuleCollider:
@@ -596,7 +598,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60264595}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -650,6 +652,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -733,7 +737,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &63610060
 CapsuleCollider:
@@ -743,7 +747,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63610053}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -1535,6 +1539,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -1618,7 +1624,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &147796390
 CapsuleCollider:
@@ -1628,7 +1634,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147796383}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -1679,6 +1685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 0
   IAController: {fileID: 0}
@@ -1760,6 +1768,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 0
   IAController: {fileID: 0}
@@ -2720,6 +2730,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -2803,7 +2815,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &320747731
 CapsuleCollider:
@@ -2813,7 +2825,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320747724}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -3098,6 +3110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -3181,7 +3195,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &340576420
 CapsuleCollider:
@@ -3191,7 +3205,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340576413}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -3322,6 +3336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -3405,7 +3421,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &364135822
 CapsuleCollider:
@@ -3415,7 +3431,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364135815}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -3532,6 +3548,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -3629,7 +3647,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &389331085
 CapsuleCollider:
@@ -3639,7 +3657,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389331078}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -3847,6 +3865,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -3930,7 +3950,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &410469457
 CapsuleCollider:
@@ -3940,7 +3960,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410469450}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -4651,6 +4671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -4734,7 +4756,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &522965153
 CapsuleCollider:
@@ -4744,7 +4766,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522965146}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -4798,6 +4820,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -4881,7 +4905,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &530173089
 CapsuleCollider:
@@ -4891,7 +4915,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530173082}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -5366,6 +5390,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -5449,7 +5475,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &600077536
 CapsuleCollider:
@@ -5459,7 +5485,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600077529}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -5749,6 +5775,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -5832,7 +5860,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &631251308
 CapsuleCollider:
@@ -5842,7 +5870,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631251301}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -6279,6 +6307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 0
   IAController: {fileID: 0}
@@ -6454,6 +6484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -6537,7 +6569,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &737593696
 CapsuleCollider:
@@ -6547,7 +6579,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737593689}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -6973,6 +7005,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 0
   IAController: {fileID: 0}
@@ -7593,6 +7627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 0
   IAController: {fileID: 0}
@@ -7705,6 +7741,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -7788,7 +7826,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &905347866
 CapsuleCollider:
@@ -7798,7 +7836,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905347859}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -7944,6 +7982,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 0
   IAController: {fileID: 0}
@@ -8116,6 +8156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 0
   IAController: {fileID: 0}
@@ -8225,6 +8267,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 0
   IAController: {fileID: 0}
@@ -9964,6 +10008,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -10047,7 +10093,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &1112543486
 CapsuleCollider:
@@ -10057,7 +10103,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112543479}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -10344,6 +10390,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -10427,7 +10475,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &1137900983
 CapsuleCollider:
@@ -10437,7 +10485,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137900976}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -10842,6 +10890,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 0
   IAController: {fileID: 0}
@@ -11420,6 +11470,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -11503,7 +11555,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &1251200614
 CapsuleCollider:
@@ -11513,7 +11565,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251200607}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -12045,6 +12097,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -12128,7 +12182,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &1332506349
 CapsuleCollider:
@@ -12138,7 +12192,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1332506342}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -12995,6 +13049,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -13078,7 +13134,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &1472242982
 CapsuleCollider:
@@ -13088,7 +13144,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472242975}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -13540,6 +13596,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -13623,7 +13681,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &1543002891
 CapsuleCollider:
@@ -13633,7 +13691,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543002884}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -15654,6 +15712,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -15737,7 +15797,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &1819276927
 CapsuleCollider:
@@ -15747,7 +15807,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1819276920}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -15955,6 +16015,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -16038,7 +16100,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &1841440347
 CapsuleCollider:
@@ -16048,7 +16110,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841440340}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -16242,6 +16304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -16339,7 +16403,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &1884716632
 CapsuleCollider:
@@ -16349,7 +16413,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884716625}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -16400,6 +16464,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 0
   IAController: {fileID: 0}
@@ -17149,6 +17215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 0
   IAController: {fileID: 0}
@@ -17401,6 +17469,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -17484,7 +17554,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &2032523087
 CapsuleCollider:
@@ -17494,7 +17564,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032523080}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -17624,6 +17694,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 0
   IAController: {fileID: 0}
@@ -17929,6 +18001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -18026,7 +18100,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &2079941835
 CapsuleCollider:
@@ -18036,7 +18110,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079941828}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998
@@ -18090,6 +18164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46933d9ba9434e47bab666e19e3415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyZone: {fileID: 0}
+  OvertakeZone: {fileID: 0}
   Overtaking: 0
   SpeedMax: 2
   IAController: {fileID: 60264600}
@@ -18173,7 +18249,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &2099008485
 CapsuleCollider:
@@ -18183,7 +18259,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099008478}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.9999998

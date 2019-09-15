@@ -27,8 +27,8 @@ public class TestNPC_CamminaState : StateMachineBehaviour
 
     private void MoveTheCharacter(Animator _animator)
     {
-        Character.transform.Translate(new Vector3((Character.direction * Character.configData.Speed), 0));
         CheckDistance(_animator);
+        Character.transform.Translate(new Vector3((Character.direction * Character.configData.Speed), 0));
     }
 
     private void CheckDistance(Animator _animator)
