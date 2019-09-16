@@ -2,11 +2,16 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class TimeManager : MonoBehaviour
 {
-    private float _Minutes;
-    private int _Hours;
+    public TMP_Text Time_txt;
+    public int Moltiplic;
+    [HideInInspector]
+    public float _Minutes;
+    [HideInInspector]
+    public int _Hours = 1;
     #region Actions
     public Action UpdateTime;
     public Action UpdateTime3h;
@@ -16,11 +21,12 @@ public class TimeManager : MonoBehaviour
     private void Update()
     {
         UpdateMinutes();
+        UpdateTxt(); // Da spostare
     }
 
     private void UpdateMinutes()
     {
-        _Minutes += (Time.deltaTime / 2);
+        _Minutes += (Time.deltaTime * Moltiplic);
         if(_Minutes >= 60)
         {
             UpdateHours();
@@ -44,5 +50,10 @@ public class TimeManager : MonoBehaviour
         {
             UpdateTime24h?.Invoke();
         }
+    }
+
+    private void UpdateTxt()
+    {
+        Time_txt.text = (_Hours + ":" + (int)_Minutes);
     }
 }
