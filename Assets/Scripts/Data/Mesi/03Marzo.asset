@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a06c71d2546c8c04e963bd97cbc480c7, type: 3}
   m_Name: 03Marzo
   m_EditorClassIdentifier: 
-  Feste: 
+  Holidays: 
   Days: 31
+  Name: Marzo
+  currentDay: 0
   day_used: 0

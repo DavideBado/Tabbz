@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a06c71d2546c8c04e963bd97cbc480c7, type: 3}
   m_Name: 04Aprile
   m_EditorClassIdentifier: 
-  Feste: 150000001600000019000000
+  Holidays: 
   Days: 30
+  Name: Aprile
+  currentDay: 0
   day_used: 0

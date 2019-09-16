@@ -42,10 +42,6 @@ public class TimeManager : MonoBehaviour
     private void UpdateHours()
     {
         _Hours++;
-        if(_Hours >= 24)
-        {
-            _Hours = 0;
-        }
         if(_Hours % 3 == 0)
         {
             UpdateTime3h?.Invoke();
@@ -53,6 +49,10 @@ public class TimeManager : MonoBehaviour
         if(_Hours == 24)
         {
             UpdateTime24h?.Invoke();
+        }
+        if(_Hours >= 24)
+        {
+            _Hours = 0;
         }
     }
 

@@ -10,10 +10,15 @@ namespace Bado_City
         [SerializeField]
         protected List<int> Holidays = new List<int>();
         [SerializeField]
-        protected int Days;
-        int currentDay;
-        public bool day_used; 
+        protected int Days;       
+        public string Name;
+        protected int currentDay = 1;
+        public bool day_used;
 
+        public void Setup()
+        {
+            currentDay = 1;
+        }
         public bool CanWork()
         {
             foreach (int _day in Holidays)
@@ -26,9 +31,14 @@ namespace Bado_City
             return true;
         }
 
+        public int CurrentDay()
+        {
+            return currentDay;
+        }
         public int NextDay()
         {
             int _nextDay = currentDay + 1;
+            currentDay = _nextDay;
             day_used = false;
             if(_nextDay > Days)
             {
