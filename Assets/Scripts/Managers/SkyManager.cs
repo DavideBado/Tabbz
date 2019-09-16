@@ -30,7 +30,7 @@ public class SkyManager : MonoBehaviour
     }
     private void UpdateColor()
     {
-        Color SkyColor = new Color32(0, (byte)Mathf.Abs(255 - ((timeManager._Hours * K) - 255)), 255, 200); // Sono le 3 di notte, è da rivedere
+        Color SkyColor = new Color32(0, (byte)(255 - Mathf.Abs((timeManager._Hours * K) - 255)), 255, 50); // Sono le 3 di notte, è da rivedere
         RenderSettings.skybox.SetColor("_Tint", SkyColor);
         SkyBar.color = SkyColor;
     }

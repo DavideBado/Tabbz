@@ -7,7 +7,7 @@ using TMPro;
 public class TimeManager : MonoBehaviour
 {
     public TMP_Text Time_txt;
-    public int Moltiplic;
+    public float Moltiplic;
     [HideInInspector]
     public float _Minutes;
     [HideInInspector]
@@ -18,6 +18,10 @@ public class TimeManager : MonoBehaviour
     public Action UpdateTime24h;
     #endregion
 
+    private void Start()
+    {
+        UpdateTime3h?.Invoke();
+    }
     private void Update()
     {
         UpdateMinutes();
@@ -38,9 +42,9 @@ public class TimeManager : MonoBehaviour
     private void UpdateHours()
     {
         _Hours++;
-        if(_Hours > 24)
+        if(_Hours >= 24)
         {
-            _Hours = 1;
+            _Hours = 0;
         }
         if(_Hours % 3 == 0)
         {
@@ -54,6 +58,6 @@ public class TimeManager : MonoBehaviour
 
     private void UpdateTxt()
     {
-        Time_txt.text = (_Hours + ":" + (int)_Minutes);
+        Time_txt.text = (_Hours.ToString("D2") + ":" + ((int)_Minutes).ToString("D2"));
     }
 }
