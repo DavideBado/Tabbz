@@ -14,12 +14,14 @@ public class TimeManager : MonoBehaviour
     public int _Hours = 1;
     #region Actions
     public Action UpdateTime;
+    public Action UpdateTime1h;
     public Action UpdateTime3h;
     public Action UpdateTime24h;
     #endregion
 
     private void Start()
     {
+        UpdateTime1h?.Invoke();
         UpdateTime3h?.Invoke();
     }
     private void Update()
@@ -54,6 +56,7 @@ public class TimeManager : MonoBehaviour
         {
             _Hours = 0;
         }
+        UpdateTime1h();
     }
 
     private void UpdateTxt()

@@ -27,42 +27,60 @@ public class FSMManager : MonoBehaviour
     public Action Act_GashaponView_Submit;
     #endregion
 
+    #region DelegatesDef
+    public delegate void MyCheckShopDelegate(ShopBase _shop);
+    #endregion
+
+    #region Delegates
+    public MyCheckShopDelegate CheckShopOnenDelegate;
+    #endregion
     private void Awake()
     {
         FSM = GetComponent<Animator>();
     }
     private void OnEnable()
     {
-        TriggerSub();
+        ActSub();
+        DelegSub();
     }
     private void OnDisable()
     {
-        TriggerUnsub();
+        ActUnsub();
+        DelegUnsub();
     }
-    private void TriggerSub()
+    private void ActSub()
     {
         Act_OnTheRoad_DetectDoor += SetTo_OutsideTheDoor_Trigger;
         Act_OnTheRoad_DetectGashaMachine += SetTo_GashaponMachine_Trigger;
         Act_OutsideTheDoor_GoBack += SetTo_OnTheRoad_Trigger;
-        Act_OutsideTheDoor_GoForward += SetTo_InsideABuilding_Trigger;
+        //Act_OutsideTheDoor_GoForward += SetTo_InsideABuilding_Trigger;
         Act_InsideABuilding_GoBack += SetTo_OnTheRoad_Trigger;
         Act_OnGashaponMachine_GoForward += SetTo_InGashaponBoxView_Trigger;
         Act_OnGashaponMachine_GoBack += SetTo_OnTheRoad_Trigger;
         Act_GashaponBoxView_Submit += SetTo_InGashaponView_Trigger;
         Act_GashaponView_Submit += SetTo_GashaponMachine_Trigger;
     }
-    private void TriggerUnsub()
+    private void ActUnsub()
     {
         Act_OnTheRoad_DetectDoor -= SetTo_OutsideTheDoor_Trigger;
         Act_OnTheRoad_DetectGashaMachine -= SetTo_GashaponMachine_Trigger;
         Act_OutsideTheDoor_GoBack -= SetTo_OnTheRoad_Trigger;
-        Act_OutsideTheDoor_GoForward -= SetTo_InsideABuilding_Trigger;
+        //Act_OutsideTheDoor_GoForward -= SetTo_InsideABuilding_Trigger;
         Act_InsideABuilding_GoBack -= SetTo_OnTheRoad_Trigger;
         Act_OnGashaponMachine_GoForward += SetTo_InGashaponBoxView_Trigger;
         Act_OnGashaponMachine_GoBack -= SetTo_OnTheRoad_Trigger;
         Act_GashaponBoxView_Submit -= SetTo_InGashaponView_Trigger;
         Act_GashaponView_Submit -= SetTo_GashaponMachine_Trigger;
     }
+    private void DelegSub()
+    {
+        CheckShopOnenDelegate += CheckShopOpen;
+    }
+    private void DelegUnsub()
+    {
+        CheckShopOnenDelegate -= CheckShopOpen;
+    }
+
     #region TriggerSetMet
     private void SetTo_OutsideTheDoor_Trigger()
     {
@@ -89,4 +107,10 @@ public class FSMManager : MonoBehaviour
         FSM.SetTrigger(To_InGashaponView_Trigger);
     }
     #endregion
+
+    private void CheckShopOpen(ShopBase _shop)
+    {
+        if (_shop.IsOpen)
+            SetTo_InsideABuilding_Trigger();
+    }
 }
