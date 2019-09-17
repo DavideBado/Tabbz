@@ -21,6 +21,7 @@ public class FSMManager : MonoBehaviour
     public Action Act_OutsideTheDoor_GoBack;
     public Action Act_OutsideTheDoor_GoForward;
     public Action Act_InsideABuilding_GoBack;
+    public Action Act_InsideAShopMenu_GoBack;
     public Action Act_OnGashaponMachine_GoForward;
     public Action Act_OnGashaponMachine_GoBack;
     public Action Act_GashaponBoxView_Submit;
@@ -32,7 +33,8 @@ public class FSMManager : MonoBehaviour
     #endregion
 
     #region Delegates
-    public MyCheckShopDelegate CheckShopOnenDelegate;
+    public MyCheckShopDelegate CheckShopOpenDelegate;
+    public MyCheckShopDelegate OpenMenuShopDelegate;
     #endregion
     private void Awake()
     {
@@ -53,7 +55,7 @@ public class FSMManager : MonoBehaviour
         Act_OnTheRoad_DetectDoor += SetTo_OutsideTheDoor_Trigger;
         Act_OnTheRoad_DetectGashaMachine += SetTo_GashaponMachine_Trigger;
         Act_OutsideTheDoor_GoBack += SetTo_OnTheRoad_Trigger;
-        //Act_OutsideTheDoor_GoForward += SetTo_InsideABuilding_Trigger;
+        Act_OutsideTheDoor_GoForward += SetTo_InsideABuilding_Trigger;
         Act_InsideABuilding_GoBack += SetTo_OnTheRoad_Trigger;
         Act_OnGashaponMachine_GoForward += SetTo_InGashaponBoxView_Trigger;
         Act_OnGashaponMachine_GoBack += SetTo_OnTheRoad_Trigger;
@@ -65,7 +67,7 @@ public class FSMManager : MonoBehaviour
         Act_OnTheRoad_DetectDoor -= SetTo_OutsideTheDoor_Trigger;
         Act_OnTheRoad_DetectGashaMachine -= SetTo_GashaponMachine_Trigger;
         Act_OutsideTheDoor_GoBack -= SetTo_OnTheRoad_Trigger;
-        //Act_OutsideTheDoor_GoForward -= SetTo_InsideABuilding_Trigger;
+        Act_OutsideTheDoor_GoForward -= SetTo_InsideABuilding_Trigger;
         Act_InsideABuilding_GoBack -= SetTo_OnTheRoad_Trigger;
         Act_OnGashaponMachine_GoForward += SetTo_InGashaponBoxView_Trigger;
         Act_OnGashaponMachine_GoBack -= SetTo_OnTheRoad_Trigger;
@@ -74,11 +76,11 @@ public class FSMManager : MonoBehaviour
     }
     private void DelegSub()
     {
-        CheckShopOnenDelegate += CheckShopOpen;
+        CheckShopOpenDelegate += CheckShopOpen;
     }
     private void DelegUnsub()
     {
-        CheckShopOnenDelegate -= CheckShopOpen;
+        CheckShopOpenDelegate -= CheckShopOpen;
     }
 
     #region TriggerSetMet

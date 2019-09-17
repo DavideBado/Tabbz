@@ -26,8 +26,12 @@ public class OutsideTheDoorState : StateBase
 
     override public void GoForward_KDown()
     {
-        //m_FSMManager.Act_OutsideTheDoor_GoForward();
-        m_FSMManager.CheckShopOnenDelegate(_door.Shop);
+        if (_door.Shop)
+        {
+            m_FSMManager.CheckShopOpenDelegate(_door.Shop); 
+        }
+        else
+            m_FSMManager.Act_OutsideTheDoor_GoForward();
     }
     override public void GoBack_KDown()
     {

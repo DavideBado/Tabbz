@@ -24,9 +24,14 @@ public class InsideABuildingState : StateBase
         base.OnStateExit(animator, stateInfo, layerIndex);
     }
 
+    public override void GoForward_KDown()
+    {
+        m_FSMManager.OpenMenuShopDelegate(_Shop);
+    }
     override public void GoBack_KDown()
     {
         m_FSMManager.Act_InsideABuilding_GoBack();
+        m_FSMManager.Act_InsideAShopMenu_GoBack();
     }
     public override void GoLeft_KDown()
     {

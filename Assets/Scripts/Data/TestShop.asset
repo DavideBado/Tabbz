@@ -16,4 +16,9 @@ MonoBehaviour:
   WorkingDays_Insp: 010000000200000003000000040000000500000006000000
   OpeningTime_Insp: 8
   ClosingTime_Insp: 15
-  SaleableObjects: []
+  SaleableObjects:
+  - {fileID: 11400000, guid: bebae6b78687037488d20863fd7d6eb2, type: 2}
+  - {fileID: 11400000, guid: 6453bb15bd167314e84cf0fed1e35830, type: 2}
+  - {fileID: 11400000, guid: a838f8e1426f9a54f8a398e1f0c8912c, type: 2}
+  - {fileID: 11400000, guid: ef8ec54e7b92cc64089de36d6db10ee2, type: 2}
+  - {fileID: 11400000, guid: 685ab4e4256ade349aedbe0e11b0283c, type: 2}

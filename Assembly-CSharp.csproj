@@ -126,6 +126,7 @@
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\SkyManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TimeManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
     <Compile Include="Assets\Scripts\Tabboz.cs" />
     <Compile Include="Assets\Scripts\Test\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Test\Door.cs" />
