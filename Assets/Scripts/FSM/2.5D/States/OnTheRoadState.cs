@@ -10,7 +10,13 @@ public class OnTheRoadState : StateBase
         base.OnStateEnter(animator, stateInfo, layerIndex);
         SetPosition();
         cameraManager.Action_OnTheRoadCamera();
-    }  
+    }
+
+    public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        SavePosition();
+        base.OnStateExit(animator, stateInfo, layerIndex);
+    }
 
     override public void GoLeft()
     {
@@ -29,13 +35,11 @@ public class OnTheRoadState : StateBase
         {
             if (hit.transform.GetComponent<Door>() != null)
             {
-                SavePosition();
                 SaveTheDoor(hit);
                 m_FSMManager.Act_OnTheRoad_DetectDoor();
             }
             else if(hit.transform.GetComponent<GashaponMachine>() != null)
-            {
-                SavePosition();
+            {              
                 SaveGashaponMachine(hit);
                 m_FSMManager.Act_OnTheRoad_DetectGashaMachine();
             }
