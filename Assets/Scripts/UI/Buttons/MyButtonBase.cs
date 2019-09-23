@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Bado_City
+namespace Tabboz_Base
 {
     /// <summary>
     /// Classe per i bottoni che si limitano a settare un trigger della state/classe base per gli altri bottoni

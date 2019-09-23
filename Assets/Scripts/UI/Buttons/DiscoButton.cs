@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Bado_City
+namespace Tabboz_Base
 {
     /// <summary>
     /// Classe specifica per i bottoni di scelta della discoteca

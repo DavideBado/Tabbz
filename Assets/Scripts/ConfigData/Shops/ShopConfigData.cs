@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Classe base per tutti i negozzi presumendo che in ogni negozio si possa comprare un solo tipo di oggetti
 /// </summary>
-namespace Bado_City
+namespace Tabboz_Base
 {
     [CreateAssetMenu(fileName = "Shop ConfigData", menuName = "Shop/New Shop", order = 1)]
     public class ShopConfigData : ScriptableObject, IShop

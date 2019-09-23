@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Bado_City
+namespace Tabboz_Base
 {
     [CreateAssetMenu(fileName = "Disco Shop ConfigData", menuName = "Shop/New Disco shop", order = 1)]
     public class DiscoShopConfigData : ScriptableObject, IShop

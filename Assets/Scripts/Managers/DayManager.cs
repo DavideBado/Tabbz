@@ -1,13 +1,12 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-namespace Bado_City
+namespace Tabboz_Base
 {
     public class DayManager : MonoBehaviour
-    {
-        public TMP_Text WeekDay_txt, Day_txt, Month_txt;
+    {      
         [SerializeField]
         private List<MonthsConfigData> Months = new List<MonthsConfigData>();
         [SerializeField]
@@ -16,12 +15,19 @@ namespace Bado_City
         [HideInInspector]
         public int currentWeekDay;
         public TimeManager timeManager;
-
+        
+        #region DelegatesDef
+        public delegate void MyDayDelegate(int _dayNum, string _dayName);
+        public delegate void MyMonthDelegate(MonthsConfigData _month);
+        #endregion
+        #region Delegates
+        public MyDayDelegate UpdateDayDelegate;
+        public MyMonthDelegate UpdateMonth;
+        #endregion
         private void Start()
         {
             currentMonth = 0;
             Months[currentMonth].Setup();
-            UpdateText();
         }
         private void OnEnable()
         {
@@ -41,21 +47,16 @@ namespace Bado_City
                     currentMonth = 0;
                 }
                 Months[currentMonth].Setup();
+                UpdateMonth(Months[currentMonth]);
             }
             UpdateWeek();
-            UpdateText();
+            UpdateDayDelegate(Months[currentMonth].CurrentDay(), WeekDays[currentWeekDay]);
         }
         private void UpdateWeek()
         {
             currentWeekDay++;
             if (currentWeekDay >= WeekDays.Count)
                 currentWeekDay = 0;
-        }
-        private void UpdateText()
-        {
-            WeekDay_txt.text = WeekDays[currentWeekDay];
-            Day_txt.text = Months[currentMonth].CurrentDay().ToString("D2") + "-";
-            Month_txt.text = Months[currentMonth].Name;
-        }
+        }       
     }
 }

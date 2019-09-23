@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Bado_City
+namespace Tabboz_Base
 {
     /// <summary>
     /// Classe per creare accoglienti posti di lavoro

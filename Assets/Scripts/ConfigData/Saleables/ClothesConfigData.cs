@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Bado_City
+namespace Tabboz_Base
 {
     /// <summary>
     /// Classe base per i vestiti

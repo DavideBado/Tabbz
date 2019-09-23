@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-namespace Bado_City
+namespace Tabboz_Base
 {
     public abstract class LoaderBase : MonoBehaviour
     {

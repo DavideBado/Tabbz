@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Bado_City
+namespace Tabboz_Base
 {
     [CreateAssetMenu(fileName = "TipaConfigData", menuName = "NPC/New Tipa", order = 0)]
     public class TipaConfigData : ScriptableObject, ICharacter

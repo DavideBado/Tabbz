@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Bado_City;
+using Tabboz_Base;
 
 public class ClothesInfoData : MonoBehaviour
 {

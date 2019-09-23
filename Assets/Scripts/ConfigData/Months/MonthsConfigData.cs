@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Bado_City
+namespace Tabboz_Base
 {
     [CreateAssetMenu(fileName = "Month Config Data", menuName = "Month", order = 0)]
     public class MonthsConfigData : ScriptableObject

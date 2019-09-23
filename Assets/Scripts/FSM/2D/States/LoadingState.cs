@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Bado_City;
+using Tabboz_Base;
 
 public class LoadingState : StateMachineBehaviour
 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-namespace Bado_City
+namespace Tabboz_Base
 {
     public class LoadSceneButton : MyButtonBase
     {        

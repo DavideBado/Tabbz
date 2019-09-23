@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Bado_City;
+using Tabboz_Base;
 
 public class EnterTheClothesSState : StateMachineBehaviour
 {

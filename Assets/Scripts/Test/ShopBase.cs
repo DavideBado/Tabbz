@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Bado_City;
+using Tabboz_Base;
 
 public class ShopBase : MonoBehaviour
 {

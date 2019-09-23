@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Bado_City
+namespace Tabboz_Base
 {
     [CreateAssetMenu(fileName = "Cigarette Congid Data", menuName = "Saleable/Cigarette", order = 3)]
     public class CigarettesConfigData : BuyableBase, ISaleable
