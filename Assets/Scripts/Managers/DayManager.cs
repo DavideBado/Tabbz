@@ -29,10 +29,14 @@ namespace Tabboz_Base
             currentMonth = 0;
             Months[currentMonth].Setup();
         }
-        private void OnEnable()
+        public void Init()
         {
             timeManager.UpdateTime24h += UpdateDay;
         }
+        //private void OnEnable()
+        //{
+        //    timeManager.UpdateTime24h += UpdateDay;
+        //}
         private void OnDisable()
         {
             timeManager.UpdateTime24h -= UpdateDay;

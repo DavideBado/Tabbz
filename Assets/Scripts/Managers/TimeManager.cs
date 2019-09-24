@@ -8,7 +8,6 @@ namespace Tabboz_Base
 {
     public class TimeManager : MonoBehaviour
     {
-        public TMP_Text Time_txt;
         public float Moltiplic;
         [HideInInspector]
         public float _Minutes;
@@ -21,15 +20,19 @@ namespace Tabboz_Base
         public Action UpdateTime24h;
         #endregion
 
-        private void Start()
+        public void Init()
         {
             UpdateTime1h?.Invoke();
             UpdateTime3h?.Invoke();
         }
+        //private void Start()
+        //{
+        //    UpdateTime1h?.Invoke();
+        //    UpdateTime3h?.Invoke();
+        //}
         private void Update()
         {
             UpdateMinutes();
-            UpdateTxt(); // Da spostare
         }
 
         private void UpdateMinutes()
@@ -59,12 +62,6 @@ namespace Tabboz_Base
                 _Hours = 0;
             }
             UpdateTime1h();
-        }
-
-        private void UpdateTxt()
-        {
-            Time_txt.text = (_Hours.ToString("D2") + ":" + ((int)_Minutes).ToString("D2"));
-        }
+        }        
     }
-
 }

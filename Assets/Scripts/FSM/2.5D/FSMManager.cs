@@ -40,11 +40,17 @@ public class FSMManager : MonoBehaviour
     {
         FSM = GetComponent<Animator>();
     }
-    private void OnEnable()
+    public void Init()
     {
         ActSub();
         DelegSub();
     }
+
+    //private void OnEnable()
+    //{
+    //    ActSub();
+    //    DelegSub();
+    //}
     private void OnDisable()
     {
         ActUnsub();

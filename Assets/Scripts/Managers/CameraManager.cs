@@ -21,10 +21,16 @@ public class CameraManager : MonoBehaviour
     public Action Action_POVCamera;
     #endregion
 
-    private void OnEnable()
+    public void Init()
     {
         ActionsSub();
     }
+
+    //private void OnEnable()
+    //{
+    //    ActionsSub();
+    //}
+
     private void OnDisable()
     {
         ActionsUnsub();
@@ -36,12 +42,14 @@ public class CameraManager : MonoBehaviour
         Action_InsideOrNearBuildCamera += SetInsideOrNearBuildCamera;
         Action_POVCamera += SetPOVCamera;
     }
+
     private void ActionsUnsub()
     {
         Action_OnTheRoadCamera -= SetOnTheRoadCamera;
         Action_InsideOrNearBuildCamera -= SetInsideOrNearBuildCamera;
         Action_POVCamera -= SetPOVCamera;
     }
+
     private void SetOnTheRoadCamera()
     {
         OnTheRoadCamera.gameObject.SetActive(true);
@@ -49,6 +57,7 @@ public class CameraManager : MonoBehaviour
         POVCamera.gameObject.SetActive(false);
         CurrentCamera = OnTheRoadCamera;
     }
+
     private void SetInsideOrNearBuildCamera()
     {
         OnTheRoadCamera.gameObject.SetActive(false);
@@ -57,6 +66,7 @@ public class CameraManager : MonoBehaviour
         CurrentCamera = InsideOrNearBuildCamera;
         // InsideOrNearBuildCamera.RenderWithShader(OutlineShader, "RenderedByReplacementCamera");
     }
+
     private void SetPOVCamera()
     {
         OnTheRoadCamera.gameObject.SetActive(false);

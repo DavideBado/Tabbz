@@ -32,6 +32,12 @@ namespace Tabboz_3D
         public Action DownKeyCall;
         public Action SubmitKeyDownCall;
         #endregion
+
+        public void Init()
+        {
+
+        }
+
         private void Update()
         {
             CheckInput();
@@ -41,39 +47,39 @@ namespace Tabboz_3D
         {
             if (Input.GetKey(LeftKey))
             {
-                LeftKeyCall();
+                LeftKeyCall?.Invoke();
             }
             if (Input.GetKeyDown(LeftKey))
             {
-                LeftKeyDownCall();
+                LeftKeyDownCall?.Invoke();
             }
             if (Input.GetKey(RightKey))
             {
-                RightKeyCall();
+                RightKeyCall?.Invoke();
             }
             if (Input.GetKeyDown(RightKey))
             {
-                RightKeyDownCall();
+                RightKeyDownCall?.Invoke();
             }
             if (Input.GetKey(UpKey))
             {
-                UpKeyCall();
+                UpKeyCall?.Invoke();
             }
             if (Input.GetKeyDown(UpKey))
             {
-                UpKeyDownCall();
+                UpKeyDownCall?.Invoke();
             }
             if (Input.GetKey(DownKey))
             {
-                DownKeyCall();
+                DownKeyCall?.Invoke();
             }
             if (Input.GetKeyDown(DownKey))
             {
-                DownKeyDownCall();
+                DownKeyDownCall?.Invoke();
             }
             if (Input.GetKeyDown(SubmitKey))
             {
-                SubmitKeyDownCall();
+                SubmitKeyDownCall?.Invoke();
             }
         }
     } 

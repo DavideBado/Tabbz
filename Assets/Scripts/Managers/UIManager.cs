@@ -9,25 +9,33 @@ namespace Tabboz_3D
     public class UIManager : MonoBehaviour
     {
         private DayManager dayManager;
-        public FSMManager fSMManager;
+        private FSMManager fSMManager;
+        private TimeManager timeManager;
 
         [HideInInspector]
-        public TMP_Text WeekDay_txt, Day_txt, Month_txt;
+        public TMP_Text Timer_txt, WeekDay_txt, Day_txt, Month_txt;
         public GameObject ShopMenuPanel, ShopMenuContent;
         public GameObject ShopItemPref;
         public GameObject InventoryPanel, InventoryContent;
 
         public void Init()
         {
+            fSMManager = GameManager3D.instance.fSMManager;
             dayManager = GameManager3D.instance.dayManager;
-        }
-        private void OnEnable()
-        {
+            timeManager = GameManager3D.instance.timeManager;
             fSMManager.OpenMenuShopDelegate += SetupShopMenu;
             fSMManager.Act_InsideAShopMenu_GoBack += CloseShopMenu;
             dayManager.UpdateDayDelegate += UpdateDayText;
             dayManager.UpdateMonth += UpdateMonthText;
+            timeManager.UpdateTime += UpdateTimerText;
         }
+        //private void OnEnable()
+        //{
+        //    fSMManager.OpenMenuShopDelegate += SetupShopMenu;
+        //    fSMManager.Act_InsideAShopMenu_GoBack += CloseShopMenu;
+        //    dayManager.UpdateDayDelegate += UpdateDayText;
+        //    dayManager.UpdateMonth += UpdateMonthText;
+        //}
         private void OnDisable()
         {
             fSMManager.OpenMenuShopDelegate -= SetupShopMenu;
@@ -61,6 +69,11 @@ namespace Tabboz_3D
             CleanShopMenu();
         }
         #endregion
+
+        private void UpdateTimerText()
+        {
+            Timer_txt.text = timeManager._Hours.ToString("D2") + ":" + ((int)timeManager._Minutes).ToString("D2");
+        }
         private void UpdateDayText(int _dayNum, string _dayName)
         {
             WeekDay_txt.text = _dayName;

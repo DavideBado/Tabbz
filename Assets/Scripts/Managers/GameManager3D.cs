@@ -20,7 +20,12 @@ namespace Tabboz_3D
         [HideInInspector]
         public FSMManager fSMManager;
         [HideInInspector]
-        public Tabboz tabboz;
+        public UIManager uIManager;
+        [HideInInspector]
+        public SkyManager skyManager;
+        [HideInInspector]
+        public Tabboz3D tabboz;
+        public int CurrentSceneIndex, NextSceneIndex;
 
         //Awake is always called before any Start functions
         void Awake()
@@ -29,7 +34,7 @@ namespace Tabboz_3D
                 instance = this;
             else if (instance != this)
                 Destroy(gameObject);
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject);          
         }
         public void GameManagerSetup()
         {
@@ -37,7 +42,24 @@ namespace Tabboz_3D
         }
         private void Init()
         {
-
+            timeManager = GetComponentInChildren<TimeManager>();
+            inputManager = GetComponentInChildren<InputManager>();
+            cameraManager = GetComponentInChildren<CameraManager>();
+            dayManager = GetComponentInChildren<DayManager>();
+            fSMManager = GetComponentInChildren<FSMManager>();
+            uIManager = GetComponentInChildren<UIManager>();
+            skyManager = GetComponentInChildren<SkyManager>();
+            tabboz = GetComponentInChildren<Tabboz3D>();
+        }
+        public void InitManagers()
+        {
+            inputManager.Init();
+            fSMManager.Init();
+            timeManager.Init();
+            cameraManager.Init();
+            dayManager.Init();
+            skyManager.Init();
+            uIManager.Init();            
         }
     } 
 }
