@@ -16,6 +16,7 @@ public class FSMManager : MonoBehaviour
     #endregion
 
     #region Actions
+    public Action Act_StartGame;
     public Action Act_OnTheRoad_DetectDoor;
     public Action Act_OnTheRoad_DetectGashaMachine;
     public Action Act_OutsideTheDoor_GoBack;
@@ -60,6 +61,7 @@ public class FSMManager : MonoBehaviour
     }
     private void ActSub()
     {
+        Act_StartGame += SetTo_OnTheRoad_Trigger;
         Act_OnTheRoad_DetectDoor += SetTo_OutsideTheDoor_Trigger;
         Act_OnTheRoad_DetectGashaMachine += SetTo_GashaponMachine_Trigger;
         Act_OutsideTheDoor_GoBack += SetTo_OnTheRoad_Trigger;
@@ -72,6 +74,7 @@ public class FSMManager : MonoBehaviour
     }
     private void ActUnsub()
     {
+        Act_StartGame -= SetTo_OnTheRoad_Trigger;
         Act_OnTheRoad_DetectDoor -= SetTo_OutsideTheDoor_Trigger;
         Act_OnTheRoad_DetectGashaMachine -= SetTo_GashaponMachine_Trigger;
         Act_OutsideTheDoor_GoBack -= SetTo_OnTheRoad_Trigger;

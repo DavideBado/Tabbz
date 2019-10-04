@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Abstracts\SchoolBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\Selectable.cs" />
     <Compile Include="Assets\Scripts\Abstracts\StateBase.cs" />
+    <Compile Include="Assets\Scripts\ButtonBaseData3D.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Factory\FactoryConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Factory\QuizConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Months\MonthsConfigData.cs" />
@@ -133,6 +134,7 @@
     <Compile Include="Assets\Scripts\Managers\SkyManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TimeManager.cs" />
     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
+    <Compile Include="Assets\Scripts\MyButtonBase3D.cs" />
     <Compile Include="Assets\Scripts\Tabboz.cs" />
     <Compile Include="Assets\Scripts\Test\Door.cs" />
     <Compile Include="Assets\Scripts\Test\EnvironmentManager.cs" />

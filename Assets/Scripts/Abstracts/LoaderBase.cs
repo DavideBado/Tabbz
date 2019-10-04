@@ -5,7 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 namespace Tabboz_Base
-{
+{/// <summary>
+/// Classe comune a tutti i loader
+/// </summary>
     public abstract class LoaderBase : MonoBehaviour
     {
         public GameObject LoadingPanel, CountinueButton;
