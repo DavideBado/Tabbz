@@ -21,7 +21,7 @@ namespace Tabboz_Base
         {            
             foreach (Action _action in myBaseData.OnClickActions)
             {
-                _action();
+                _action?.Invoke();
             }
         }
     }

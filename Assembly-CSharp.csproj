@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Abstracts\BuyableBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\LoaderBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\SchoolBase.cs" />
+    <Compile Include="Assets\Scripts\Abstracts\Selectable.cs" />
     <Compile Include="Assets\Scripts\Abstracts\StateBase.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Factory\FactoryConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Factory\QuizConfigData.cs" />

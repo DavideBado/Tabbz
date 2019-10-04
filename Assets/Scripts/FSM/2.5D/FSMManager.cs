@@ -30,11 +30,13 @@ public class FSMManager : MonoBehaviour
 
     #region DelegatesDef
     public delegate void MyCheckShopDelegate(ShopBase _shop);
+    public delegate void MyCheckSelectionDelegate(Selectable _selectableobj);
     #endregion
 
     #region Delegates
     public MyCheckShopDelegate CheckShopOpenDelegate;
     public MyCheckShopDelegate OpenMenuShopDelegate;
+    public MyCheckSelectionDelegate CheckSelectionDelegate;
     #endregion
     private void Awake()
     {
@@ -61,7 +63,7 @@ public class FSMManager : MonoBehaviour
         Act_OnTheRoad_DetectDoor += SetTo_OutsideTheDoor_Trigger;
         Act_OnTheRoad_DetectGashaMachine += SetTo_GashaponMachine_Trigger;
         Act_OutsideTheDoor_GoBack += SetTo_OnTheRoad_Trigger;
-        Act_OutsideTheDoor_GoForward += SetTo_InsideABuilding_Trigger;
+        //Act_OutsideTheDoor_GoForward += SetTo_InsideABuilding_Trigger;
         Act_InsideABuilding_GoBack += SetTo_OnTheRoad_Trigger;
         Act_OnGashaponMachine_GoForward += SetTo_InGashaponBoxView_Trigger;
         Act_OnGashaponMachine_GoBack += SetTo_OnTheRoad_Trigger;
@@ -73,7 +75,7 @@ public class FSMManager : MonoBehaviour
         Act_OnTheRoad_DetectDoor -= SetTo_OutsideTheDoor_Trigger;
         Act_OnTheRoad_DetectGashaMachine -= SetTo_GashaponMachine_Trigger;
         Act_OutsideTheDoor_GoBack -= SetTo_OnTheRoad_Trigger;
-        Act_OutsideTheDoor_GoForward -= SetTo_InsideABuilding_Trigger;
+        //Act_OutsideTheDoor_GoForward -= SetTo_InsideABuilding_Trigger;
         Act_InsideABuilding_GoBack -= SetTo_OnTheRoad_Trigger;
         Act_OnGashaponMachine_GoForward += SetTo_InGashaponBoxView_Trigger;
         Act_OnGashaponMachine_GoBack -= SetTo_OnTheRoad_Trigger;
@@ -120,5 +122,25 @@ public class FSMManager : MonoBehaviour
     {
         if (_shop.IsOpen)
             SetTo_InsideABuilding_Trigger();
+    }
+
+    private void SetTriggerToSelection(Selectable _selectableobj)
+    {
+        switch (_selectableobj.Type)
+        {
+            case Selectable.SelectableType.Door:
+                SetTo_InsideABuilding_Trigger();
+                break;
+            case Selectable.SelectableType.Shop:
+                break;
+            case Selectable.SelectableType.Bed:
+                break;
+            case Selectable.SelectableType.Computer:
+                break;
+            case Selectable.SelectableType.CosoOrari:
+                break;
+            default:
+                break;
+        }
     }
 }

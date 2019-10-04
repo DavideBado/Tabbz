@@ -1325,6 +1325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0acadb57df4d054da438ceebec0b4d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   InsidePosition: {x: -6.33, y: 0, z: 8.5}
   SelectableObjects:
   - {fileID: 94612713}
@@ -8067,6 +8068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c5f9923e6b37f43b73031470ec5279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 2
   IsOpen: 0
   OpnClsPanel: {fileID: 0}
   ShopData: {fileID: 11400000, guid: 75d93d6b4535d29468898cb627f4bd17, type: 2}
@@ -10135,6 +10137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c5f9923e6b37f43b73031470ec5279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 1
   IsOpen: 0
   OpnClsPanel: {fileID: 2060220106}
   ShopData: {fileID: 11400000, guid: e3fb075aea277564b8cb6c7819c56118, type: 2}
@@ -10632,6 +10635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0acadb57df4d054da438ceebec0b4d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   InsidePosition: {x: 24.6, y: 0, z: 9}
   SelectableObjects:
   - {fileID: 1063366187}
@@ -13340,6 +13344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c5f9923e6b37f43b73031470ec5279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 1
   IsOpen: 0
   OpnClsPanel: {fileID: 1629082162}
   ShopData: {fileID: 11400000, guid: e3fb075aea277564b8cb6c7819c56118, type: 2}
@@ -14567,6 +14572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c5f9923e6b37f43b73031470ec5279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 1
   IsOpen: 0
   OpnClsPanel: {fileID: 982281313}
   ShopData: {fileID: 11400000, guid: e3fb075aea277564b8cb6c7819c56118, type: 2}
@@ -15574,6 +15580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0acadb57df4d054da438ceebec0b4d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   InsidePosition: {x: -45.2, y: 0, z: 9}
   SelectableObjects:
   - {fileID: 1551705869}
@@ -16547,6 +16554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0acadb57df4d054da438ceebec0b4d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   InsidePosition: {x: -25.2, y: 0, z: 9}
   SelectableObjects:
   - {fileID: 1625735125}
@@ -17814,6 +17822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c5f9923e6b37f43b73031470ec5279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 1
   IsOpen: 0
   OpnClsPanel: {fileID: 1906426077}
   ShopData: {fileID: 11400000, guid: e3fb075aea277564b8cb6c7819c56118, type: 2}
@@ -20649,6 +20658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0acadb57df4d054da438ceebec0b4d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   InsidePosition: {x: 34.7, y: 0, z: 9}
   SelectableObjects:
   - {fileID: 2063922467}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Tabboz_Base;
 
-public class ShopBase : MonoBehaviour
+public class ShopBase : Selectable
 {
     [HideInInspector]
     public bool IsOpen;
