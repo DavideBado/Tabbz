@@ -75,14 +75,19 @@ namespace Tabboz_3D
         {
             Tabboz3D m_tabboz = GameManager3D.instance.tabboz;
             int Tot = 0;
-            foreach (ISaleable _item in Cart)
+            foreach (ISaleable _item in Cart) //Da sostituire con un aggiornamento ad aggiunta
             {
                 Tot += _item.Price;
             }
             if(m_tabboz.Money >= Tot)
             {
                 m_tabboz.Money -= Tot;
-            }
+                foreach (ISaleable _item in Cart)
+                {
+                    _item.EquipMe();
+                }
+            }        
+                Cart.Clear();
         }
     }
 }

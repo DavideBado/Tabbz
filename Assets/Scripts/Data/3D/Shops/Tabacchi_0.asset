@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19867d22ad7f5548a43ab9b0848ba59, type: 3}
+  m_Name: Tabacchi_0
+  m_EditorClassIdentifier: 
+  Name_Insp: Beppe Polito & Figli
+  WorkingDays_Insp: 0100000002000000030000000400000005000000
+  OpeningTime_Insp: 10
+  ClosingTime_Insp: 18
+  SaleableObjects:
+  - {fileID: 11400000, guid: c8d9d64aa6fa1344ba5d469213df7a6a, type: 2}
+  - {fileID: 11400000, guid: 339c5681c3710224caf4529c1e3b3831, type: 2}
+  - {fileID: 11400000, guid: 0be76b1f343003645a056a8ebae1dc59, type: 2}

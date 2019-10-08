@@ -10140,7 +10140,7 @@ MonoBehaviour:
   Type: 1
   IsOpen: 0
   OpnClsPanel: {fileID: 2060220106}
-  ShopData: {fileID: 0}
+  ShopData: {fileID: 11400000, guid: 01681c6c2c019c644b42cf2248f0f781, type: 2}
   timeManager: {fileID: 947439109}
   dayManager: {fileID: 331207043}
   SelectableObjects:
@@ -13347,7 +13347,7 @@ MonoBehaviour:
   Type: 1
   IsOpen: 0
   OpnClsPanel: {fileID: 1629082162}
-  ShopData: {fileID: 0}
+  ShopData: {fileID: 11400000, guid: c44d32ddddea41d45ae325ade76b98d1, type: 2}
   timeManager: {fileID: 947439109}
   dayManager: {fileID: 331207043}
   SelectableObjects:
@@ -14575,7 +14575,7 @@ MonoBehaviour:
   Type: 1
   IsOpen: 0
   OpnClsPanel: {fileID: 982281313}
-  ShopData: {fileID: 0}
+  ShopData: {fileID: 11400000, guid: 1f485f4e3ee934042907314f321bc6e6, type: 2}
   timeManager: {fileID: 947439109}
   dayManager: {fileID: 331207043}
   SelectableObjects:
@@ -19167,6 +19167,7 @@ MonoBehaviour:
   MyBikes: []
   MyCigarettes: []
   MyClothes: []
+  MyDrinks: []
 --- !u!1 &1901671299
 GameObject:
   m_ObjectHideFlags: 0

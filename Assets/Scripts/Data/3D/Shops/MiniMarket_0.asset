@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19867d22ad7f5548a43ab9b0848ba59, type: 3}
+  m_Name: MiniMarket_0
+  m_EditorClassIdentifier: 
+  Name_Insp: Coup
+  WorkingDays_Insp: 00000000010000000200000003000000040000000500000006000000
+  OpeningTime_Insp: 0
+  ClosingTime_Insp: 24
+  SaleableObjects:
+  - {fileID: 11400000, guid: 339c5681c3710224caf4529c1e3b3831, type: 2}
+  - {fileID: 11400000, guid: c8d9d64aa6fa1344ba5d469213df7a6a, type: 2}
+  - {fileID: 11400000, guid: 90b32ac9e51497a489ff68490cf48941, type: 2}
+  - {fileID: 11400000, guid: 446f522283c8198459dac313e6430916, type: 2}

@@ -14,5 +14,7 @@ namespace Tabboz_3D
         public List<CigarettesConfigData> MyCigarettes = new List<CigarettesConfigData>();
         [HideInInspector]
         public List<ClothesConfigData> MyClothes = new List<ClothesConfigData>();
+        [HideInInspector]
+        public List<DrinksConfigData> MyDrinks = new List<DrinksConfigData>();
     } 
 }

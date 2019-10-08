@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Tabboz_3D;
 
 namespace Tabboz_Base
 {
     /// <summary>
     /// Classe base per i vestiti
     /// </summary>
-    [CreateAssetMenu(fileName = "Clothing Congid Data", menuName = "Saleable/Clothing", order = 2)]
+    [CreateAssetMenu(fileName = "Clothes Config Data", menuName = "Saleable/Clothes", order = 2)]
     public class ClothesConfigData : BuyableBase, ISaleable
     {
         [SerializeField]
@@ -52,9 +53,9 @@ namespace Tabboz_Base
             }
         }
 
-        public void EquipMe()
+        public void EquipMe() // Da sostituire con evento e differenziare 3D e 2D
         {
-            GameManager.MyGameManager.tabboz.clothings.Insert(Type, this);
+            GameManager3D.instance.tabboz.MyClothes.Add(this);
         }
 
         protected enum ClothingType

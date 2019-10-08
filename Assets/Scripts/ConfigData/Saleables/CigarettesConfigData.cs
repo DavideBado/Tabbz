@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Tabboz_3D;
 
 namespace Tabboz_Base
 {
@@ -43,9 +44,9 @@ namespace Tabboz_Base
 
         }
 
-        public void EquipMe()
+        public void EquipMe() // Da sostituire con evento e differenziare 3D e 2D
         {
-            throw new System.NotImplementedException();
+            GameManager3D.instance.tabboz.MyCigarettes.Add(this);
         }
     }
 }
