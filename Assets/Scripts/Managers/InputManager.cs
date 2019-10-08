@@ -7,11 +7,11 @@ namespace Tabboz_3D
 {
     public class InputManager : MonoBehaviour
     {
-        public int WalkSpeed;
+        public int WalkSpeed;//Da spostare
         public KeyCode LeftKey, RightKey, UpKey, DownKey, SubmitKey;
         public bool OnTheRoad, OutsideTheDoor, InsideABuilding;
         public bool InfrontOfTheGashaponMachine, InGashaponBoxView, InGashaponView;
-        public List<Camera> Cameras = new List<Camera>();
+        public List<Camera> Cameras = new List<Camera>();//Da spostare
         public float OutsideSavedPosX; //Da spostare
         public Door SavedDoor; //Da spostare
         public GashaponMachine SavedGashaponMachine; //Da spostare

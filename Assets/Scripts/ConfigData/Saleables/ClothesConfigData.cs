@@ -19,7 +19,13 @@ namespace Tabboz_Base
         [SerializeField]
         protected int Price_Insp;
         public int Price { get { return Price_Insp; } set { Price = Price_Insp; } }
-        public string Description;
+        public string Description()
+        {
+            string _description = "";
+            _description = string.Format("Type:{0}\n", clothingType);
+            return _description;
+        }
+
         [HideInInspector]
         public int Type; // Identificatore per la zona del corpo di destinazione, penso di usarlo come index per la lista di sprite
         [SerializeField]

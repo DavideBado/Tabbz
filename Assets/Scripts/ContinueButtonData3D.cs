@@ -5,9 +5,8 @@ using UnityEngine;
 
 namespace Tabboz_3D
 {
-    public class ButtonBaseData3D : MonoBehaviour
+    public class ContinueButtonData3D : MyButton3DBaseData
     {
-        public List<Action> OnClickActions = new List<Action>();
         public List<StatesActions> MyActions = new List<StatesActions>();
 
         private void Start()
@@ -18,7 +17,7 @@ namespace Tabboz_3D
         /// <summary>
         /// Non potendo mettere a inspector le action non di unity ho optato per uno switch
         /// </summary>
-        private void SetOnClickAction()
+        public override void SetOnClickAction()
         {
             foreach (StatesActions _action in MyActions)
             {
@@ -39,4 +38,3 @@ namespace Tabboz_3D
         }
     }
 }
-

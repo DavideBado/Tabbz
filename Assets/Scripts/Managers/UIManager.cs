@@ -49,17 +49,17 @@ namespace Tabboz_3D
         {
             foreach (Transform _child in ShopMenuContent.transform)
             {
-                Destroy(_child.gameObject);
+                Destroy(_child.gameObject); // Dubbi
             }
         }
         private void SetupShopMenu(ShopBase _shop)
         {
             CleanShopMenu();
-            foreach (ClothesConfigData _item in _shop.ShopData.SaleableObjects)
+            foreach (ISaleable _item in _shop.ShopData.SaleableObjects)
             {
                 GameObject _newItemInfo = Instantiate(ShopItemPref, ShopMenuContent.transform);
-                ClothesInfoData clothesInfo = _newItemInfo.GetComponent<ClothesInfoData>();
-                clothesInfo.Setup(_item);
+                ItemInfoData InfoData = _newItemInfo.GetComponent<ItemInfoData>();
+                InfoData.Setup(_item, _shop);
             }
             ShopMenuPanel.SetActive(true);
         }

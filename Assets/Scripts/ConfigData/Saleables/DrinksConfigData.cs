@@ -16,6 +16,12 @@ namespace Tabboz_Base
         [SerializeField]
         protected int Price_Insp;
         public int Price { get { return Price_Insp; } set { Price = Price_Insp; } }
+        public string Description()
+        {
+            string _description = "";
+            _description = string.Format("Vol:{0}\n", Vol);
+            return _description;
+        }
 
         [SerializeField]
         protected float Vol;

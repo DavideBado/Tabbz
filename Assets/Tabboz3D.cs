@@ -1,18 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Tabboz_Base;
 
-public class Tabboz3D : MonoBehaviour
+namespace Tabboz_3D
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Tabboz3D : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        public int Money;
+        [HideInInspector]
+        public List<BikesConfigData> MyBikes = new List<BikesConfigData>();
+        [HideInInspector]
+        public List<CigarettesConfigData> MyCigarettes = new List<CigarettesConfigData>();
+        [HideInInspector]
+        public List<ClothesConfigData> MyClothes = new List<ClothesConfigData>();
+    } 
 }

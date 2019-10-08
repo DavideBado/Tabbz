@@ -16,6 +16,12 @@ namespace Tabboz_Base
         [SerializeField]
         protected int Price_Insp;
         public int Price { get { return Price_Insp; } set { Price = Price_Insp; } }
+        public string Description()
+        {
+            string _description = "";
+            _description = string.Format("Nicotine:{0}\n Tar:{1}\n CO:{2}\n", Nicotine, Tar, CO);
+            return _description;
+        }
 
         [SerializeField]
         protected float Nicotine, Tar, CO; // Valori delle sigarette

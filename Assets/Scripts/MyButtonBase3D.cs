@@ -12,10 +12,10 @@ namespace Tabboz_3D
     /// </summary>
     public class MyButtonBase3D : Button
     {
-        protected ButtonBaseData3D myBaseData;
+        protected MyButton3DBaseData myBaseData;
         protected override void Start()
         {
-            myBaseData = GetComponent<ButtonBaseData3D>();
+            myBaseData = GetComponent<MyButton3DBaseData>();
         }
         public override void OnPointerClick(PointerEventData eventData)
         {

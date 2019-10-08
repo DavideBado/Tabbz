@@ -66,12 +66,12 @@
     <Compile Include="Assets\Scripts\Abstracts\SchoolBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\Selectable.cs" />
     <Compile Include="Assets\Scripts\Abstracts\StateBase.cs" />
-    <Compile Include="Assets\Scripts\ButtonBaseData3D.cs" />
+    <Compile Include="Assets\Scripts\ConfigData\3D\NPC\PedoneConfigData.cs" />
+    <Compile Include="Assets\Scripts\ConfigData\3D\NPC\TipaConfigData.cs" />
+    <Compile Include="Assets\Scripts\ConfigData\3D\Shop3DConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Factory\FactoryConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Factory\QuizConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Months\MonthsConfigData.cs" />
-    <Compile Include="Assets\Scripts\ConfigData\NPC\PedoneConfigData.cs" />
-    <Compile Include="Assets\Scripts\ConfigData\NPC\TipaConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Saleables\BikesConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Saleables\CigarettesConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Saleables\ClothesConfigData.cs" />
@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\ConfigData\Shops\ClothesShopConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Shops\DiscoShopConfigData.cs" />
     <Compile Include="Assets\Scripts\ConfigData\Shops\ShopConfigData.cs" />
+    <Compile Include="Assets\Scripts\ContinueButtonData3D.cs" />
     <Compile Include="Assets\Scripts\FSM\2.5D\FSMManager.cs" />
     <Compile Include="Assets\Scripts\FSM\2.5D\States\FrenaState.cs" />
     <Compile Include="Assets\Scripts\FSM\2.5D\States\InGashaponBoxViewState.cs" />
@@ -143,7 +144,9 @@
     <Compile Include="Assets\Scripts\Test\ShopBase.cs" />
     <Compile Include="Assets\Scripts\Test\Spawner_Pedoni.cs" />
     <Compile Include="Assets\Scripts\Test\ZonaPedonale.cs" />
-    <Compile Include="Assets\Scripts\UI\Buttons\BuyButton.cs" />
+    <Compile Include="Assets\Scripts\UI\3D\Buttons\ButtonData\MyButton3DBaseData.cs" />
+    <Compile Include="Assets\Scripts\UI\3D\Buttons\ButtonData\MyBuyButton3DData.cs" />
+    <Compile Include="Assets\Scripts\UI\3D\Buttons\MyBuyButton3D.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\ClothesButton.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\Data storage\ButtonBaseData.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\Data storage\ClothesButtonData.cs" />
@@ -152,7 +155,7 @@
     <Compile Include="Assets\Scripts\UI\Buttons\DiscoButton.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\LoadSceneButton.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\MyButtonBase.cs" />
-    <Compile Include="Assets\Scripts\UI\ShopsUI\ClothesInfoData.cs" />
+    <Compile Include="Assets\Scripts\UI\ShopsUI\ItemInfoData.cs" />
     <Compile Include="Assets\Scripts\UI\ShopsUI\ShopPanelData.cs" />
     <Compile Include="Assets\Scripts\UI\TabbozImageData.cs" />
     <Compile Include="Assets\Tabboz3D.cs" />

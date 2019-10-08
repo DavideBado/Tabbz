@@ -12,5 +12,6 @@ public interface ISaleable
     string Name{ get; set; } // Un nome
     Sprite Icon{ get; set; } // Un immagine
     int Price{ get; set; }   // Un prezzo
+    string Description(); // Una descrizione
     void EquipMe();
 }

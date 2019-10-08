@@ -34,13 +34,13 @@ public class EnterTheClothesSState : StateMachineBehaviour
         foreach (ClothesConfigData _cloth in GameManager.MyGameManager.ClothesShop.Clothings)
         {
             GameObject itemInfoInsta = Instantiate(_itemsInfoPref, _content.transform);
-            itemInfoInsta.GetComponent<ClothesInfoData>().IconImage.sprite = _cloth.Icon;
+            itemInfoInsta.GetComponent<ItemInfoData>().IconImage.sprite = _cloth.Icon;
             //itemInfoInsta.GetComponent<ClothesInfoData>().NameBackgroundImage.sprite = _clothing...;
             //itemInfoInsta.GetComponent<ClothesInfoData>().DescriptBackgroundImage.sprite = _clothing.....;
             //itemInfoInsta.GetComponent<ClothesInfoData>().PriceBackgroundImage.sprite = _clothing.....;
-            itemInfoInsta.GetComponent<ClothesInfoData>().NameTxt.text = _cloth.Name;
-            itemInfoInsta.GetComponent<ClothesInfoData>().DescriptionTxt.text = _cloth.Description;
-            itemInfoInsta.GetComponent<ClothesInfoData>().PriceTxt.text = (_cloth.Price.ToString() + "$");
+            itemInfoInsta.GetComponent<ItemInfoData>().NameTxt.text = _cloth.Name;
+            itemInfoInsta.GetComponent<ItemInfoData>().DescriptionTxt.text = _cloth.Description();
+            itemInfoInsta.GetComponent<ItemInfoData>().PriceTxt.text = (_cloth.Price.ToString() + "$");
         }
     }
 }

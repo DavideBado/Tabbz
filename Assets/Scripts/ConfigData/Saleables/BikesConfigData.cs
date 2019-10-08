@@ -15,8 +15,16 @@ namespace Tabboz_Base
         public Sprite Icon { get { return Icon_Insp; } set { Icon = Icon_Insp; } }
         [SerializeField]
         protected int Price_Insp;
-        public int Price { get { return Price_Insp; } set { Price = Price_Insp; } }
-        public float Velocità, Cilindrata, Efficienza, Benzina, Stato; // Ogni moto avrà una velocità massima, una resistenza all'usura e una capienza del serbatoio. Da rivedere nel dettaglio le gare.
+        public int Price { get { return Price_Insp; } set { Price = Price_Insp; } }        
+        public string Description()
+        {
+            string _description = "";
+            _description = string.Format("Velocità:{0}\n Cilindrata:{1}\n Efficienza:{2}\n Benzina:{3}\n Stato:{4}\n", Velocità, Cilindrata, Efficienza, Benzina, Stato);
+            return _description;
+        }
+
+        public float Velocità, Cilindrata, Benzina; // Ogni moto avrà una velocità massima, una resistenza all'usura e una capienza del serbatoio. Da rivedere nel dettaglio le gare.
+        [Range(0,100)] public int Efficienza, Stato;
 
         public void EquipMe()
         {
