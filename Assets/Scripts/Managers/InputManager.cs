@@ -8,7 +8,7 @@ namespace Tabboz_3D
     public class InputManager : MonoBehaviour
     {
         public int WalkSpeed;//Da spostare
-        public KeyCode LeftKey, RightKey, UpKey, DownKey, SubmitKey;
+        public KeyCode LeftKey, RightKey, UpKey, DownKey, SubmitKey, InventoryKey;
         public bool OnTheRoad, OutsideTheDoor, InsideABuilding;
         public bool InfrontOfTheGashaponMachine, InGashaponBoxView, InGashaponView;
         public List<Camera> Cameras = new List<Camera>();//Da spostare
@@ -31,6 +31,7 @@ namespace Tabboz_3D
         public Action UpKeyCall;
         public Action DownKeyCall;
         public Action SubmitKeyDownCall;
+        public Action InventoryKeyDownCall;
         #endregion
 
         public void Init()
@@ -80,6 +81,10 @@ namespace Tabboz_3D
             if (Input.GetKeyDown(SubmitKey))
             {
                 SubmitKeyDownCall?.Invoke();
+            }
+            if (Input.GetKeyDown(InventoryKey))
+            {
+                InventoryKeyDownCall?.Invoke();
             }
         }
     } 

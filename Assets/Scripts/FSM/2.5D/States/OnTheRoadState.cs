@@ -12,11 +12,13 @@ namespace Tabboz_3D
             base.OnStateEnter(animator, stateInfo, layerIndex);
             SetPosition();
             cameraManager.Action_OnTheRoadCamera();
+            inputManager.InventoryKeyDownCall += InventoryKeyDown;
         }
 
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             SavePosition();
+            inputManager.InventoryKeyDownCall -= InventoryKeyDown;
             base.OnStateExit(animator, stateInfo, layerIndex);
         }
 
@@ -63,6 +65,11 @@ namespace Tabboz_3D
         private void SetPosition()
         {
             Tabboz.transform.position = new Vector3(inputManager.OutsideSavedPosX, Tabboz.transform.position.y, 1.5f);
+        }
+
+        private void InventoryKeyDown()
+        {
+            m_FSMManager.Act_ToInventory?.Invoke();
         }
     } 
 }

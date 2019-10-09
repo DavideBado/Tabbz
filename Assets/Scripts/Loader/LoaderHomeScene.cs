@@ -8,7 +8,7 @@ namespace Tabboz_3D
     {
         public TMP_Text TimerTxt, DayNumTxt, DayNameTxt, MonthTxt;
         public GameObject ShopMenuPanel, ShopMenuContent, ShopMenuItemPref;
-        public GameObject InventoryGashaPanel, InventoryGashaContent;
+        public InventoryMenu InventoryPanel;
 
         public override void SetGameManager()
         {
@@ -21,8 +21,7 @@ namespace Tabboz_3D
             gameManager.uIManager.ShopMenuPanel = ShopMenuPanel;
             gameManager.uIManager.ShopMenuContent = ShopMenuContent;
             gameManager.uIManager.ShopItemPref = ShopMenuItemPref;
-            gameManager.uIManager.InventoryPanel = InventoryGashaPanel;
-            gameManager.uIManager.InventoryContent = InventoryGashaContent;
+            gameManager.uIManager.InventoryPanel = InventoryPanel;
             gameManager.InitManagers();
             OnLoaded();
         }

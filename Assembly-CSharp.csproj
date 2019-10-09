@@ -60,7 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\InventoryStayState.cs" />
     <Compile Include="Assets\Loading3DState.cs" />
+    <Compile Include="Assets\OpenCloseInventoryState.cs" />
     <Compile Include="Assets\Scripts\Abstracts\BuyableBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\LoaderBase.cs" />
     <Compile Include="Assets\Scripts\Abstracts\SchoolBase.cs" />
@@ -147,6 +149,8 @@
     <Compile Include="Assets\Scripts\UI\3D\Buttons\ButtonData\MyButton3DBaseData.cs" />
     <Compile Include="Assets\Scripts\UI\3D\Buttons\ButtonData\MyBuyButton3DData.cs" />
     <Compile Include="Assets\Scripts\UI\3D\Buttons\MyBuyButton3D.cs" />
+    <Compile Include="Assets\Scripts\UI\Buttons\BottoniInventarioTemporanei\InventoryButton.cs" />
+    <Compile Include="Assets\Scripts\UI\Buttons\BottoniInventarioTemporanei\InventoryButtonData.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\ClothesButton.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\Data storage\ButtonBaseData.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\Data storage\ClothesButtonData.cs" />
@@ -155,7 +159,12 @@
     <Compile Include="Assets\Scripts\UI\Buttons\DiscoButton.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\LoadSceneButton.cs" />
     <Compile Include="Assets\Scripts\UI\Buttons\MyButtonBase.cs" />
-    <Compile Include="Assets\Scripts\UI\ShopsUI\ItemInfoData.cs" />
+    <Compile Include="Assets\Scripts\UI\IItemsMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\InventoryMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\ItemInfoDataBase.cs" />
+    <Compile Include="Assets\Scripts\UI\ItemInventoryInfoData.cs" />
+    <Compile Include="Assets\Scripts\UI\ItemsInventoryMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\ShopsUI\ItemInShopInfoData.cs" />
     <Compile Include="Assets\Scripts\UI\ShopsUI\ShopPanelData.cs" />
     <Compile Include="Assets\Scripts\UI\TabbozImageData.cs" />
     <Compile Include="Assets\Tabboz3D.cs" />

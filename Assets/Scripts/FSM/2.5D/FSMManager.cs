@@ -15,6 +15,8 @@ namespace Tabboz_3D
         public string To_InsideABuilding_Trigger;
         public string To_InGashaponBoxView_Trigger;
         public string To_InGashaponView_Trigger;
+        public string To_InventoryOpenClose_Trigger;
+        public string To_InventoryStay_Trigger;
         #endregion
 
         #region Actions
@@ -29,6 +31,9 @@ namespace Tabboz_3D
         public Action Act_OnGashaponMachine_GoBack;
         public Action Act_GashaponBoxView_Submit;
         public Action Act_GashaponView_Submit;
+        public Action Act_ToInventory;
+        public Action Act_InventoryOn;
+        public Action Act_InventoryOff;
         #endregion
 
         #region DelegatesDef
@@ -73,6 +78,9 @@ namespace Tabboz_3D
             Act_OnGashaponMachine_GoBack += SetTo_OnTheRoad_Trigger;
             Act_GashaponBoxView_Submit += SetTo_InGashaponView_Trigger;
             Act_GashaponView_Submit += SetTo_GashaponMachine_Trigger;
+            Act_ToInventory += SetTo_InventoryOpenClose_Trigger;
+            Act_InventoryOn += SetTo_InventoryStay_Trigger;
+            Act_InventoryOff += SetTo_OnTheRoad_Trigger;
         }
         private void ActUnsub()
         {
@@ -86,6 +94,9 @@ namespace Tabboz_3D
             Act_OnGashaponMachine_GoBack -= SetTo_OnTheRoad_Trigger;
             Act_GashaponBoxView_Submit -= SetTo_InGashaponView_Trigger;
             Act_GashaponView_Submit -= SetTo_GashaponMachine_Trigger;
+            Act_ToInventory -= SetTo_InventoryOpenClose_Trigger;
+            Act_InventoryOn -= SetTo_InventoryStay_Trigger;
+            Act_InventoryOff -= SetTo_OnTheRoad_Trigger;
         }
         private void DelegSub()
         {
@@ -120,6 +131,14 @@ namespace Tabboz_3D
         private void SetTo_InGashaponView_Trigger()
         {
             FSM.SetTrigger(To_InGashaponView_Trigger);
+        }
+        private void SetTo_InventoryOpenClose_Trigger()
+        {
+            FSM.SetTrigger(To_InventoryOpenClose_Trigger);
+        }
+        private void SetTo_InventoryStay_Trigger()
+        {
+            FSM.SetTrigger(To_InventoryStay_Trigger);
         }
         #endregion
 
