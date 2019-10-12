@@ -18,6 +18,11 @@ namespace Tabboz_3D
             _CurrentMeshIndex = 0;
             SetOutline(_Shop.SelectableObjects[_OldMeshIndex], _Shop.SelectableObjects[_CurrentMeshIndex]);
         }
+
+        public override void OnStateUpdate(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex)
+        {
+            TimeManager.UpdateTime?.Invoke();
+        }
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             SetOutline(_Shop.SelectableObjects[_CurrentMeshIndex], null);

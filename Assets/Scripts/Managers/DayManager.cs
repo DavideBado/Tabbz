@@ -6,7 +6,7 @@ using TMPro;
 namespace Tabboz_Base
 {
     public class DayManager : MonoBehaviour
-    {      
+    {
         [SerializeField]
         private List<MonthsConfigData> Months = new List<MonthsConfigData>();
         [SerializeField]
@@ -15,7 +15,11 @@ namespace Tabboz_Base
         [HideInInspector]
         public int currentWeekDay;
         public TimeManager timeManager;
-        
+
+        #region Actions
+        public Action ReturnCurrentDayMonth;
+        #endregion
+
         #region DelegatesDef
         public delegate void MyDayDelegate(int _dayNum, string _dayName);
         public delegate void MyMonthDelegate(MonthsConfigData _month);
@@ -31,6 +35,7 @@ namespace Tabboz_Base
         }
         public void Init()
         {
+            ReturnCurrentDayMonth += CurrentDayMonth;
             timeManager.UpdateTime24h += UpdateDay;
         }
         //private void OnEnable()
@@ -39,6 +44,7 @@ namespace Tabboz_Base
         //}
         private void OnDisable()
         {
+            ReturnCurrentDayMonth -= CurrentDayMonth;
             timeManager.UpdateTime24h -= UpdateDay;
         }
         private void UpdateDay()
@@ -61,6 +67,12 @@ namespace Tabboz_Base
             currentWeekDay++;
             if (currentWeekDay >= WeekDays.Count)
                 currentWeekDay = 0;
-        }       
+        }
+
+        public void CurrentDayMonth()
+        {
+            UpdateDayDelegate(Months[currentMonth].CurrentDay(), WeekDays[currentWeekDay]);
+            UpdateMonth(Months[currentMonth]);
+        }
     }
 }

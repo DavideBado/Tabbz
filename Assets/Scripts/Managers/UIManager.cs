@@ -46,6 +46,7 @@ namespace Tabboz_3D
             ItemsMenuSetup += SetupItemsMenu;
             ItemsMenuOnOff += ItemsMenuOpenClose;
             allItemsMenu = InventoryPanel.GetComponentsInChildren<IItemsMenu>().ToList();
+            dayManager.ReturnCurrentDayMonth?.Invoke();
         }
         //private void OnEnable()
         //{

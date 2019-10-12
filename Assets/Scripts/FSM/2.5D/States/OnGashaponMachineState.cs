@@ -13,6 +13,11 @@ namespace Tabboz_3D
             cameraManager.Action_InsideOrNearBuildCamera();
         }
 
+        public override void OnStateUpdate(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex)
+        {
+            TimeManager.UpdateTime?.Invoke();
+        }
+
         override public void GoForward_KDown()
         {
             m_FSMManager.Act_OnGashaponMachine_GoForward();

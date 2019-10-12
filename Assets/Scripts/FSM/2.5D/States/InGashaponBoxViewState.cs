@@ -14,6 +14,10 @@ namespace Tabboz_3D
             cameraManager.Action_POVCamera();
         }
 
+        public override void OnStateUpdate(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex)
+        {
+            TimeManager.UpdateTime?.Invoke();
+        }
         public override void GoLeft()
         {
             inputManager.GashaponBox.transform.Rotate(Vector3.left * inputManager.GashaponRotationSpeed * Time.deltaTime);

@@ -8,6 +8,7 @@ namespace Tabboz_Base
 {
     public class TimeManager : MonoBehaviour
     {
+        // Idea, mettere una bool in ogni state per uodate o meno del tempo, oppure nello state update
         public float Moltiplic;
         [HideInInspector]
         public float _Minutes;
@@ -22,18 +23,23 @@ namespace Tabboz_Base
 
         public void Init()
         {
+            UpdateTime += UpdateMinutes;
             UpdateTime1h?.Invoke();
             UpdateTime3h?.Invoke();
+        }
+        private void OnDisable()
+        {
+            UpdateTime -= UpdateMinutes;
         }
         //private void Start()
         //{
         //    UpdateTime1h?.Invoke();
         //    UpdateTime3h?.Invoke();
         //}
-        private void Update()
-        {
-            UpdateMinutes();
-        }
+        //private void Update()
+        //{
+        //    //UpdateMinutes();
+        //}
 
         private void UpdateMinutes()
         {
@@ -44,7 +50,7 @@ namespace Tabboz_Base
                 _Minutes = 0;
             }
             //if (_Minutes % 1 == 0)
-            UpdateTime?.Invoke();
+            //UpdateTime?.Invoke();
         }
         private void UpdateHours()
         {

@@ -15,6 +15,11 @@ namespace Tabboz_3D
             inputManager.InventoryKeyDownCall += InventoryKeyDown;
         }
 
+        public override void OnStateUpdate(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex)
+        {
+            TimeManager.UpdateTime?.Invoke();
+        }
+
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             SavePosition();

@@ -12,7 +12,7 @@ namespace Tabboz_Base
         [SerializeField]
         protected int Days;       
         public string Name;
-        protected int currentDay = 1;
+        public int currentDay = 1;
         public bool day_used;
 
         public void Setup()

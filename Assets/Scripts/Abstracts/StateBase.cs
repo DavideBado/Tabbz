@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Tabboz_Base;
 
 namespace Tabboz_3D
 {
@@ -10,6 +11,7 @@ namespace Tabboz_3D
         protected FSMManager m_FSMManager;
         protected CameraManager cameraManager;
         protected InputManager inputManager;
+        protected TimeManager TimeManager;
         protected GameObject Tabboz;
 
         // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -19,6 +21,7 @@ namespace Tabboz_3D
             cameraManager = GameManager3D.instance.cameraManager;
             m_FSMManager = GameManager3D.instance.fSMManager;
             Tabboz = GameManager3D.instance.tabboz.gameObject;
+            TimeManager = GameManager3D.instance.timeManager;
             inputManager.LeftKeyCall += GoLeft;
             inputManager.LeftKeyDownCall += GoLeft_KDown;
             inputManager.RightKeyCall += GoRight;
