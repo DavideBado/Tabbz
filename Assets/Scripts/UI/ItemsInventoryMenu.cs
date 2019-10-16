@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Tabboz_Base;
 
 namespace Tabboz_3D
 {
@@ -17,27 +18,36 @@ namespace Tabboz_3D
         public GameObject ItemPrefab { get { return m_itemPrefab; } }
         public List<ISaleable> Items { get { return m_items; } }
 
-        public void UpdateItems()
+        public void UpdateItems(ISaleable _item)
         {
             m_items.Clear();
             switch (MenuItemsType)
             {
                 case ItemsType.MotorBikes:
-                    foreach (ISaleable _item in GameManager3D.instance.tabboz.MyBikes)
+                    if (_item is BikesConfigData)
                     {
-                        m_items.Add(_item);
+                        GameObject _newItemInfo = Instantiate(ItemPrefab, Content.transform);
+                        ItemInventoryInfoData InfoData = _newItemInfo.GetComponent<ItemInventoryInfoData>();
+                        InfoData.Setup(_item);
+                        m_items.Add(_newItemInfo.GetComponent<ISaleable>());
                     }
                     break;
                 case ItemsType.Clothes:
-                    foreach (ISaleable _item in GameManager3D.instance.tabboz.MyClothes)
+                   if(_item is ClothesConfigData)
                     {
-                        m_items.Add(_item);
+                        GameObject _newItemInfo = Instantiate(ItemPrefab, Content.transform);
+                        ItemInventoryInfoData InfoData = _newItemInfo.GetComponent<ItemInventoryInfoData>();
+                        InfoData.Setup(_item);
+                        m_items.Add(_newItemInfo.GetComponent<ISaleable>());
                     }
                     break;
                 case ItemsType.Cigarettes:
-                    foreach (ISaleable _item in GameManager3D.instance.tabboz.MyCigarettes)
+                    if (_item is CigarettesConfigData)
                     {
-                        m_items.Add(_item);
+                        GameObject _newItemInfo = Instantiate(ItemPrefab, Content.transform);
+                        ItemInventoryInfoData InfoData = _newItemInfo.GetComponent<ItemInventoryInfoData>();
+                        InfoData.Setup(_item);
+                        m_items.Add(_newItemInfo.GetComponent<ISaleable>());
                     }
                     break;
                 case ItemsType.Gasha:

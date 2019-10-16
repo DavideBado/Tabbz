@@ -47,6 +47,7 @@ namespace Tabboz_3D
             ItemsMenuOnOff += ItemsMenuOpenClose;
             allItemsMenu = InventoryPanel.GetComponentsInChildren<IItemsMenu>().ToList();
             dayManager.ReturnCurrentDayMonth?.Invoke();
+            InitMenu();
         }
         //private void OnEnable()
         //{
@@ -55,17 +56,17 @@ namespace Tabboz_3D
         //    dayManager.UpdateDayDelegate += UpdateDayText;
         //    dayManager.UpdateMonth += UpdateMonthText;
         //}
-        private void OnDisable()
-        {
-            fSMManager.OpenMenuShopDelegate -= SetupShopMenu;
-            fSMManager.Act_InsideAShopMenu_GoBack -= CloseShopMenu;
-            dayManager.UpdateDayDelegate -= UpdateDayText;
-            dayManager.UpdateMonth -= UpdateMonthText;
-            timeManager.UpdateTime -= UpdateTimerText;
-            InventoryOnOff -= OpenCloseInventory;
-            ItemsMenuSetup -= SetupItemsMenu;
-            ItemsMenuOnOff -= ItemsMenuOpenClose;
-        }
+        //private void OnDisable()
+        //{
+        //    fSMManager.OpenMenuShopDelegate -= SetupShopMenu;
+        //    fSMManager.Act_InsideAShopMenu_GoBack -= CloseShopMenu;
+        //    dayManager.UpdateDayDelegate -= UpdateDayText;
+        //    dayManager.UpdateMonth -= UpdateMonthText;
+        //    timeManager.UpdateTime -= UpdateTimerText;
+        //    InventoryOnOff -= OpenCloseInventory;
+        //    ItemsMenuSetup -= SetupItemsMenu;
+        //    ItemsMenuOnOff -= ItemsMenuOpenClose;
+        //}
 
         #region ShopMenu
         private void CleanShopMenu()
@@ -98,12 +99,19 @@ namespace Tabboz_3D
         private void OpenCloseInventory()
         {
             InventoryPanel.gameObject.SetActive(!InventoryPanel.gameObject.activeSelf);
-            if(InventoryPanel.gameObject.activeSelf)
+            //if(InventoryPanel.gameObject.activeSelf)
+            //{
+            //InitMenu();
+            //}
+        }
+
+        private void InitMenu()
+        {
+
+            foreach (IItemsMenu _menu in InventoryPanel.AllItemsMenu)
             {
-                foreach (IItemsMenu _menu in InventoryPanel.AllItemsMenu)
-                {
-                    ItemsMenuSetup(_menu);
-                }
+                CleanItemsMenu(_menu);
+                ItemsMenuSetup(_menu);
             }
         }
 
@@ -116,18 +124,26 @@ namespace Tabboz_3D
         }
         private void SetupItemsMenu(IItemsMenu _itemsMenu)
         {
-            _itemsMenu.UpdateItems();
-            CleanItemsMenu(_itemsMenu);
+           // CleanItemsMenu(_itemsMenu);
             foreach (ISaleable _item in _itemsMenu.Items)
             {
-                GameObject _newItemInfo = Instantiate(_itemsMenu.ItemPrefab, _itemsMenu.Content.transform);
-                ItemInventoryInfoData InfoData = _newItemInfo.GetComponent<ItemInventoryInfoData>();
-                InfoData.Setup(_item);
+                _itemsMenu.UpdateItems(_item);
+                //GameObject _newItemInfo = Instantiate(_itemsMenu.ItemPrefab, _itemsMenu.Content.transform);
+                //ItemInventoryInfoData InfoData = _newItemInfo.GetComponent<ItemInventoryInfoData>();
+                //InfoData.Setup(_item);
             }
             //if(m_CurrentItemsMenu != null)
             //    m_CurrentItemsMenu.Panel.SetActive(false);
             //_itemsMenu.Panel.SetActive(true);
             //m_CurrentItemsMenu = _itemsMenu;
+        }
+
+        public void UpdateItemsInMenu(ISaleable _item)
+        {
+            foreach (IItemsMenu _itemsMenu in InventoryPanel.AllItemsMenu)
+            {
+                _itemsMenu.UpdateItems(_item);
+            }
         }
 
         private void ItemsMenuOpenClose(IItemsMenu _itemsMenu)

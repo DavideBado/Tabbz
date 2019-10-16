@@ -17,6 +17,9 @@ namespace Tabboz_3D
         public string To_InGashaponView_Trigger;
         public string To_InventoryOpenClose_Trigger;
         public string To_InventoryStay_Trigger;
+        public string To_EndLevelLeft_Trigger;
+        public string To_EndLevelRight_Trigger;
+        public string To_LoadLevel_Trigger;
         #endregion
 
         #region Actions
@@ -34,6 +37,10 @@ namespace Tabboz_3D
         public Action Act_ToInventory;
         public Action Act_InventoryOn;
         public Action Act_InventoryOff;
+        public Action Act_EndLevelLeft;
+        public Action Act_EndLevelRight;
+        public Action Act_EndLevelBack;
+        public Action Act_LoadLevel;
         #endregion
 
         #region DelegatesDef
@@ -81,6 +88,10 @@ namespace Tabboz_3D
             Act_ToInventory += SetTo_InventoryOpenClose_Trigger;
             Act_InventoryOn += SetTo_InventoryStay_Trigger;
             Act_InventoryOff += SetTo_OnTheRoad_Trigger;
+            Act_EndLevelLeft += SetTo_EndLevelLeft_Trigger;
+            Act_EndLevelRight += SetTo_EndLevelRight_Trigger;
+            Act_EndLevelBack += SetTo_OnTheRoad_Trigger;
+            Act_LoadLevel += SetTo_LoadLevel_Trigger;
         }
         private void ActUnsub()
         {
@@ -90,13 +101,17 @@ namespace Tabboz_3D
             Act_OutsideTheDoor_GoBack -= SetTo_OnTheRoad_Trigger;
             //Act_OutsideTheDoor_GoForward -= SetTo_InsideABuilding_Trigger;
             Act_InsideABuilding_GoBack -= SetTo_OnTheRoad_Trigger;
-            Act_OnGashaponMachine_GoForward += SetTo_InGashaponBoxView_Trigger;
+            Act_OnGashaponMachine_GoForward -= SetTo_InGashaponBoxView_Trigger;
             Act_OnGashaponMachine_GoBack -= SetTo_OnTheRoad_Trigger;
             Act_GashaponBoxView_Submit -= SetTo_InGashaponView_Trigger;
             Act_GashaponView_Submit -= SetTo_GashaponMachine_Trigger;
             Act_ToInventory -= SetTo_InventoryOpenClose_Trigger;
             Act_InventoryOn -= SetTo_InventoryStay_Trigger;
             Act_InventoryOff -= SetTo_OnTheRoad_Trigger;
+            Act_EndLevelLeft -= SetTo_EndLevelLeft_Trigger;
+            Act_EndLevelRight -= SetTo_EndLevelRight_Trigger;
+            Act_EndLevelBack -= SetTo_OnTheRoad_Trigger;
+            Act_LoadLevel -= SetTo_LoadLevel_Trigger;
         }
         private void DelegSub()
         {
@@ -140,6 +155,18 @@ namespace Tabboz_3D
         {
             FSM.SetTrigger(To_InventoryStay_Trigger);
         }
+        private void SetTo_EndLevelLeft_Trigger()
+        {
+            FSM.SetTrigger(To_EndLevelLeft_Trigger);
+        }
+        private void SetTo_EndLevelRight_Trigger()
+        {
+            FSM.SetTrigger(To_EndLevelRight_Trigger);
+        }
+        private void SetTo_LoadLevel_Trigger()
+        {
+            FSM.SetTrigger(To_LoadLevel_Trigger);
+        }
         #endregion
 
         private void CheckShopOpen(ShopBase _shop)
@@ -167,5 +194,5 @@ namespace Tabboz_3D
                     break;
             }
         }
-    } 
+    }
 }

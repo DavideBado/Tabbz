@@ -6,10 +6,12 @@ namespace Tabboz_3D
 {
     public class OnTheRoadState : StateBase
     {
+        LevelManager  m_levelManager;
         // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
         override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             base.OnStateEnter(animator, stateInfo, layerIndex);
+            m_levelManager = GameManager3D.instance.levelManager;
             SetPosition();
             cameraManager.Action_OnTheRoadCamera();
             inputManager.InventoryKeyDownCall += InventoryKeyDown;
@@ -29,12 +31,18 @@ namespace Tabboz_3D
 
         override public void GoLeft()
         {
-            Tabboz.transform.Translate(Vector3.left * inputManager.WalkSpeed * Time.deltaTime);
+            if (Tabboz.transform.position.x > m_levelManager.EndLevel_L)
+                Tabboz.transform.Translate(Vector3.left * inputManager.WalkSpeed * Time.deltaTime);
+            else
+                m_FSMManager.Act_EndLevelLeft?.Invoke();
         }
 
         override public void GoRight()
         {
-            Tabboz.transform.Translate(Vector3.right * inputManager.WalkSpeed * Time.deltaTime);
+            if (Tabboz.transform.position.x < m_levelManager.EndLevel_R)
+                Tabboz.transform.Translate(Vector3.right * inputManager.WalkSpeed * Time.deltaTime);
+            else
+                m_FSMManager.Act_EndLevelRight?.Invoke();
         }
 
         override public void GoForward_KDown()

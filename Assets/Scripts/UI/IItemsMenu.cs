@@ -9,6 +9,6 @@ namespace Tabboz_3D
         GameObject Content { get;}
         GameObject ItemPrefab { get;}
         List<ISaleable> Items { get;}
-        void UpdateItems();
+        void UpdateItems(ISaleable _item);
     } 
 }

@@ -14,7 +14,9 @@ namespace Tabboz_3D
             AllItemsMenu.Clear();
             foreach (GameObject _ItemMenu in AllItemsMenuGObj)
             {
+                _ItemMenu.SetActive(true);
                 AllItemsMenu.Add(_ItemMenu.GetComponent<IItemsMenu>());
+                _ItemMenu.SetActive(false);
             }
         }
     } 

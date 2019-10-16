@@ -8,12 +8,24 @@ namespace Tabboz_3D
     public class MyBuyButton3DData : MyButton3DBaseData
     {
         protected ShopBase m_shop;
-        protected ISaleable Item;
+        [HideInInspector]
+        public ISaleable Item;
         public List<Actions> MyActions = new List<Actions>();
+        public List<MyItemDelegate> MyItemDelegates = new List<MyItemDelegate>();
         protected MyBuyButton3D myBuyButton3D;
+
+        #region DelegatesDef
+        public delegate void MyItemDelegate(ISaleable _item);
+        #endregion
+
+        #region Delegates
+        MyItemDelegate UpdateItems;
+        #endregion
+
         private void OnDisable()
         {
             myBuyButton3D.AddToCart -= AddToCart;
+            UpdateItems -= GameManager3D.instance.uIManager.UpdateItemsInMenu;
         }
         public override void SetOnClickAction()
         {
@@ -28,6 +40,7 @@ namespace Tabboz_3D
                         break;
                 }
             }
+            MyItemDelegates.Add(UpdateItems); //Da spostare #####################################
         }
         public enum Actions
         {
@@ -40,6 +53,7 @@ namespace Tabboz_3D
             Item = _item;
             myBuyButton3D = _buyButton;
             ActionsSub();
+            DelegatesSub();
             SetOnClickAction();
         }
 
@@ -47,9 +61,14 @@ namespace Tabboz_3D
         {
             m_shop.Cart.Add(Item);
         }
-    private void ActionsSub()
-    {
+        private void ActionsSub()
+        {
             myBuyButton3D.AddToCart += AddToCart;
-    }
+        }
+        private void DelegatesSub()
+        {
+            UpdateItems += GameManager3D.instance.uIManager.UpdateItemsInMenu;
+        }
+
     }
 }

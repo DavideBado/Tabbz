@@ -8,10 +8,19 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: dbed2182be59b074b95c63baf103ad97
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TabbozMenu.unity
     guid: f9c3eca82d57a264783d97734ab13cee
+  - enabled: 1
+    path: Assets/Scenes/3D/QuartiereCasa.unity
+    guid: 4f52a5283d0a3b2479718df4edea6448
+  - enabled: 1
+    path: Assets/Scenes/3D/QuartiereCasa 1.unity
+    guid: 8b1ed1ba4202ffe48a8e956e48e81bc5
+  - enabled: 1
+    path: Assets/Scenes/3D/QuartiereCasa 2.unity
+    guid: 31614a887630ac44aa8f4cd57e720b31
   m_configObjects: {}

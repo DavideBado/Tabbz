@@ -29,16 +29,17 @@ namespace Tabboz_3D
         //{
         //    timeManager.UpdateTime3h += UpdateColor;
         //}
-        private void OnDisable()
-        {
-            timeManager.UpdateTime3h -= UpdateColor;
-        }
+        //private void OnDisable()
+        //{
+        //    timeManager.UpdateTime3h -= UpdateColor;
+        //}
 
         private void UpdateColor()
         {
             Color SkyColor = new Color32(0, (byte)(255 - Mathf.Abs((timeManager._Hours * K) - 255)), 255, 50); // Sono le 3 di notte, è da rivedere
             RenderSettings.skybox.SetColor("_Tint", SkyColor);
-            SkyBar.color = SkyColor;
+            if(SkyBar)
+                SkyBar.color = SkyColor;
         }
     }
 }

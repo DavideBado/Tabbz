@@ -9,6 +9,7 @@ namespace Tabboz_3D
         public TMP_Text TimerTxt, DayNumTxt, DayNameTxt, MonthTxt;
         public GameObject ShopMenuPanel, ShopMenuContent, ShopMenuItemPref;
         public InventoryMenu InventoryPanel;
+        public Transform EndLevel_L, EndLevel_R;
 
         public override void SetGameManager()
         {
@@ -22,6 +23,10 @@ namespace Tabboz_3D
             gameManager.uIManager.ShopMenuContent = ShopMenuContent;
             gameManager.uIManager.ShopItemPref = ShopMenuItemPref;
             gameManager.uIManager.InventoryPanel = InventoryPanel;
+            gameManager.levelManager.EndLevel_L = EndLevel_L.position.x;
+            gameManager.levelManager.EndLevel_R = EndLevel_R.position.x;
+            gameManager.levelManager.NextLevel_L = (int)EndLevel_L.position.y;
+            gameManager.levelManager.NextLevel_R = (int)EndLevel_R.position.y;
             gameManager.InitManagers();
             OnLoaded();
         }

@@ -24,6 +24,8 @@ namespace Tabboz_3D
         [HideInInspector]
         public SkyManager skyManager;
         [HideInInspector]
+        public LevelManager levelManager;
+        [HideInInspector]
         public Tabboz3D tabboz;
         public int CurrentSceneIndex, NextSceneIndex;
 
@@ -49,6 +51,7 @@ namespace Tabboz_3D
             fSMManager = GetComponentInChildren<FSMManager>();
             uIManager = GetComponentInChildren<UIManager>();
             skyManager = GetComponentInChildren<SkyManager>();
+            levelManager = GetComponentInChildren<LevelManager>();
             tabboz = GetComponentInChildren<Tabboz3D>();
         }
         public void InitManagers()
@@ -60,6 +63,7 @@ namespace Tabboz_3D
             dayManager.Init();
             skyManager.Init();
             uIManager.Init();            
+            levelManager.Init();            
         }
     } 
 }
