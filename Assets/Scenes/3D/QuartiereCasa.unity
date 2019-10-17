@@ -2302,7 +2302,7 @@ RectTransform:
   - {fileID: 1981264652}
   - {fileID: 1695830653}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8500,8 +8500,6 @@ MonoBehaviour:
   IsOpen: 0
   OpnClsPanel: {fileID: 0}
   ShopData: {fileID: 11400000, guid: 7d2766e9d055efd4980445e8d1229e7e, type: 2}
-  timeManager: {fileID: 947439109}
-  dayManager: {fileID: 331207043}
   SelectableObjects:
   - {fileID: 853357577}
   - {fileID: 780386764}
@@ -10722,8 +10720,6 @@ MonoBehaviour:
   IsOpen: 0
   OpnClsPanel: {fileID: 2060220106}
   ShopData: {fileID: 11400000, guid: 01681c6c2c019c644b42cf2248f0f781, type: 2}
-  timeManager: {fileID: 947439109}
-  dayManager: {fileID: 331207043}
   SelectableObjects:
   - {fileID: 1022266681}
 --- !u!1 &1034562962
@@ -11425,7 +11421,7 @@ Transform:
   - {fileID: 486070986}
   - {fileID: 1554287156}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1094117716
 GameObject:
@@ -14037,8 +14033,6 @@ MonoBehaviour:
   IsOpen: 0
   OpnClsPanel: {fileID: 1629082162}
   ShopData: {fileID: 11400000, guid: c44d32ddddea41d45ae325ade76b98d1, type: 2}
-  timeManager: {fileID: 947439109}
-  dayManager: {fileID: 331207043}
   SelectableObjects:
   - {fileID: 1331572390}
 --- !u!23 &1331572390
@@ -15058,8 +15052,6 @@ MonoBehaviour:
   IsOpen: 0
   OpnClsPanel: {fileID: 982281313}
   ShopData: {fileID: 11400000, guid: 1f485f4e3ee934042907314f321bc6e6, type: 2}
-  timeManager: {fileID: 947439109}
-  dayManager: {fileID: 331207043}
   SelectableObjects:
   - {fileID: 1471331076}
 --- !u!23 &1471331076
@@ -18128,7 +18120,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1731874841
 GameObject:
@@ -18477,8 +18469,6 @@ MonoBehaviour:
   IsOpen: 0
   OpnClsPanel: {fileID: 1906426077}
   ShopData: {fileID: 11400000, guid: 7f6ed4346a82b98459a0a4b0542b4e9e, type: 2}
-  timeManager: {fileID: 947439109}
-  dayManager: {fileID: 331207043}
   SelectableObjects:
   - {fileID: 1811210937}
 --- !u!23 &1811210937
@@ -20077,7 +20067,7 @@ Transform:
   - {fileID: 1898532999}
   - {fileID: 789734836}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1957438271
 MonoBehaviour:

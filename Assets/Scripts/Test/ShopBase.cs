@@ -12,8 +12,8 @@ namespace Tabboz_3D
         public bool IsOpen;
         public MeshRenderer OpnClsPanel;
         public Shop3DConfigData ShopData;
-        public TimeManager timeManager;
-        public DayManager dayManager;
+        protected TimeManager timeManager;
+        protected DayManager dayManager;
         public List<MeshRenderer> SelectableObjects = new List<MeshRenderer>();
         public List<ISaleable> Cart = new List<ISaleable>();
         //#region DelegatesDef
@@ -25,8 +25,14 @@ namespace Tabboz_3D
         //#endregion
 
         #region Actions
-        public Action CheckOutCart; 
+        public Action CheckOutCart;
         #endregion
+
+        private void Awake()
+        {
+            timeManager = GameManager3D.instance.timeManager;
+            dayManager = GameManager3D.instance.dayManager;
+        }
         private void OnEnable()
         {
             timeManager.UpdateTime1h += OpenCheck;

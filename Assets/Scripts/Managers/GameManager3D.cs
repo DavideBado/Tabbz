@@ -36,12 +36,15 @@ namespace Tabboz_3D
                 instance = this;
             else if (instance != this)
                 Destroy(gameObject);
-            DontDestroyOnLoad(gameObject);          
-        }
-        public void GameManagerSetup()
-        {
+            DontDestroyOnLoad(gameObject);
             Init();
+            //GameManagerSetup();
         }
+        //public void GameManagerSetup()
+        //{
+        //    Init();
+        //    //InitManagers();
+        //}
         private void Init()
         {
             timeManager = GetComponentInChildren<TimeManager>();

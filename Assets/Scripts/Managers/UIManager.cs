@@ -56,17 +56,17 @@ namespace Tabboz_3D
         //    dayManager.UpdateDayDelegate += UpdateDayText;
         //    dayManager.UpdateMonth += UpdateMonthText;
         //}
-        //private void OnDisable()
-        //{
-        //    fSMManager.OpenMenuShopDelegate -= SetupShopMenu;
-        //    fSMManager.Act_InsideAShopMenu_GoBack -= CloseShopMenu;
-        //    dayManager.UpdateDayDelegate -= UpdateDayText;
-        //    dayManager.UpdateMonth -= UpdateMonthText;
-        //    timeManager.UpdateTime -= UpdateTimerText;
-        //    InventoryOnOff -= OpenCloseInventory;
-        //    ItemsMenuSetup -= SetupItemsMenu;
-        //    ItemsMenuOnOff -= ItemsMenuOpenClose;
-        //}
+        private void OnDisable()
+        {
+            fSMManager.OpenMenuShopDelegate -= SetupShopMenu;
+            fSMManager.Act_InsideAShopMenu_GoBack -= CloseShopMenu;
+            dayManager.UpdateDayDelegate -= UpdateDayText;
+            dayManager.UpdateMonth -= UpdateMonthText;
+            timeManager.UpdateTime -= UpdateTimerText;
+            InventoryOnOff -= OpenCloseInventory;
+            ItemsMenuSetup -= SetupItemsMenu;
+            ItemsMenuOnOff -= ItemsMenuOpenClose;
+        }
 
         #region ShopMenu
         private void CleanShopMenu()

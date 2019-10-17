@@ -18,9 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/3D/QuartiereCasa.unity
     guid: 4f52a5283d0a3b2479718df4edea6448
   - enabled: 1
-    path: Assets/Scenes/3D/QuartiereCasa 1.unity
+    path: Assets/Scenes/3D/QuartiereNegozi.unity
     guid: 8b1ed1ba4202ffe48a8e956e48e81bc5
   - enabled: 1
-    path: Assets/Scenes/3D/QuartiereCasa 2.unity
+    path: Assets/Scenes/3D/QuartiereLavoro.unity
     guid: 31614a887630ac44aa8f4cd57e720b31
   m_configObjects: {}

@@ -29,10 +29,10 @@ namespace Tabboz_3D
         //{
         //    timeManager.UpdateTime3h += UpdateColor;
         //}
-        //private void OnDisable()
-        //{
-        //    timeManager.UpdateTime3h -= UpdateColor;
-        //}
+        private void OnDisable()
+        {
+            timeManager.UpdateTime3h -= UpdateColor;
+        }
 
         private void UpdateColor()
         {
