@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
 using Tabboz_Base;
+using UnityEngine.UI;
 
 namespace Tabboz_3D
 {
@@ -10,6 +11,7 @@ namespace Tabboz_3D
         public GameObject ShopMenuPanel, ShopMenuContent, ShopMenuItemPref;
         public InventoryMenu InventoryPanel;
         public Transform EndLevel_L, EndLevel_R;
+        public Image Skybar;
 
         public override void SetGameManager()
         {
@@ -27,6 +29,7 @@ namespace Tabboz_3D
             gameManager.levelManager.EndLevel_R = EndLevel_R.position.x;
             gameManager.levelManager.NextLevel_L = (int)EndLevel_L.position.y;
             gameManager.levelManager.NextLevel_R = (int)EndLevel_R.position.y;
+            gameManager.skyManager.SkyBar = Skybar;
             gameManager.InitManagers();
             OnLoaded();
         }

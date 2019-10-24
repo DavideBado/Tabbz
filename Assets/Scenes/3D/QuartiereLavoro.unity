@@ -16134,6 +16134,7 @@ MonoBehaviour:
   InventoryPanel: {fileID: 1731874845}
   EndLevel_L: {fileID: 1646780510}
   EndLevel_R: {fileID: 1424209993}
+  Skybar: {fileID: 1692650969}
 --- !u!4 &1621935663
 Transform:
   m_ObjectHideFlags: 0
